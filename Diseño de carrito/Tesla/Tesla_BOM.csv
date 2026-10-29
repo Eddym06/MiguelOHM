@@ -1,0 +1,63 @@
+﻿Referencias,Cant,Valor,Huella,Notas
+C1,1,22nF,22nF,X7R 50 V (de tu diseño; falta huella)
+C2,1,220nF,220nF,X7R 50 V (de tu diseño; falta huella)
+"C3,C4",2,10nF,10nF,X7R 50 V (de tu diseño; falta huella)
+C5,1,470nF,10nF,X7R 50 V (de tu diseño; falta huella)
+C6,1,100uF,(sin huella),Electrolítico 25 V mín. en VM (de tu diseño; falta huella)
+"C11,C16,C39,C40,C41,C43,C44,C65,C68",9,1uF,Capacitor_SMD:C_0402_1005Metric,X5R 10 V
+"C12,C13",2,1.5pF,Capacitor_SMD:C_0402_1005Metric,Cerámico C0G/NP0 salvo que sea 22nF-470nF (X7R)
+"C14,C15,C17,C18",4,10pF,Capacitor_SMD:C_0402_1005Metric,Cerámico C0G/NP0 salvo que sea 22nF-470nF (X7R)
+C19,1,22pF,Capacitor_SMD:C_0402_1005Metric,Cerámico C0G/NP0 salvo que sea 22nF-470nF (X7R)
+"C37,C38,C42,C46,C49,C50,C51,C52,C53,C54,C56,C58,C60,C61,C62,C64,C66,C67,C70,C74,C78,C80,C84,C87,C89",25,0.1uF,Capacitor_SMD:C_0402_1005Metric,X7R 16 V mín. (25 V si está en VM)
+"C45,C59,C63,C69,C73,C79,C82,C83,C86,C88",10,10uF,Capacitor_SMD:C_0805_2012Metric,X7R 25 V mín. si está en VM; 10 V mín. en 3V3/5V
+"C47,C48,C57,C71,C72,C75,C76",7,22uF,Capacitor_SMD:C_0805_2012Metric,X5R/X7R 10 V mín. (salidas de los bucks; 25 V si algún día va en VM)
+C55,1,4.7uF,Capacitor_SMD:C_0805_2012Metric,X5R 10 V
+C77,1,470uF,Capacitor_SMD:CP_Elec_6.3x5.4,Electrolítico SMD 10 V mín. (salida 5 V servos/GPS)
+C81,1,100uF,Capacitor_SMD:CP_Elec_6.3x5.4,Electrolítico SMD 10 V mín. (salida 5 V del LiDAR)
+C85,1,470uF 25V,Capacitor_SMD:CP_Elec_8x10,Electrolítico SMD 25 V 8x10 (reserva a la entrada de la batería)
+D1,1,A+,LED_SMD:LED_0603_1608Metric,"LED 0603 (color a elección), indica sentido del motor A"
+D2,1,A-,LED_SMD:LED_0603_1608Metric,"LED 0603, motor A"
+D3,1,B+,LED_SMD:LED_0603_1608Metric,"LED 0603, motor B"
+D4,1,B-,LED_SMD:LED_0603_1608Metric,"LED 0603, motor B"
+D5,1,Faro izq 1W,LED_SMD:LED_Cree-XP-G,"LED blanco 1 W (350 mA), Vf 3,0-3,4 V, estrella o chip tipo XP-G"
+D6,1,Faro der 1W,LED_SMD:LED_Cree-XP-G,"LED blanco 1 W (350 mA), Vf 3,0-3,4 V, estrella o chip tipo XP-G"
+D7,1,SS14,Diode_SMD:D_SMA,"Schottky 40 V 1 A, libre circulación del driver de faros"
+J1,1,u.FL antena,Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical,Hirose U.FL-R-SMT-1 (antena del C6)
+J2,1,UART C6 (TX RX GND),Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,"Header 1x3 2,54 mm"
+J3,1,UART0 P4 (RX TX GND),Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,"Header 1x3 2,54 mm"
+J4,1,Motor A,Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical,Molex KK-254 2 pines
+J5,1,Motor B,Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical,Molex KK-254 2 pines
+J6,1,Bateria 12V (XT60),Connector_AMASS:AMASS_XT60-M_1x02_P7.20mm_Vertical,"AMASS XT60 macho para PCB, 30 A"
+J7,1,Servo SG90 direccion,Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical,"Molex KK-254 3 pines (GND, 5V, señal)"
+J8,1,Servo SG90 1,Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical,Molex KK-254 3 pines
+J9,1,Servo SG90 2,Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical,Molex KK-254 3 pines
+J10,1,GPS M100 Pro (JST SH 6),Connector_JST:JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal,JST SH SM06B-SRSS-TB (orden de pines por verificar)
+J11,1,LiDAR D500 (ZH 1.5),Connector_JST:JST_ZH_B4B-ZR_1x04_P1.50mm_Vertical,"JST ZH B4B-ZR; ojo: 1 A por contacto y el LiDAR puede pedir 1,5 A"
+J12,1,nRF24L01+ PA/LNA (socket 2x4),Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical,Zócalo hembra 2x4 para módulo nRF24L01+PA/LNA con antena
+L1,1,2.5nH,Inductor_SMD:L_0805_2012Metric,"RF 2,5 nH, alta Q, 0805"
+L2,1,24nH,Inductor_SMD:L_0805_2012Metric,"RF 24 nH, alta Q, 0805"
+L3,1,2.2uH,Inductor_SMD:L_0805_2012Metric,"2,2 uH, Isat 1 A mín. (TLV62569)"
+L4,1,4.7uH,Inductor_SMD:L_0805_2012Metric,"4,7 uH, Isat 3 A mín. (AP63203)"
+"L5,L6",2,4.7uH,Inductor_SMD:L_Taiyo-Yuden_NR-50xx,"Inductor 4,7 uH, Isat 3 A mín. (bucks de 2 A)"
+L7,1,100uH,Inductor_SMD:L_Bourns_SRN6045TA,"Inductor de potencia 100 uH, Isat 0,6 A mín. (Bourns SRN6045TA o equivalente)"
+NT1,1,NetTie_2,NetTie:NetTie-2_SMD_Pad0.5mm,Net tie GND-GNDPWR (sin pieza física)
+"R1,R3",2,15k,(sin huella),de tu diseño; falta huella
+"R2,R4",2,10k,(sin huella),de tu diseño; falta huella
+"R5,R6,R7,R8,R9,R10,R11,R12,R13,R16,R24,R26",12,10k,Resistor_SMD:R_0402_1005Metric,"1 %, 0402"
+"R14,R15",2,499k,Resistor_SMD:R_0402_1005Metric,"1 %, 0402"
+"R17,R18,R19,R20",4,1k,Resistor_SMD:R_0402_1005Metric,limitan los LED de dirección
+"R21,R22",2,4.7k,Resistor_SMD:R_0402_1005Metric,"1 %, 0402"
+R23,1,100,Resistor_SMD:R_0402_1005Metric,serie en Tx del LiDAR
+R25,1,0.3,Resistor_SMD:R_0805_2012Metric,"0,3 ohm 1 % 0805, fija 333 mA de los faros (I = 0,1/Rs)"
+SW1,1,BOOT C6,Button_Switch_SMD:SW_SPST_TL3342,Pulsador SMD TL3342
+SW2,1,RESET,Button_Switch_SMD:SW_SPST_TL3342,Pulsador SMD TL3342
+SW3,1,BOOT P4,Button_Switch_SMD:SW_SPST_TL3342,Pulsador SMD TL3342
+U1,1,DRV8424EPWPR,Tesla_Parts:SOP65P640X120-29N,"TI, puente H doble 2,5 A, HTSSOP-28 con pad térmico"
+U2,1,ESP32-P4,PCM_Espressif:ESP32-P4,"Espressif, variante exacta a confirmar (flash/PSRAM)"
+U3,1,ESP32-C6FH4,Espressif_C6:ESP32-C6FH4_QFN32_Espressif,"Espressif, 4 MB flash en el encapsulado"
+U4,1,TLV62569,Package_TO_SOT_SMD:SOT-23-5,"TI TLV62569DBVR, buck 1,2 V"
+U5,1,W25Q128JVS,Package_SO:SOIC-8_5.3x5.3mm_P1.27mm,"Winbond W25Q128JVSIQ, flash 128 Mbit"
+U6,1,AP63203WU,Package_TO_SOT_SMD:TSOT-23-6,"Diodes AP63203WU-7, buck 3,3 V 2 A"
+"U7,U8",2,AP63205WU,Package_TO_SOT_SMD:TSOT-23-6,"Diodes AP63205WU-7, buck 5 V 2 A"
+U9,1,AL8860WT,Package_TO_SOT_SMD:TSOT-23-5,"Diodes AL8860WT-7, driver LED de corriente constante (faros)"
+"Y1,Y2",2,40MHz,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm,"Cristal 3225 de 4 pines, CL a confirmar con el datasheet del chip"
