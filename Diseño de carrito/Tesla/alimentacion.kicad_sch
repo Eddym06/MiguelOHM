@@ -1,0 +1,1344 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "88acc448-12b0-4c9a-9864-69df38e4dee1")
+	(paper "A2")
+	(title_block
+		(title "Tesla - Alimentacion")
+		(date "2026-10-29")
+		(comment 1 "Carrito Tesla - ESP32-P4 + DRV8424E")
+	)
+	(lib_symbols
+		(symbol "power:+3V3"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:+5V"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(sheet
+		(at 68.58 48.26)
+		(size 63.5 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4d5a437e-9cd6-42bc-ac67-03ff09125619")
+		(property "Sheetname" "Proteccion bateria"
+			(at 68.58 47.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "alim_proteccion.kicad_sch"
+			(at 68.58 74.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VBAT" input
+			(at 68.58 53.34 180)
+			(uuid "6f393924-5395-4f7d-be5d-e2b5d9246348")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VM" output
+			(at 132.08 53.34 0)
+			(uuid "12103388-b883-40a7-b096-82c107d37a65")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Tesla"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/d030c1b8-cfad-4a3d-92ca-1d1b304d6085"
+					(page "3")
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 68.58 53.34) (xy 60.96 53.34))
+		(stroke (width 0) (type default))
+		(uuid "28694ced-080a-4084-94f6-f3e1718dad57")
+	)
+	(label "VBAT"
+		(at 60.96 53.34 180)
+		(effects (font (size 1.27 1.27)) (justify right bottom))
+		(uuid "5aa5b575-30e1-4fd7-8696-e6836ba04d02")
+	)
+	(wire
+		(pts (xy 132.08 53.34) (xy 139.7 53.34))
+		(stroke (width 0) (type default))
+		(uuid "c635b375-16a9-44ee-9931-e0a4d4700af3")
+	)
+(symbol
+		(lib_id "power:+5V")
+		(at 139.7 53.34 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "8ddec04e-9da3-4b8f-b6d5-d0cf78fc231b")
+		(property "Reference" "#PWR8126"
+			(at 142.7 50.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VM"
+			(at 144.78 53.34 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (justify left)
+				
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 139.7 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6fb08b4d-909a-4ce6-afee-127d9ba038d6")
+		)
+		(instances
+			(project "Tesla"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/d030c1b8-cfad-4a3d-92ca-1d1b304d6085"
+					(reference "#PWR8126")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 189.23 48.26)
+		(size 63.5 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "69e35a55-fecc-465b-b93e-e8f9a04d5311")
+		(property "Sheetname" "Medicion bateria"
+			(at 189.23 47.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "alim_medicion.kicad_sch"
+			(at 189.23 74.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VM" input
+			(at 189.23 53.34 180)
+			(uuid "f6a67e90-d3a1-46f7-8efa-0880bee6de87")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VBAT_ADC" output
+			(at 252.73 53.34 0)
+			(uuid "f129fe71-3f35-4f02-81dc-4928b541a762")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Tesla"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/d030c1b8-cfad-4a3d-92ca-1d1b304d6085"
+					(page "4")
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 189.23 53.34) (xy 181.61 53.34))
+		(stroke (width 0) (type default))
+		(uuid "a2ca3e3a-4980-43cd-9845-ede84a7badfc")
+	)
+(symbol
+		(lib_id "power:+5V")
+		(at 181.61 53.34 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "94a937c2-146b-4678-b390-6fc929ead52c")
+		(property "Reference" "#PWR8127"
+			(at 184.61 50.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VM"
+			(at 176.53 53.34 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (justify right)
+				
+			)
+		)
+		(property "Footprint" ""
+			(at 181.61 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 181.61 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5869b25e-a295-478a-a171-22d98d82e1f7")
+		)
+		(instances
+			(project "Tesla"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/d030c1b8-cfad-4a3d-92ca-1d1b304d6085"
+					(reference "#PWR8127")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 252.73 53.34) (xy 260.35 53.34))
+		(stroke (width 0) (type default))
+		(uuid "f3347f5d-4372-44d1-9e8c-5f7bdf4edad6")
+	)
+	(label "VBAT_ADC"
+		(at 260.35 53.34 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "457a7236-a2c0-4227-9e5f-0f639ff1f30a")
+	)
+	(sheet
+		(at 68.58 107.95)
+		(size 63.5 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "09a3ad19-feed-456f-a21f-6193b3b1e264")
+		(property "Sheetname" "Buck 3V3"
+			(at 68.58 107.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "alim_buck_3v3.kicad_sch"
+			(at 68.58 133.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VM" input
+			(at 68.58 113.03 180)
+			(uuid "facb3b5f-4905-4673-92b3-8e1bc1ebbf48")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+3V3" output
+			(at 132.08 113.03 0)
+			(uuid "a51a4709-1ac2-45ca-9ccc-f44512f9a136")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Tesla"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/d030c1b8-cfad-4a3d-92ca-1d1b304d6085"
+					(page "5")
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 68.58 113.03) (xy 60.96 113.03))
+		(stroke (width 0) (type default))
+		(uuid "d8a3b960-7aca-4ae1-abfe-8896db05684d")
+	)
+(symbol
+		(lib_id "power:+5V")
+		(at 60.96 113.03 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "831a9c00-4805-4d35-affe-71a94c7ee782")
+		(property "Reference" "#PWR8128"
+			(at 63.96 110.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VM"
+			(at 55.88 113.03 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (justify right)
+				
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 60.96 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4f5629b1-b5c4-48ee-acd9-ed1b6e7a6883")
+		)
+		(instances
+			(project "Tesla"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/d030c1b8-cfad-4a3d-92ca-1d1b304d6085"
+					(reference "#PWR8128")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 132.08 113.03) (xy 139.7 113.03))
+		(stroke (width 0) (type default))
+		(uuid "abacdaaf-e0b2-4be0-9880-ced903d9507d")
+	)
+(symbol
+		(lib_id "power:+3V3")
+		(at 139.7 113.03 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "05fb624a-dcd8-418a-953a-45ae752555e0")
+		(property "Reference" "#PWR8129"
+			(at 142.7 110.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 144.78 113.03 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (justify left)
+				
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 139.7 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c4284534-df6f-418a-9d3f-80eee1864765")
+		)
+		(instances
+			(project "Tesla"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/d030c1b8-cfad-4a3d-92ca-1d1b304d6085"
+					(reference "#PWR8129")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 189.23 107.95)
+		(size 63.5 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9514380a-ce1b-4fd7-892a-e3d8a829a31b")
+		(property "Sheetname" "Buck 5V servos y GPS"
+			(at 189.23 107.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "alim_buck_5v.kicad_sch"
+			(at 189.23 133.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VM" input
+			(at 189.23 113.03 180)
+			(uuid "f2f174d9-736c-4ba8-ba88-681e4932ac0e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+5V" output
+			(at 252.73 113.03 0)
+			(uuid "5932922c-d217-4ad8-96ea-9960bc18ee91")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Tesla"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/d030c1b8-cfad-4a3d-92ca-1d1b304d6085"
+					(page "6")
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 189.23 113.03) (xy 181.61 113.03))
+		(stroke (width 0) (type default))
+		(uuid "3e40e4bc-a920-42e8-bbd1-c5a763943172")
+	)
+(symbol
+		(lib_id "power:+5V")
+		(at 181.61 113.03 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "7eece13e-8967-461e-9f17-1443af61ada0")
+		(property "Reference" "#PWR8130"
+			(at 184.61 110.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VM"
+			(at 176.53 113.03 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (justify right)
+				
+			)
+		)
+		(property "Footprint" ""
+			(at 181.61 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 181.61 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a355a00d-ff48-4eb6-a19f-0b17f49c77d3")
+		)
+		(instances
+			(project "Tesla"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/d030c1b8-cfad-4a3d-92ca-1d1b304d6085"
+					(reference "#PWR8130")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 252.73 113.03) (xy 260.35 113.03))
+		(stroke (width 0) (type default))
+		(uuid "f4e12227-9d28-48f0-aafa-9164e208f384")
+	)
+(symbol
+		(lib_id "power:+5V")
+		(at 260.35 113.03 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "53b1f146-f15e-473a-b638-0410318ccc08")
+		(property "Reference" "#PWR8131"
+			(at 263.35 110.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 265.43 113.03 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (justify left)
+				
+			)
+		)
+		(property "Footprint" ""
+			(at 260.35 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 260.35 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 260.35 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bf404966-4839-4bd8-a1ea-8296f8b3f140")
+		)
+		(instances
+			(project "Tesla"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/d030c1b8-cfad-4a3d-92ca-1d1b304d6085"
+					(reference "#PWR8131")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 68.58 166.37)
+		(size 63.5 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1370ccb2-d480-45b0-a8ad-0346476b329a")
+		(property "Sheetname" "Buck 5V LiDAR"
+			(at 68.58 165.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "alim_buck_5v_lidar.kicad_sch"
+			(at 68.58 192.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VM" input
+			(at 68.58 171.45 180)
+			(uuid "2c2eade7-1584-4ebc-ab5a-cb5ddadeabc8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "5V_LIDAR" output
+			(at 132.08 171.45 0)
+			(uuid "da473dd0-25bd-4d38-b0b3-56aa08815502")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Tesla"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/d030c1b8-cfad-4a3d-92ca-1d1b304d6085"
+					(page "7")
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 68.58 171.45) (xy 60.96 171.45))
+		(stroke (width 0) (type default))
+		(uuid "2b8bd033-ef34-4b40-848a-0d5092884551")
+	)
+(symbol
+		(lib_id "power:+5V")
+		(at 60.96 171.45 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "e56a6236-1971-424a-b912-517d9491e9dd")
+		(property "Reference" "#PWR8132"
+			(at 63.96 168.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VM"
+			(at 55.88 171.45 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (justify right)
+				
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 60.96 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d979a17f-59bb-4a4e-8562-0d6151a7e0ee")
+		)
+		(instances
+			(project "Tesla"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/d030c1b8-cfad-4a3d-92ca-1d1b304d6085"
+					(reference "#PWR8132")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 132.08 171.45) (xy 139.7 171.45))
+		(stroke (width 0) (type default))
+		(uuid "a63d6cf9-bd4b-4c3c-b7f8-ed873a63ba5e")
+	)
+(symbol
+		(lib_id "power:+5V")
+		(at 139.7 171.45 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "b3516a7d-5a3b-4d8e-9f94-bed737e0ec33")
+		(property "Reference" "#PWR8133"
+			(at 142.7 168.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5V_LIDAR"
+			(at 144.78 171.45 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (justify left)
+				
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 139.7 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "19f77d88-ca6c-4a1f-8e09-5b700e76757c")
+		)
+		(instances
+			(project "Tesla"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/d030c1b8-cfad-4a3d-92ca-1d1b304d6085"
+					(reference "#PWR8133")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(hierarchical_label "VBAT"
+		(shape input)
+		(at 339.09 48.26 0)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "9ae45545-651e-4476-a1ea-1fc9cd388e0f")
+	)
+	(wire
+		(pts (xy 339.09 48.26) (xy 331.47 48.26))
+		(stroke (width 0) (type default))
+		(uuid "a86de336-b955-47b9-b732-d611eaaed836")
+	)
+	(label "VBAT"
+		(at 331.47 48.26 180)
+		(effects (font (size 1.27 1.27)) (justify right bottom))
+		(uuid "e426cbb8-4d66-4b1b-a05e-171af31d7e48")
+	)
+	(hierarchical_label "VBAT_ADC"
+		(shape output)
+		(at 339.09 55.88 0)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "dff0e01a-bff4-4bd0-8ab0-707b480c7498")
+	)
+	(wire
+		(pts (xy 339.09 55.88) (xy 331.47 55.88))
+		(stroke (width 0) (type default))
+		(uuid "0d18bcac-7418-4f38-bf12-e4bede84ef8b")
+	)
+	(label "VBAT_ADC"
+		(at 331.47 55.88 180)
+		(effects (font (size 1.27 1.27)) (justify right bottom))
+		(uuid "5f05826a-1905-4c9f-ba2c-3b0d00166560")
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

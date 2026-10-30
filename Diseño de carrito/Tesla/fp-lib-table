@@ -1,0 +1,6 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Tesla_Parts")(type "KiCad")(uri "${KIPRJMOD}/Tesla_Parts.pretty")(options "")(descr ""))
+  (lib (name "PCM_Espressif")(type "KiCad")(uri "${KIPRJMOD}/../Componentes/ESP32-P4/KiCad/Espressif.pretty")(options "")(descr "Espressif ESP32-P4"))
+  (lib (name "Espressif_C6")(type "KiCad")(uri "${KIPRJMOD}/../Componentes/ESP32-C6/KiCad/Espressif_C6.pretty")(options "")(descr "Espressif ESP32-C6 land pattern oficial"))
+)
