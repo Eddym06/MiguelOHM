@@ -1,0 +1,7 @@
+# Archivos temporales / bloqueos
+*.lck
+~$*
+.tgrep/
+
+# Historial local automatico de KiCad (repositorio git anidado)
+.history/
