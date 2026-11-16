@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#0b0f14">
+<title>KAKATA Carrito</title>
+<style>
+:root{
+  --bg:#0b0f14; --panel:#151b23; --panel2:#1c242e; --line:#2a3541; --txt:#e8eef5; --mut:#8a99a8;
+  --acc:#36d1ff; --ok:#3ddc84; --warn:#ffb020; --bad:#ff4d5e;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--txt);font:15px/1.35 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overscroll-behavior:none}
+body{display:flex;flex-direction:column;padding:env(safe-area-inset-top) env(safe-area-inset-right) 0 env(safe-area-inset-left)}
+header{display:flex;align-items:center;gap:8px;padding:8px 12px;background:var(--panel);border-bottom:1px solid var(--line);flex-wrap:wrap}
+header h1{font-size:16px;margin:0;letter-spacing:.08em;color:var(--acc);flex:1;min-width:90px}
+.chip{display:inline-flex;align-items:center;gap:5px;padding:3px 9px;border-radius:99px;background:var(--panel2);border:1px solid var(--line);font-size:12.5px;white-space:nowrap}
+.chip i{width:8px;height:8px;border-radius:50%;background:var(--mut);display:inline-block}
+.chip.ok i{background:var(--ok)} .chip.bad i{background:var(--bad)} .chip.warn i{background:var(--warn)}
+#banner{display:none;padding:8px 12px;background:#4a1c22;color:#ffd3d8;font-weight:600;text-align:center}
+#banner.show{display:block}
+main{flex:1;min-height:0;overflow:auto;-webkit-overflow-scrolling:touch}
+section{display:none;padding:12px;max-width:900px;margin:0 auto}
+section.active{display:block}
+nav{display:flex;background:var(--panel);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
+nav button{flex:1;padding:12px 4px;background:none;border:0;color:var(--mut);font:inherit;font-weight:600;border-top:3px solid transparent}
+nav button.active{color:var(--acc);border-top-color:var(--acc)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:12px}
+.panel h2{font-size:13px;margin:0 0 8px;color:var(--mut);text-transform:uppercase;letter-spacing:.08em}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;text-align:center}
+.stat b{display:block;font-size:22px;font-variant-numeric:tabular-nums}
+.stat span{font-size:11.5px;color:var(--mut)}
+.pads{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pad{position:relative;touch-action:none;user-select:none;background:var(--panel2);border:1px solid var(--line);border-radius:16px;height:min(44vw,260px);min-height:150px}
+.pad.v::before,.pad.h::before{content:"";position:absolute;background:var(--line)}
+.pad.v::before{left:50%;top:8%;bottom:8%;width:2px;transform:translateX(-50%)}
+.pad.h::before{top:50%;left:8%;right:8%;height:2px;transform:translateY(-50%)}
+.pad .knob{position:absolute;left:50%;top:50%;width:56px;height:56px;margin:-28px 0 0 -28px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 6px rgba(54,209,255,.18);pointer-events:none}
+.pad .lbl{position:absolute;left:0;right:0;bottom:6px;text-align:center;font-size:11.5px;color:var(--mut);pointer-events:none}
+.pad .val{position:absolute;left:0;right:0;top:6px;text-align:center;font-weight:700;font-variant-numeric:tabular-nums;pointer-events:none}
+.btns{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+button.b{padding:13px 8px;border-radius:12px;border:1px solid var(--line);background:var(--panel2);color:var(--txt);font:inherit;font-weight:700;touch-action:manipulation}
+button.b.on{background:var(--acc);color:#04222b;border-color:var(--acc)}
+button.b.danger{background:#5a1d25;border-color:#8a2b36}
+button.b.danger.on,button.b.danger:active{background:var(--bad);color:#fff}
+button.b.small{padding:9px 10px;font-weight:600}
+button.b:disabled{opacity:.4}
+.colors{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.sw{width:34px;height:34px;border-radius:50%;border:3px solid transparent;touch-action:manipulation}
+.sw.sel{border-color:#fff}
+.sw.rb{background:conic-gradient(red,yellow,lime,cyan,blue,magenta,red)}
+canvas{display:block;width:100%;touch-action:none;background:#0d1319;border-radius:12px;border:1px solid var(--line)}
+#map{height:min(62vh,520px)}
+.row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:6px 0}
+.row.sp{justify-content:space-between}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.seg button{background:var(--panel2);color:var(--txt);border:0;padding:8px 12px;font:inherit;font-weight:600}
+.seg button.on{background:var(--acc);color:#04222b}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:3px 12px;font-variant-numeric:tabular-nums}
+.kv span:nth-child(odd){color:var(--mut)}
+details{border:1px solid var(--line);border-radius:12px;margin-bottom:10px;background:var(--panel)}
+summary{padding:11px 12px;font-weight:700;cursor:pointer}
+.cfg{display:grid;grid-template-columns:1fr auto auto;gap:6px 8px;align-items:center;padding:4px 12px 12px}
+.cfg label{font-size:13.5px} .cfg small{color:var(--mut)}
+input[type=number],select{background:var(--bg);color:var(--txt);border:1px solid var(--line);border-radius:8px;padding:8px;font:inherit;width:96px}
+select{width:auto}
+input[type=range]{width:100%}
+.flash{animation:fl .9s}
+@keyframes fl{from{background:#1f5a3a}to{background:transparent}}
+.note{color:var(--mut);font-size:12.5px}
+.badge-test{display:none;margin-bottom:10px;padding:8px 12px;border-radius:10px;background:#3b3216;color:#ffd98a;font-weight:600}
+.badge-test.show{display:block}
+</style>
+</head>
+<body>
+<header>
+  <h1>KAKATA</h1>
+  <span class="chip" id="cLink"><i></i><span>sin conexión</span></span>
+  <span class="chip" id="cGps"><i></i><span>GPS</span></span>
+  <span class="chip" id="cBat"><i></i><span>--</span></span>
+</header>
+<div id="banner"></div>
+
+<main>
+<!-- ===================== CONTROL ===================== -->
+<section id="tab-ctl" class="active">
+  <div class="panel">
+    <div class="stats">
+      <div class="stat"><b id="sSpeed">0.0</b><span>km/h</span></div>
+      <div class="stat"><b id="sRpm">0</b><span>rpm</span></div>
+      <div class="stat"><b id="sVolt">--</b><span>V bat</span></div>
+      <div class="stat"><b id="sHead">--</b><span id="sHeadL">rumbo</span></div>
+    </div>
+  </div>
+  <div class="pads">
+    <div class="pad v" id="padThr"><div class="val" id="vThr">0</div><div class="knob"></div><div class="lbl">ACELERAR ▲ / REVERSA ▼</div></div>
+    <div class="pad h" id="padStr"><div class="val" id="vStr">0</div><div class="knob"></div><div class="lbl">◀ GIRO ▶</div></div>
+  </div>
+  <div class="panel" style="margin-top:12px">
+    <div class="btns">
+      <button class="b danger" id="bBrake">FRENO</button>
+      <button class="b" id="bLights">FAROS</button>
+      <button class="b on" id="bRgb">RGB</button>
+    </div>
+    <div class="colors" id="colors"></div>
+    <div class="row sp" style="margin-top:10px">
+      <span class="note">Al soltar los mandos el carrito sigue por inercia. FRENO = freno motor.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MAPA ===================== -->
+<section id="tab-map">
+  <div class="panel">
+    <div class="row sp">
+      <div class="seg" id="segRadius"><button data-r="10">10 m</button><button data-r="15" class="on">15 m</button><button data-r="20">20 m</button></div>
+      <div class="seg" id="segOrient"><button data-o="n">Norte ↑</button><button data-o="h" class="on">Rumbo ↑</button></div>
+    </div>
+    <canvas id="map"></canvas>
+    <div class="row" style="margin-top:10px">
+      <button class="b" id="bGo" disabled style="flex:1">IR AL PUNTO</button>
+      <button class="b danger" id="bCancel" style="flex:1">CANCELAR</button>
+    </div>
+    <label class="note" style="display:block;margin-top:6px"><input type="checkbox" id="chkTiles"> Mapa en línea (solo si el celular tiene internet)</label>
+  </div>
+  <div class="panel">
+    <h2>Navegación autónoma</h2>
+    <div class="kv">
+      <span>Estado</span><span id="nState">Sin destino</span>
+      <span>Distancia</span><span id="nDist">--</span>
+      <span>Rumbo al punto</span><span id="nBear">--</span>
+      <span>Rumbo del carrito</span><span id="nHead">--</span>
+      <span>GPS</span><span id="nGps">--</span>
+    </div>
+    <p class="note">Toca el mapa para marcar un punto y pulsa «IR AL PUNTO». El carrito esquiva obstáculos con el LIDAR. Mover el acelerador o el freno cancela el modo autónomo.</p>
+  </div>
+</section>
+
+<!-- ===================== CONFIG ===================== -->
+<section id="tab-cfg">
+  <div class="panel">
+    <div class="row">
+      <button class="b small" id="bCfgRead">Leer todo</button>
+      <button class="b small danger" id="bCfgReset">Restaurar valores de fábrica</button>
+    </div>
+    <p class="note">Los cambios se guardan en el carrito (memoria NVS) y se aplican al instante.</p>
+  </div>
+  <div id="cfgList"><p class="note">Cargando ajustes…</p></div>
+</section>
+
+<!-- ===================== PRUEBAS ===================== -->
+<section id="tab-test">
+  <div class="badge-test" id="testBadge"></div>
+  <div class="panel">
+    <h2>Sensores</h2>
+    <div class="row" id="sensChips"></div>
+    <div class="kv" style="margin-top:8px">
+      <span>GPS</span><span id="tGps">--</span>
+      <span>Posición</span><span id="tPos">--</span>
+      <span>Velocidad GPS</span><span id="tGv">--</span>
+      <span>IMU (cabeceo / alabeo)</span><span id="tImu">--</span>
+      <span>Rumbo</span><span id="tHead">--</span>
+      <span>Batería (INA219)</span><span id="tBat">--</span>
+      <span>Encoders</span><span id="tEnc">--</span>
+      <span>Servo</span><span id="tServo">--</span>
+    </div>
+  </div>
+  <div class="panel">
+    <h2>LIDAR (radio 3 m)</h2>
+    <canvas id="lidar" style="aspect-ratio:1/1;max-width:320px;margin:0 auto"></canvas>
+  </div>
+  <div class="panel">
+    <h2>Motores (se mueven las ruedas: levanta el carrito)</h2>
+    <div class="row"><label style="flex:1">PWM <b id="tDutyV">40</b> %<input type="range" id="tDuty" min="10" max="100" value="40"></label></div>
+    <div class="btns">
+      <button class="b small" data-t="1" data-sg="1">Izq ▲</button>
+      <button class="b small" data-t="1" data-sg="-1">Izq ▼</button>
+      <button class="b small" data-t="7" data-sg="1">PID ambos ▲</button>
+      <button class="b small" data-t="2" data-sg="1">Der ▲</button>
+      <button class="b small" data-t="2" data-sg="-1">Der ▼</button>
+      <button class="b small" data-t="7" data-sg="-1">PID ambos ▼</button>
+    </div>
+    <p class="note">«PID» usa la mitad del RPM máximo como objetivo con los encoders. Cada prueba dura 1.5 s.</p>
+  </div>
+  <div class="panel">
+    <h2>Servo de dirección</h2>
+    <div class="btns">
+      <button class="b small" data-servo="-30">−30°</button>
+      <button class="b small" data-servo="0">Centro</button>
+      <button class="b small" data-servo="30">+30°</button>
+    </div>
+  </div>
+  <div class="panel">
+    <h2>Luces</h2>
+    <div class="btns">
+      <button class="b small" id="tHead4">Faros</button>
+      <button class="b small" id="tRgb5">RGB (ciclo)</button>
+      <button class="b small" id="tSpoil">Tira trasera</button>
+    </div>
+  </div>
+  <div class="panel">
+    <h2>Calibración</h2>
+    <div class="row">
+      <button class="b small" id="bCalMag">Calibrar brújula</button>
+      <button class="b small" id="bCalGyro">Recalibrar giroscopio</button>
+    </div>
+    <p class="note">Brújula: pulsa «Calibrar», gira el carrito despacio 360° en suelo plano y pulsa «Terminar». Giroscopio: con el carrito quieto.</p>
+  </div>
+</section>
+</main>
+
+<nav id="nav">
+  <button data-tab="ctl" class="active">Control</button>
+  <button data-tab="map">Mapa</button>
+  <button data-tab="cfg">Ajustes</button>
+  <button data-tab="test">Pruebas</button>
+</nav>
+
+<script>
+"use strict";
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+const COLORS = [["ROJO","#ff2a2a"],["NARANJA","#ff7a1a"],["AMARILLO","#ffd21a"],["VERDE","#24e05a"],
+                ["CIAN","#21e3ee"],["AZUL","#2a4dff"],["VIOLETA","#a02aff"],["BLANCO","#ffffff"],["ARCOIRIS",""]];
+const NAV_TXT = ["Sin destino","En camino","Esquivando obstáculo","Llegó al destino","Abortado: sin GPS/rumbo","Bloqueado (demasiados obstáculos)"];
+const CARD = ["N","NE","E","SE","S","SO","O","NO"];
+const card = d => CARD[Math.round(((d % 360) + 360) % 360 / 45) % 8];
+
+let ws = null, wsOpen = false, S = {ok: 0};
+let META = [], CFG = {};
+const ctl = {th: 0, st: 0, br: false};
+const lig = {fl: false, rgb: true, col: 0};
+let calOn = false;
+
+/* ============================== WebSocket ============================== */
+function connect() {
+  try { ws = new WebSocket("ws://" + location.host + "/ws"); } catch (e) { setTimeout(connect, 1500); return; }
+  ws.onopen = () => { wsOpen = true; sendLights(); render(); if (!META.length) loadSettings(); };
+  ws.onclose = () => { wsOpen = false; render(); setTimeout(connect, 1000); };
+  ws.onerror = () => { try { ws.close(); } catch (e) {} };
+  ws.onmessage = ev => {
+    let m; try { m = JSON.parse(ev.data); } catch (e) { return; }
+    if (m.t === "st") { S = m; render(); }
+    else if (m.t === "cfg") onCfg(m);
+  };
+}
+function send(o) { if (wsOpen && ws.readyState === 1) ws.send(JSON.stringify(o)); }
+function sendLights() { send({t: "lig", fl: lig.fl ? 1 : 0, rgb: lig.rgb ? 1 : 0, col: lig.col}); }
+setInterval(() => send({t: "ctl", th: Math.round(ctl.th), st: Math.round(ctl.st), br: ctl.br ? 1 : 0}), 50);
+
+/* ============================== Pestañas ============================== */
+$$("#nav button").forEach(b => b.onclick = () => {
+  $$("#nav button").forEach(x => x.classList.toggle("active", x === b));
+  $$("section").forEach(s => s.classList.toggle("active", s.id === "tab-" + b.dataset.tab));
+  if (b.dataset.tab === "map") { drawMap(); }
+  if (b.dataset.tab === "test") { drawLidar(); }
+  if (b.dataset.tab === "cfg" && META.length && !Object.keys(CFG).length) readAll();
+});
+const activeTab = () => $("#nav button.active").dataset.tab;
+
+/* ============================== Mandos táctiles ============================== */
+function pad(el, axis, onChange) {
+  const knob = el.querySelector(".knob");
+  let id = null;
+  const upd = e => {
+    const r = el.getBoundingClientRect();
+    let v;
+    if (axis === "y") { v = clamp((0.5 - (e.clientY - r.top) / r.height) * 2, -1, 1); knob.style.top = (50 - v * 42) + "%"; knob.style.left = "50%"; }
+    else { v = clamp(((e.clientX - r.left) / r.width - 0.5) * 2, -1, 1); knob.style.left = (50 + v * 42) + "%"; knob.style.top = "50%"; }
+    if (Math.abs(v) < 0.06) v = 0;
+    onChange(v * 100);
+  };
+  el.addEventListener("pointerdown", e => { id = e.pointerId; el.setPointerCapture(id); upd(e); e.preventDefault(); });
+  el.addEventListener("pointermove", e => { if (e.pointerId === id) upd(e); });
+  const end = e => { if (e.pointerId !== id) return; id = null; knob.style.top = "50%"; knob.style.left = "50%"; onChange(0); };
+  el.addEventListener("pointerup", end);
+  el.addEventListener("pointercancel", end);
+}
+pad($("#padThr"), "y", v => { ctl.th = v; $("#vThr").textContent = Math.round(v); });
+pad($("#padStr"), "x", v => { ctl.st = v; $("#vStr").textContent = Math.round(v); });
+
+const bBrake = $("#bBrake");
+const brakeOn = e => { ctl.br = true; bBrake.classList.add("on"); e.preventDefault(); };
+const brakeOff = () => { ctl.br = false; bBrake.classList.remove("on"); };
+bBrake.addEventListener("pointerdown", brakeOn);
+["pointerup", "pointercancel", "pointerleave"].forEach(ev => bBrake.addEventListener(ev, brakeOff));
+document.addEventListener("visibilitychange", () => { if (document.hidden) { ctl.th = ctl.st = 0; brakeOff(); } });
+
+$("#bLights").onclick = () => { lig.fl = !lig.fl; $("#bLights").classList.toggle("on", lig.fl); sendLights(); };
+$("#bRgb").onclick = () => { lig.rgb = !lig.rgb; $("#bRgb").classList.toggle("on", lig.rgb); sendLights(); };
+COLORS.forEach((c, i) => {
+  const b = document.createElement("button");
+  b.className = "sw" + (i === 8 ? " rb" : "") + (i === 0 ? " sel" : "");
+  if (c[1]) b.style.background = c[1];
+  b.title = c[0];
+  b.onclick = () => { lig.col = i; lig.rgb = true; $("#bRgb").classList.add("on"); $$("#colors .sw").forEach((x, k) => x.classList.toggle("sel", k === i)); sendLights(); };
+  $("#colors").appendChild(b);
+});
+
+/* ============================== Estado / cabecera ============================== */
+const SO = {GPS: 1, LIDAR: 2, IMU: 4, INA: 8, MAG: 16, GPSU: 32};
+function setChip(el, cls, text) { el.className = "chip " + cls; el.querySelector("span").textContent = text; }
+
+function render() {
+  const ok = wsOpen && S.ok;
+  // banner y chips
+  let msg = "";
+  if (!wsOpen) msg = "Sin conexión con el carrito (¿WiFi KAKATA-CARRITO?)";
+  else if (!S.ok) msg = "Conectado al S3, pero el P4 no responde (revisa el cable SPI)";
+  $("#banner").textContent = msg;
+  $("#banner").classList.toggle("show", !!msg);
+  setChip($("#cLink"), !wsOpen ? "bad" : (S.ok ? "ok" : "warn"), !wsOpen ? "sin conexión" : (S.ok ? "WiFi" : "sin datos"));
+  const fix = ok && (S.so & SO.GPS);
+  setChip($("#cGps"), fix ? "ok" : (ok && (S.so & SO.GPSU) ? "warn" : "bad"), ok ? "GPS " + S.sa : "GPS");
+  if (ok && (S.so & SO.INA)) {
+    setChip($("#cBat"), S.bp > 25 ? "ok" : (S.bp > 10 ? "warn" : "bad"), (S.vb / 1000).toFixed(1) + " V " + S.bp + "%");
+  } else setChip($("#cBat"), "", "-- V");
+
+  if (ok) {
+    $("#sSpeed").textContent = (S.sp / 100).toFixed(1);
+    $("#sRpm").textContent = Math.round((Math.abs(S.rl) + Math.abs(S.rr)) / 2);
+    $("#sVolt").textContent = (S.so & SO.INA) ? (S.vb / 1000).toFixed(1) : "--";
+    const h = S.hd / 10;
+    $("#sHead").textContent = Math.round(h) + "°";
+    $("#sHeadL").textContent = "rumbo " + card(h);
+    $("#bBrake").dataset.state = (S.df & 8) ? "1" : "";
+  }
+  // pruebas y navegación
+  renderNav();
+  renderTest();
+  if (activeTab() === "map") drawMap();
+  if (activeTab() === "test") drawLidar();
+}
+
+function gpsPos() { return (S.ok && (S.so & SO.GPS)) ? {lat: S.la / 1e7, lon: S.lo / 1e7} : null; }
+
+function renderNav() {
+  if (!S.ok) return;
+  $("#nState").textContent = NAV_TXT[S.ns] || "?";
+  const hasWp = S.wa || S.wo;
+  $("#nDist").textContent = hasWp && S.ns === 1 || S.ns === 2 ? (S.wd / 10).toFixed(1) + " m" : "--";
+  $("#nBear").textContent = hasWp && (S.ns === 1 || S.ns === 2) ? (S.wb / 10).toFixed(0) + "° " + card(S.wb / 10) : "--";
+  $("#nHead").textContent = (S.hd / 10).toFixed(0) + "° " + card(S.hd / 10);
+  $("#nGps").textContent = (S.so & SO.GPS) ? S.sa + " sat · HDOP " + (S.hp / 100).toFixed(1) : (S.so & SO.GPSU ? "buscando satélites (" + S.sa + ")" : "sin datos del módulo");
+}
+
+/* ============================== Mapa ============================== */
+const map = {radius: 15, north: false, online: false, target: null, trail: [], tiles: new Map(), tapPx: null};
+const cv = $("#map"), cx2 = cv.getContext("2d");
+const D2R = Math.PI / 180;
+const enu = (lat, lon, p0) => [(lon - p0.lon) * 111320 * Math.cos(p0.lat * D2R), (lat - p0.lat) * 111132];
+const fromEnu = (e, n, p0) => ({lat: p0.lat + n / 111132, lon: p0.lon + e / (111320 * Math.cos(p0.lat * D2R))});
+
+$$("#segRadius button").forEach(b => b.onclick = () => { map.radius = +b.dataset.r; $$("#segRadius button").forEach(x => x.classList.toggle("on", x === b)); drawMap(); });
+$$("#segOrient button").forEach(b => b.onclick = () => { map.north = b.dataset.o === "n"; $$("#segOrient button").forEach(x => x.classList.toggle("on", x === b)); drawMap(); });
+$("#chkTiles").onchange = e => { map.online = e.target.checked; drawMap(); };
+window.addEventListener("resize", () => { drawMap(); drawLidar(); });
+
+function sizeCanvas(c) {
+  const dpr = window.devicePixelRatio || 1;
+  const w = c.clientWidth, h = c.clientHeight;
+  if (c.width !== Math.round(w * dpr) || c.height !== Math.round(h * dpr)) { c.width = Math.round(w * dpr); c.height = Math.round(h * dpr); }
+  return [w, h, dpr];
+}
+
+function tileImg(z, x, y) {
+  const k = z + "/" + x + "/" + y;
+  let t = map.tiles.get(k);
+  if (!t) {
+    t = new Image(); t.ok = false;
+    t.onload = () => { t.ok = true; drawMap(); };
+    t.src = "https://tile.openstreetmap.org/" + k + ".png";
+    map.tiles.set(k, t);
+    if (map.tiles.size > 60) map.tiles.delete(map.tiles.keys().next().value);
+  }
+  return t;
+}
+function drawTiles(ctx, p0, ppm) {
+  const z = 19, n = 1 << z, R = map.radius * 1.8;
+  const a = fromEnu(-R, R, p0), b = fromEnu(R, -R, p0);
+  const tx = lon => Math.floor((lon + 180) / 360 * n);
+  const ty = lat => { const r = lat * D2R; return Math.floor((1 - Math.log(Math.tan(r) + 1 / Math.cos(r)) / Math.PI) / 2 * n); };
+  const x0 = tx(a.lon), x1 = tx(b.lon), y0 = ty(a.lat), y1 = ty(b.lat);
+  if ((x1 - x0 + 1) * (y1 - y0 + 1) > 16) return;
+  const lonOf = x => x / n * 360 - 180;
+  const latOf = y => Math.atan(Math.sinh(Math.PI * (1 - 2 * y / n))) / D2R;
+  for (let x = x0; x <= x1; x++) for (let y = y0; y <= y1; y++) {
+    const img = tileImg(z, x, y);
+    if (!img.ok) continue;
+    const [e1, n1] = enu(latOf(y), lonOf(x), p0), [e2, n2] = enu(latOf(y + 1), lonOf(x + 1), p0);
+    ctx.drawImage(img, e1 * ppm, -n1 * ppm, (e2 - e1) * ppm, (n1 - n2) * ppm);
+  }
+}
+
+function lidarCfg() {
+  const find = s => META.findIndex(m => m.n.indexOf(s) === 0);
+  const iy = find("LIDAR: giro"), ii = find("LIDAR: invertir");
+  return {yaw: iy >= 0 && CFG[iy] !== undefined ? CFG[iy] : 0, inv: ii >= 0 && CFG[ii] > 0.5};
+}
+
+function drawMap() {
+  if (activeTab() !== "map") return;
+  const [W, H, dpr] = sizeCanvas(cv);
+  const ctx = cx2;
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.clearRect(0, 0, W, H);
+  ctx.fillStyle = "#0d1319"; ctx.fillRect(0, 0, W, H);
+  const p0 = gpsPos();
+  const hdg = (S.ok ? S.hd / 10 : 0) * D2R;
+  const ppm = Math.min(W, H) / 2 / map.radius;
+  const cxp = W / 2, cyp = H / 2;
+
+  // rastro
+  if (p0) {
+    const l = map.trail[map.trail.length - 1];
+    if (!l || Math.hypot(...enu(p0.lat, p0.lon, l)) > 0.5) { map.trail.push(p0); if (map.trail.length > 300) map.trail.shift(); }
+  }
+
+  ctx.save();
+  ctx.translate(cxp, cyp);
+  if (!map.north) ctx.rotate(-hdg);
+
+  if (p0 && map.online) drawTiles(ctx, p0, ppm);
+
+  // cuadricula: anillos cada 5 m y ejes N-S / E-O
+  ctx.lineWidth = 1;
+  const maxR = map.radius * 1.6;
+  for (let r = 5; r <= maxR; r += 5) {
+    ctx.strokeStyle = r % 10 === 0 ? "#2f3b48" : "#1f2832";
+    ctx.beginPath(); ctx.arc(0, 0, r * ppm, 0, 7); ctx.stroke();
+  }
+  ctx.strokeStyle = "#2f3b48";
+  ctx.beginPath(); ctx.moveTo(0, -maxR * ppm); ctx.lineTo(0, maxR * ppm); ctx.moveTo(-maxR * ppm, 0); ctx.lineTo(maxR * ppm, 0); ctx.stroke();
+  ctx.fillStyle = "#566474"; ctx.font = "11px system-ui";
+  for (let r = 5; r <= map.radius; r += 5) {
+    ctx.save(); ctx.translate(2 + 0, -r * ppm - 2); if (!map.north) ctx.rotate(hdg); ctx.fillText(r + " m", 2, 0); ctx.restore();
+  }
+
+  if (p0) {
+    // rastro
+    ctx.strokeStyle = "rgba(54,209,255,.55)"; ctx.lineWidth = 2; ctx.beginPath();
+    map.trail.forEach((q, i) => { const [e, n] = enu(q.lat, q.lon, p0); i ? ctx.lineTo(e * ppm, -n * ppm) : ctx.moveTo(e * ppm, -n * ppm); });
+    ctx.stroke();
+
+    // LIDAR
+    if (S.ld && (S.so & SO.LIDAR)) {
+      const lc = lidarCfg();
+      ctx.fillStyle = "#ff6b6b";
+      S.ld.forEach((cm, i) => {
+        if (cm === 65535) return;
+        const d = cm / 100;
+        if (d > map.radius * 1.6) return;
+        let a = (i * 10 + 5);
+        if (lc.inv) a = -a;
+        const b = hdg + (a + lc.yaw) * D2R;
+        ctx.beginPath(); ctx.arc(d * Math.sin(b) * ppm, -d * Math.cos(b) * ppm, 3, 0, 7); ctx.fill();
+      });
+    }
+
+    // destino activo
+    if ((S.wa || S.wo) && (S.ns === 1 || S.ns === 2 || S.ns === 3)) {
+      const [e, n] = enu(S.wa / 1e7, S.wo / 1e7, p0);
+      ctx.strokeStyle = "#3ddc84"; ctx.lineWidth = 2; ctx.setLineDash([6, 5]);
+      ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(e * ppm, -n * ppm); ctx.stroke(); ctx.setLineDash([]);
+      ctx.fillStyle = "#3ddc84"; ctx.beginPath(); ctx.arc(e * ppm, -n * ppm, 7, 0, 7); ctx.fill();
+    }
+    // punto marcado (pendiente)
+    if (map.target) {
+      const [e, n] = enu(map.target.lat, map.target.lon, p0);
+      const x = e * ppm, y = -n * ppm;
+      ctx.strokeStyle = "#ffb020"; ctx.lineWidth = 2;
+      ctx.beginPath(); ctx.arc(x, y, 9, 0, 7); ctx.moveTo(x - 14, y); ctx.lineTo(x + 14, y); ctx.moveTo(x, y - 14); ctx.lineTo(x, y + 14); ctx.stroke();
+    }
+    // carrito
+    ctx.save(); ctx.rotate(hdg);
+    ctx.fillStyle = "#36d1ff"; ctx.strokeStyle = "#04222b"; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(0, -13); ctx.lineTo(9, 10); ctx.lineTo(0, 5); ctx.lineTo(-9, 10); ctx.closePath(); ctx.fill(); ctx.stroke();
+    ctx.restore();
+  }
+  ctx.restore();
+
+  // brujula
+  const bx = W - 38, by = 38, br = 27;
+  ctx.save(); ctx.translate(bx, by);
+  ctx.fillStyle = "rgba(10,14,19,.8)"; ctx.beginPath(); ctx.arc(0, 0, br + 3, 0, 7); ctx.fill();
+  ctx.strokeStyle = "#3a4756"; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.arc(0, 0, br, 0, 7); ctx.stroke();
+  ctx.rotate(map.north ? 0 : -hdg);
+  ctx.fillStyle = "#ff4d5e"; ctx.beginPath(); ctx.moveTo(0, -br + 3); ctx.lineTo(5, 0); ctx.lineTo(-5, 0); ctx.fill();
+  ctx.fillStyle = "#cfd8e3"; ctx.beginPath(); ctx.moveTo(0, br - 3); ctx.lineTo(5, 0); ctx.lineTo(-5, 0); ctx.fill();
+  ctx.fillStyle = "#e8eef5"; ctx.font = "bold 10px system-ui"; ctx.textAlign = "center"; ctx.textBaseline = "middle";
+  [["N", 0, -br + 11], ["S", 0, br - 11], ["E", br - 11, 0], ["O", -br + 11, 0]].forEach(([t, x, y]) => {
+    ctx.save(); ctx.translate(x, y); ctx.rotate(map.north ? 0 : hdg); ctx.fillText(t, 0, 0); ctx.restore();
+  });
+  ctx.restore();
+  ctx.fillStyle = "#8a99a8"; ctx.font = "11px system-ui"; ctx.textAlign = "left"; ctx.textBaseline = "alphabetic";
+  ctx.fillText("radio " + map.radius + " m · " + (map.north ? "norte arriba" : "rumbo arriba"), 8, H - 8);
+  if (S.ok) { ctx.textAlign = "center"; ctx.fillStyle = "#e8eef5"; ctx.font = "bold 12px system-ui"; ctx.fillText(Math.round(S.hd / 10) + "° " + card(S.hd / 10), bx, by + br + 18); }
+
+  if (!p0) {
+    ctx.fillStyle = "rgba(10,14,19,.72)"; ctx.fillRect(0, H / 2 - 26, W, 52);
+    ctx.fillStyle = "#ffb020"; ctx.font = "bold 14px system-ui"; ctx.textAlign = "center";
+    ctx.fillText(S.ok ? "Esperando fix GPS…" : "Sin datos del carrito", W / 2, H / 2 + 5);
+  }
+  $("#bGo").disabled = !(p0 && map.target);
+}
+
+// tocar el mapa = marcar un punto
+cv.addEventListener("pointerdown", e => { map.tapPx = [e.clientX, e.clientY]; });
+cv.addEventListener("pointerup", e => {
+  if (!map.tapPx || Math.hypot(e.clientX - map.tapPx[0], e.clientY - map.tapPx[1]) > 10) return;
+  const p0 = gpsPos(); if (!p0) return;
+  const r = cv.getBoundingClientRect();
+  const dx = e.clientX - r.left - r.width / 2, dy = e.clientY - r.top - r.height / 2;
+  const ppm = Math.min(r.width, r.height) / 2 / map.radius;
+  const h = map.north ? 0 : (S.hd / 10) * D2R;
+  const X = dx * Math.cos(h) - dy * Math.sin(h), Y = dx * Math.sin(h) + dy * Math.cos(h);   // pantalla -> mundo
+  map.target = fromEnu(X / ppm, -Y / ppm, p0);
+  drawMap();
+});
+$("#bGo").onclick = () => {
+  if (!map.target) return;
+  send({t: "goto", la: map.target.lat, lo: map.target.lon});
+  map.target = null;
+};
+$("#bCancel").onclick = () => { send({t: "cancel"}); map.target = null; drawMap(); };
+
+/* ============================== Ajustes ============================== */
+async function loadSettings() {
+  try {
+    const r = await fetch("/api/settings");
+    META = await r.json();
+    buildCfg();
+    readAll();
+  } catch (e) { $("#cfgList").innerHTML = '<p class="note">No se pudo leer la lista de ajustes.</p>'; }
+}
+function buildCfg() {
+  const groups = new Map();
+  META.forEach(m => {
+    const i = m.n.indexOf(":");
+    const g = i > 0 ? m.n.slice(0, i) : "General";
+    if (!groups.has(g)) groups.set(g, []);
+    groups.get(g).push(m);
+  });
+  const root = $("#cfgList"); root.innerHTML = "";
+  groups.forEach((items, g) => {
+    const d = document.createElement("details");
+    d.innerHTML = "<summary>" + g + "</summary>";
+    const box = document.createElement("div"); box.className = "cfg";
+    items.forEach(m => {
+      const lab = document.createElement("label");
+      lab.innerHTML = m.n.replace(/^[^:]*:\s*/, "") + (m.u ? " <small>(" + m.u + ")</small>" : "");
+      const inp = document.createElement("input");
+      inp.type = "number"; inp.id = "cfg" + m.id; inp.min = m.min; inp.max = m.max; inp.step = m.s; inp.inputMode = "decimal";
+      inp.placeholder = String(m.d);
+      const btn = document.createElement("button");
+      btn.className = "b small"; btn.textContent = "Guardar";
+      btn.onclick = () => { const v = parseFloat(inp.value); if (!isNaN(v)) send({t: "set", k: m.id, v}); };
+      box.append(lab, inp, btn);
+    });
+    d.appendChild(box); root.appendChild(d);
+  });
+}
+function readAll() { META.forEach(m => send({t: "get", k: m.id})); }
+function onCfg(m) {
+  CFG[m.k] = m.v;
+  const inp = document.getElementById("cfg" + m.k);
+  if (inp && document.activeElement !== inp) { inp.value = +(+m.v).toFixed(4); inp.classList.remove("flash"); void inp.offsetWidth; inp.classList.add("flash"); }
+}
+$("#bCfgRead").onclick = readAll;
+$("#bCfgReset").onclick = () => {
+  if (!confirm("¿Restaurar TODOS los ajustes a los valores de fábrica?")) return;
+  send({t: "reset"}); setTimeout(readAll, 700);
+};
+
+/* ============================== Pruebas ============================== */
+const TEST_NAMES = {1: "motor izquierdo", 2: "motor derecho", 3: "servo", 4: "faros", 5: "RGB", 6: "tira trasera", 7: "PID de ambos motores", 8: "calibración de brújula", 9: "giroscopio"};
+const test = (id, v, ms) => send({t: "test", id, v: Math.round(v || 0), ms: ms || 1500});
+$("#tDuty").oninput = e => { $("#tDutyV").textContent = e.target.value; };
+$$("[data-t]").forEach(b => b.onclick = () => {
+  const id = +b.dataset.t, sg = +b.dataset.sg;
+  if (id === 7) { const rpmMax = META.length ? (CFG[META.findIndex(m => m.n.indexOf("RPM maximas") === 0)] || 1000) : 1000; test(7, sg * rpmMax * 0.5, 1500); }
+  else test(id, sg * +$("#tDuty").value, 1500);
+});
+$$("[data-servo]").forEach(b => b.onclick = () => test(3, +b.dataset.servo, 1500));
+$("#tHead4").onclick = () => test(4, 1, 1500);
+let rgbTestIdx = 0;
+$("#tRgb5").onclick = () => { test(5, rgbTestIdx, 1200); rgbTestIdx = (rgbTestIdx + 1) % 9; };
+$("#tSpoil").onclick = () => test(6, 0, 2000);
+$("#bCalGyro").onclick = () => test(9, 0, 0);
+$("#bCalMag").onclick = () => {
+  calOn = !calOn;
+  test(8, calOn ? 1 : 0, 0);
+  $("#bCalMag").textContent = calOn ? "Terminar y guardar" : "Calibrar brújula";
+  $("#bCalMag").classList.toggle("on", calOn);
+};
+
+function renderTest() {
+  if (!S.ok) { $("#testBadge").classList.remove("show"); return; }
+  const tb = $("#testBadge");
+  tb.classList.toggle("show", !!S.ti);
+  if (S.ti) tb.textContent = "Prueba en curso: " + (TEST_NAMES[S.ti] || S.ti);
+  if (!S.ti && calOn && !(S.ti === 8)) { /* el usuario termina la calibracion manualmente */ }
+  const chips = [["GPS", SO.GPS], ["LIDAR", SO.LIDAR], ["IMU", SO.IMU], ["INA219", SO.INA], ["Brújula", SO.MAG]];
+  $("#sensChips").innerHTML = chips.map(([n, b]) => '<span class="chip ' + ((S.so & b) ? "ok" : "bad") + '"><i></i>' + n + "</span>").join("");
+  $("#tGps").textContent = (S.so & SO.GPS) ? "fix " + S.gf + " · " + S.sa + " sat · HDOP " + (S.hp / 100).toFixed(1) : (S.so & SO.GPSU ? "sin fix (" + S.sa + " sat)" : "sin datos");
+  $("#tPos").textContent = (S.so & SO.GPS) ? (S.la / 1e7).toFixed(6) + ", " + (S.lo / 1e7).toFixed(6) : "--";
+  $("#tGv").textContent = (S.gs / 100).toFixed(1) + " km/h · rumbo " + (S.gc / 10).toFixed(0) + "°";
+  $("#tImu").textContent = (S.so & SO.IMU) ? (S.pi / 10).toFixed(1) + "° / " + (S.ro / 10).toFixed(1) + "°" : "--";
+  $("#tHead").textContent = (S.hd / 10).toFixed(1) + "° " + card(S.hd / 10);
+  $("#tBat").textContent = (S.so & SO.INA) ? (S.vb / 1000).toFixed(2) + " V · " + (S.cu / 1000).toFixed(2) + " A · " + S.bp + " %" : "--";
+  $("#tEnc").textContent = "izq " + S.rl + " rpm · der " + S.rr + " rpm";
+  $("#tServo").textContent = (S.sv / 10).toFixed(1) + "°";
+}
+
+const lcv = $("#lidar"), lctx = lcv.getContext("2d");
+function drawLidar() {
+  if (activeTab() !== "test") return;
+  const [W, H, dpr] = sizeCanvas(lcv);
+  lctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  lctx.fillStyle = "#0d1319"; lctx.fillRect(0, 0, W, H);
+  const cx = W / 2, cy = H / 2, R = Math.min(W, H) / 2 - 6, maxM = 3;
+  lctx.strokeStyle = "#26303b"; lctx.lineWidth = 1;
+  for (let m = 1; m <= maxM; m++) { lctx.beginPath(); lctx.arc(cx, cy, R * m / maxM, 0, 7); lctx.stroke(); }
+  lctx.beginPath(); lctx.moveTo(cx, cy - R); lctx.lineTo(cx, cy + R); lctx.moveTo(cx - R, cy); lctx.lineTo(cx + R, cy); lctx.stroke();
+  lctx.fillStyle = "#36d1ff"; lctx.beginPath(); lctx.moveTo(cx, cy - 8); lctx.lineTo(cx + 6, cy + 6); lctx.lineTo(cx - 6, cy + 6); lctx.fill();
+  if (S.ok && S.ld && (S.so & SO.LIDAR)) {
+    const lc = lidarCfg();
+    lctx.fillStyle = "#ff6b6b";
+    S.ld.forEach((cm, i) => {
+      if (cm === 65535) return;
+      const d = cm / 100; if (d > maxM) return;
+      let a = i * 10 + 5; if (lc.inv) a = -a;
+      const b = (a + lc.yaw) * D2R;
+      lctx.beginPath(); lctx.arc(cx + Math.sin(b) * d / maxM * R, cy - Math.cos(b) * d / maxM * R, 3.2, 0, 7); lctx.fill();
+    });
+  } else {
+    lctx.fillStyle = "#8a99a8"; lctx.font = "13px system-ui"; lctx.textAlign = "center"; lctx.fillText("sin datos del LIDAR", cx, cy + R - 10);
+  }
+}
+
+/* ============================== Arranque ============================== */
+window.__feed = o => { S = o; render(); };           // para pruebas sin carrito
+window.__cfg = (k, v) => onCfg({k, v});
+connect();
+render();
+</script>
+</body>
+</html>

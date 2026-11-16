@@ -1,0 +1,14 @@
+# ESP32-P4 (Waveshare devkit) - cerebro del carrito
+CONFIG_IDF_TARGET="esp32p4"
+
+# Chip P4 revision >= 3.0 es el valor por defecto de ESP-IDF 5.5.
+# Si tu placa es una revision antigua (0.x / 1.x; el log de arranque muestra "chip revision"),
+# agrega estas dos lineas y recompila:
+#   CONFIG_ESP32P4_SELECTS_REV_LESS_V3=y
+#   CONFIG_ESP32P4_REV_MIN_100=y
+
+CONFIG_FREERTOS_HZ=1000
+CONFIG_ESP_MAIN_TASK_STACK_SIZE=6144
+CONFIG_LOG_DEFAULT_LEVEL_INFO=y
+CONFIG_ESPTOOLPY_FLASHSIZE_16MB=y
+CONFIG_PARTITION_TABLE_SINGLE_APP=y
