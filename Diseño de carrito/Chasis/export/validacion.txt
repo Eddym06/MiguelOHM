@@ -1,0 +1,40 @@
+==================================================================================================================
+Sin interferencias entre sólidos                        PASA       73 sólidos revisados
+Marco: caja envolvente                                  PASA       X -0.0..300.0  Y -85.0..85.0  Z 90.0..113.0
+Placa apoyada sobre los perfiles                        PASA       distancia 0.000 mm
+Agujeros de la placa sobre la ranura del perfil         PASA       10 agujeros
+Placa base fabricable                                   PASA       acrílico 300x170x3 en láser (DXF en export/)
+Ruedas traseras apoyan en el suelo                      PASA       Z mín 0.00
+Vía trasera                                             PASA       234.0 mm (objetivo 234)
+Distancia al suelo ≥ 25                                 PASA       punto más bajo 26.0 mm (Kingpin M4 Izq)
+Holgura motor A en la cuna                              PASA       1.25 mm por lado (diametral 2.5)
+Soporte A cabe en la cama                               PASA       50 × 27 × 82 mm
+Holgura motor B en la cuna                              PASA       1.25 mm por lado (diametral 2.5)
+Soporte B cabe en la cama                               PASA       50 × 27 × 82 mm
+Acople libre del soporte                                PASA       separación 2.5 mm
+Vía delantera                                           PASA       234.0 mm (objetivo 234)
+Batalla                                                 PASA       230.0 mm (objetivo 230)
+Giro ±25° rueda Izq sin choques                         PASA       libre
+Giro ±25° rueda Der sin choques                         PASA       libre
+Soporte motor A (holgura 2.5) cabe en la cama           PASA       50 × 27 × 82 mm
+Bandeja delantera (horquillas + servo) cabe en la cama  PASA       85 × 170 × 62 mm
+Mangueta Izq cabe en la cama                            PASA       44 × 34 × 42 mm
+Barra de direccion cabe en la cama                      PASA       6 × 140 × 4 mm
+Morro con faros cabe en la cama                         PASA       20 × 120 × 25 mm
+Mastil del LiDAR cabe en la cama                        PASA       54 × 46 × 42 mm
+Mastil del GPS cabe en la cama                          PASA       24 × 24 × 29 mm
+Cuna de la bateria (colgada) cabe en la cama            PASA       40 × 170 × 31 mm
+Soporte LED RGB delantero Izq cabe en la cama           PASA       12 × 12 × 8 mm
+Soporte LED RGB trasero Izq cabe en la cama             PASA       12 × 12 × 8 mm
+Soporte de la antena cabe en la cama                    PASA       10 × 10 × 10 mm
+Aleron F1 con pilon y canal LED cabe en la cama         PASA       64 × 190 × 37 mm
+GPS a ≥ 150 mm de los motores                           PASA       180 mm (por la brújula QMC5883L)
+Plano del LiDAR despejado (nada sobre Z=152)            PASA       libre a 360°
+Batería entra en su cuna                                PASA       apoyada en el fondo; holgura lateral 3 mm
+PCB dentro de la zona lógica                            PASA       X 105..205
+Largo total                                             PASA       350.0 mm (objetivo 350)
+Ancho total                                             PASA       272.0 mm (objetivo 272)
+Alto total                                              PASA       190.0 mm (objetivo 190)
+Alerón dentro del ancho de las ruedas                   PASA       envergadura 190 mm
+==================================================================================================================
+RESUMEN: 37 PASA, 0 FALLA, 0 PENDIENTE
