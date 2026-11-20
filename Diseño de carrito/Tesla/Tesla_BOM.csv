@@ -4,18 +4,20 @@ C2,1,220nF,220nF,X7R 50 V (de tu diseño; falta huella)
 "C3,C4",2,10nF,10nF,X7R 50 V (de tu diseño; falta huella)
 C5,1,470nF,10nF,X7R 50 V (de tu diseño; falta huella)
 C6,1,100uF,(sin huella),Electrolítico 25 V mín. en VM (de tu diseño; falta huella)
-"C11,C16,C65,C102,C103,C104,C105,C113,C119,C123",10,1uF,Capacitor_SMD:C_0402_1005Metric,X5R 10 V
-"C12,C13",2,1.5pF,Capacitor_SMD:C_0402_1005Metric,Cerámico C0G/NP0 salvo que sea 22nF-470nF (X7R)
-"C14,C15,C17,C18",4,10pF,Capacitor_SMD:C_0402_1005Metric,Cerámico C0G/NP0 salvo que sea 22nF-470nF (X7R)
-C19,1,22pF,Capacitor_SMD:C_0402_1005Metric,Cerámico C0G/NP0 salvo que sea 22nF-470nF (X7R)
-"C45,C63,C69,C73,C79,C82,C83,C86,C88,C96,C109,C114,C117,C127",14,10uF,Capacitor_SMD:C_0805_2012Metric,X7R 25 V mín. si está en VM; 10 V mín. en 3V3/5V
-"C46,C54,C64,C66,C67,C70,C74,C78,C80,C84,C87,C89,C90,C91,C92,C93,C94,C97,C98,C99,C100,C101,C106,C107,C108,C110,C111,C112,C115,C116,C118,C120,C122,C125",34,0.1uF,Capacitor_SMD:C_0402_1005Metric,X7R 16 V mín. (25 V si está en VM)
-"C47,C48,C71,C72,C75,C76,C128",7,22uF,Capacitor_SMD:C_0805_2012Metric,X5R/X7R 10 V mín. (salidas de los bucks; 25 V si algún día va en VM)
+"C45,C69,C73,C79,C82,C83,C86,C88",8,10uF,Capacitor_SMD:C_0805_2012Metric,X7R 25 V mín. si está en VM; 10 V mín. en 3V3/5V
+"C46,C70,C74,C78,C80,C84,C87,C89,C90,C91,C92,C93,C94",13,0.1uF,Capacitor_SMD:C_0402_1005Metric,X7R 16 V mín. (25 V si está en VM)
+"C47,C48,C71,C72,C75,C76",6,22uF,Capacitor_SMD:C_0805_2012Metric,X5R/X7R 10 V mín. (salidas de los bucks; 25 V si algún día va en VM)
 "C77,C95",2,470uF,Capacitor_SMD:CP_Elec_6.3x5.4,Electrolítico SMD 10 V mín. (salida 5 V servos/GPS)
 C81,1,100uF,Capacitor_SMD:CP_Elec_6.3x5.4,Electrolítico SMD 10 V mín. (salida 5 V del LiDAR)
 C85,1,470uF 25V,Capacitor_SMD:CP_Elec_8x10,Electrolítico SMD 25 V 8x10 (reserva a la entrada de la batería)
-"C121,C124",2,10nF,Capacitor_SMD:C_0402_1005Metric,X7R 50 V (de tu diseño; falta huella)
-C126,1,4.7uF,Capacitor_SMD:C_0805_2012Metric,X5R 10 V
+C131,1,10uF,Capacitor_SMD:C_0805_2012Metric,X5R 10 V
+C132,1,0.1uF,Capacitor_SMD:C_0402_1005Metric,X7R 16 V mín.
+C133,1,1uF,Capacitor_SMD:C_0402_1005Metric,Retardo de EN del S3
+C134,1,22uF,Capacitor_SMD:C_0805_2012Metric,"X5R 10 V, alimentacion del nRF24"
+C135,1,0.1uF,Capacitor_SMD:C_0402_1005Metric,"X7R 16 V mín., alimentacion del nRF24"
+C136,1,1nF,Capacitor_SMD:C_0402_1005Metric,"C0G/X7R 50 V, alimentacion del nRF24"
+C137,1,10uF,Capacitor_SMD:C_0805_2012Metric,"X7R 25 V mín., VLED de los LEDs RGB"
+C138,1,0.1uF,Capacitor_SMD:C_0402_1005Metric,"X7R 16 V mín., VDD del PCA9555"
 D1,1,A+,LED_SMD:LED_0603_1608Metric,"LED 0603 (color a elección), indica sentido del motor A"
 D2,1,A-,LED_SMD:LED_0603_1608Metric,"LED 0603, motor A"
 D3,1,B+,LED_SMD:LED_0603_1608Metric,"LED 0603, motor B"
@@ -26,9 +28,9 @@ D7,1,SS14,Diode_SMD:D_SMA,"Schottky 40 V 1 A, libre circulación del driver de f
 D8,1,SMBJ15CA,Diode_SMD:D_SMB,"TVS bidireccional 15 V (SMB), protege VM"
 "D9,D10",2,SMBJ5.0CA,Diode_SMD:D_SMB,
 F1,1,10A,Fuse:Fuse_2920_7451Metric,"Fusible SMD 2920, 10 A / 32 V mín. (confirmar que el modelo aguante 10 A a 12 V) o portafusible mini blade"
-J1,1,u.FL antena,Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical,Hirose U.FL-R-SMT-1 (antena del C6)
-J2,1,UART C6 (TX RX GND),Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,"Header 1x3 2,54 mm"
-J3,1,UART0 P4 (RX TX GND),Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,"Header 1x3 2,54 mm"
+FB1,1,600R @100MHz,Inductor_SMD:L_0603_1608Metric,Ferrita 0603 (>= 500 mA) en la alimentacion del nRF24
+J2,1,UART S3 (TX RX GND),Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,"Header 1x3 2,54 mm (programacion/log del S3)"
+J3,1,USB-C S3,Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12,"Receptaculo USB-C HRO TYPE-C-31-M-12 (solo datos: programacion/consola del S3, GPIO19/20)"
 J4,1,Motor A,Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical,Molex KK-254 2 pines
 J5,1,Motor B,Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical,Molex KK-254 2 pines
 J6,1,Bateria 12V (XT60),Connector_AMASS:AMASS_XT60-M_1x02_P7.20mm_Vertical,"AMASS XT60 macho para PCB, 30 A"
@@ -42,9 +44,9 @@ J13,1,Encoder motor A,Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vert
 J14,1,Encoder motor B,Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical,"Molex KK-254 4 pines: GND, 3V3, A, B (encoder a 3,3 V)"
 J15,1,IMU I2C (GY-521),Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,"Header 1x4 para módulo GY-521 (MPU6050) o BMI160: 3V3, GND, SCL, SDA"
 J16,1,Tira WS2812,Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical,"Molex KK-254 3 pines: GND, 5V, DATA (tira WS2812)"
-L1,1,2.5nH,Inductor_SMD:L_0805_2012Metric,"RF 2,5 nH, alta Q, 0805"
-L2,1,24nH,Inductor_SMD:L_0805_2012Metric,"RF 24 nH, alta Q, 0805"
-L3,1,2.2uH,Inductor_SMD:L_0805_2012Metric,"2,2 uH, Isat 1 A mín. (TLV62569)"
+J17,1,LEDs RGB ruedas (VLED R G B),Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical,"Molex KK-254 4 pines: VLED comun (anodo), R, G, B (las resistencias de los LED van en el cableado)"
+J18,1,"VLED (1-2: 12 V, 2-3: 5 V)",Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,"Header 1x3 con puente: 1-2 = 12 V (VM), 2-3 = 5 V"
+J20,1,Expansion S3 + PCA9555,Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical,"Header 1x16: 3V3, GND, 5V, 6 pines del S3 (GPIO2, 36, 37 libres; GPIO3, 45, 46 de strapping) y 6 E/S libres del PCA9555"
 L4,1,4.7uH,Inductor_SMD:L_0805_2012Metric,"4,7 uH, Isat 3 A mín. (AP63203)"
 "L5,L6",2,4.7uH,Inductor_SMD:L_Taiyo-Yuden_NR-50xx,"Inductor 4,7 uH, Isat 3 A mín. (bucks de 2 A)"
 L7,1,100uH,Inductor_SMD:L_Bourns_SRN6045TA,"Inductor de potencia 100 uH, Isat 0,6 A mín. (Bourns SRN6045TA o equivalente)"
@@ -52,27 +54,34 @@ NT1,1,NetTie_2,NetTie:NetTie-2_SMD_Pad0.5mm,Net tie GND-GNDPWR (sin pieza físic
 Q1,1,SUD50P06-15,Package_TO_SOT_SMD:TO-252-2,"Vishay SUD50P06-15, P-MOSFET 60 V 50 A, protección de polaridad invertida (TO-252)"
 "R1,R3",2,15k,(sin huella),de tu diseño; falta huella
 "R2,R4",2,10k,(sin huella),de tu diseño; falta huella
-"R5,R6,R7,R8,R9,R10,R11,R12,R13,R16,R24,R26,R27",13,10k,Resistor_SMD:R_0402_1005Metric,"1 %, 0402"
 "R17,R18,R19,R20",4,1k,Resistor_SMD:R_0402_1005Metric,limitan los LED de dirección
 "R21,R22",2,4.7k,Resistor_SMD:R_0402_1005Metric,"1 %, 0402"
-R23,1,100,Resistor_SMD:R_0402_1005Metric,serie en Tx del LiDAR
+"R24,R26,R27",3,10k,Resistor_SMD:R_0402_1005Metric,"1 %, 0402"
 R25,1,0.3,Resistor_SMD:R_0805_2012Metric,"0,3 ohm 1 % 0805, fija 333 mA de los faros (I = 0,1/Rs)"
 R28,1,100k,Resistor_SMD:R_0402_1005Metric,"divisor de batería, parte alta"
 R29,1,33k,Resistor_SMD:R_0402_1005Metric,"divisor de batería: 12,6 V da 3,13 V"
 R30,1,330,Resistor_SMD:R_0402_1005Metric,serie en la línea de datos de la tira WS2812
-"R31,R44",2,4.02k,Resistor_SMD:R_0402_1005Metric,"1 %, 0402"
-"R32,R33,R34,R35,R36,R37,R38,R39,R40,R41,R42,R43,R45,R46,R47,R48,R49",17,0,Resistor_SMD:R_0402_1005Metric,"1 %, 0402"
-"R50,R51",2,499k,Resistor_SMD:R_0402_1005Metric,"1 %, 0402"
-SW1,1,BOOT C6,Button_Switch_SMD:SW_SPST_TL3342,Pulsador SMD TL3342
-SW2,1,RESET,Button_Switch_SMD:SW_SPST_TL3342,Pulsador SMD TL3342
-SW3,1,BOOT P4,Button_Switch_SMD:SW_SPST_TL3342,Pulsador SMD TL3342
+R52,1,10k,Resistor_SMD:R_0402_1005Metric,"Pull-up de EN del S3, 1 %, 0402"
+R53,1,10k,Resistor_SMD:R_0402_1005Metric,"Pull-up de CSN del nRF24, 1 %, 0402"
+R54,1,100k,Resistor_SMD:R_0402_1005Metric,"Pull-down de CE del nRF24, 1 %, 0402"
+R55,1,10k,Resistor_SMD:R_0402_1005Metric,"Pull-up de IRQ del nRF24, 1 %, 0402"
+R56,1,10k,Resistor_SMD:R_0402_1005Metric,"Pull-down de entrada del ULN2003A (R), 1 %, 0402"
+R57,1,10k,Resistor_SMD:R_0402_1005Metric,"Pull-down de entrada del ULN2003A (G), 1 %, 0402"
+R58,1,10k,Resistor_SMD:R_0402_1005Metric,"Pull-down de entrada del ULN2003A (B), 1 %, 0402"
+R61,1,5.1k,Resistor_SMD:R_0402_1005Metric,"CC1 del USB-C del S3, 1 %, 0402"
+R62,1,5.1k,Resistor_SMD:R_0402_1005Metric,"CC2 del USB-C del S3, 1 %, 0402"
+R63,1,10k,Resistor_SMD:R_0402_1005Metric,"Pull-up de INT del PCA9555, 1 %, 0402"
+R64,1,10k,Resistor_SMD:R_0402_1005Metric,"Pull-down de APH (arranque con el motor A parado), 1 %, 0402"
+R65,1,10k,Resistor_SMD:R_0402_1005Metric,"Pull-down de BPH (arranque con el motor B parado), 1 %, 0402"
+R66,1,10k,Resistor_SMD:R_0402_1005Metric,"Pull-down de nSleep (driver dormido al arrancar), 1 %, 0402"
+SW1,1,BOOT S3,Button_Switch_SMD:SW_SPST_TL3342,Pulsador SMD TL3342 (GPIO0 del S3)
+SW4,1,RESET S3,Button_Switch_SMD:SW_SPST_TL3342,Pulsador SMD TL3342 (EN del S3)
 U1,1,DRV8424EPWPR,Tesla_Parts:SOP65P640X120-29N,"TI, puente H doble 2,5 A, HTSSOP-28 con pad térmico"
-U2,1,ESP32-P4X,PCM_Espressif:ESP32-P4,"Espressif ESP32-P4NRW32X (chip rev v3.x), JLCPCB C54540373, QFN-104 10x10"
-U3,1,ESP32-C6FH4,Espressif_C6:ESP32-C6FH4_QFN32_Espressif,"Espressif, 4 MB flash en el encapsulado"
-U4,1,TLV62569,Package_TO_SOT_SMD:SOT-23-5,"TI TLV62569DBVR, buck 1,2 V del P4 (R1/R2 499k + C2 22pF para v3.x)"
-U5,1,W25Q128JVS,Package_SO:SOIC-8_5.3x5.3mm_P1.27mm,"Winbond W25Q128JVSIQ, flash 128 Mbit"
+U3,1,ESP32-S3-WROOM-1-N16R2,Espressif_S3:ESP32-S3-WROOM-1,"Espressif ESP32-S3-WROOM-1-N16R2 (16 MB flash + 2 MB PSRAM quad): unico microcontrolador del carrito (control, WiFi y web)"
 U6,1,AP63203WU,Package_TO_SOT_SMD:TSOT-23-6,"Diodes AP63203WU-7, buck 3,3 V 2 A"
 "U7,U8",2,AP63205WU,Package_TO_SOT_SMD:TSOT-23-6,"Diodes AP63205WU-7, buck 5 V 2 A"
 U9,1,AL8860WT,Package_TO_SOT_SMD:TSOT-23-5,"Diodes AL8860WT-7, driver LED de corriente constante (faros)"
 U10,1,74AHCT1G125,Package_TO_SOT_SMD:SOT-353_SC-70-5,"Nexperia/TI 74AHCT1G125, adapta DATA de 3,3 V a 5 V para la tira WS2812"
-"Y1,Y2",2,40MHz,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm,"Cristal 3225 de 4 pines, CL a confirmar con el datasheet del chip"
+U11,1,ULN2003A,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,"TI ULN2003ADR, 7 canales Darlington 500 mA / 50 V; driver de los LEDs RGB de ruedas (JLCPCB basica C7512)"
+U13,1,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,"ST, proteccion ESD de D+/D- del USB-C del S3"
+U14,1,PCA9555PW,Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm,"NXP/TI PCA9555 (o TCA9555), expansor I2C de 16 E/S, direccion 0x20, TSSOP-24"

@@ -1532,85 +1532,85 @@
 			(embedded_fonts no)
 		)
 	)
-(junction
+	(junction
 		(at 116.84 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "032374e6-119c-4d89-bd48-e543bea97f2c")
 	)
-(junction
+	(junction
 		(at 68.58 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "06153408-5579-4951-94ee-0e91ddda7ae1")
 	)
-(junction
+	(junction
 		(at 96.52 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0e2d8f41-5090-4300-927b-01c321515098")
 	)
-(junction
+	(junction
 		(at 106.68 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1712a736-b9df-4ca1-a96c-281c15bef2e7")
 	)
-(junction
+	(junction
 		(at 54.61 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "24a642ee-bf3f-4707-9eb8-f8000b6c47ac")
 	)
-(junction
+	(junction
 		(at 109.22 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "27b396b2-3e31-4ba5-865b-c10afa8124c2")
 	)
-(junction
+	(junction
 		(at 54.61 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3bd8f1b2-acad-491c-8633-2e74e1e0d8f3")
 	)
-(junction
+	(junction
 		(at 99.06 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "41b42bbf-0dcb-4df3-b08e-cdc2b8c32930")
 	)
-(junction
+	(junction
 		(at 96.52 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "56a12c3e-03d6-4f69-9295-3a3f05c21b71")
 	)
-(junction
+	(junction
 		(at 96.52 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6b352caa-470d-432c-be55-506dbce81e02")
 	)
-(junction
+	(junction
 		(at 68.58 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bf8fafbf-546f-4fb3-ad41-7a2917ddf378")
 	)
-(junction
+	(junction
 		(at 116.84 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d6da02bc-df20-47e5-9f21-b2ee938a7a9e")
 	)
-(junction
+	(junction
 		(at 68.58 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fbd36bf2-afe1-42ae-960c-55512f940f84")
 	)
-(wire
+	(wire
 		(pts
 			(xy 68.58 64.77) (xy 69.85 64.77)
 		)
@@ -1620,7 +1620,7 @@
 		)
 		(uuid "0718c162-b978-479e-8405-67f7a2f75101")
 	)
-(wire
+	(wire
 		(pts
 			(xy 116.84 62.23) (xy 118.11 62.23)
 		)
@@ -1630,7 +1630,7 @@
 		)
 		(uuid "0a8ce4c1-947d-4cb3-ab99-5fd2b3567199")
 	)
-(wire
+	(wire
 		(pts
 			(xy 95.25 57.15) (xy 118.11 57.15)
 		)
@@ -1640,7 +1640,7 @@
 		)
 		(uuid "0ade455c-a01c-4196-aeda-8ba5d1894c68")
 	)
-(wire
+	(wire
 		(pts
 			(xy 95.25 52.07) (xy 118.11 52.07)
 		)
@@ -1650,7 +1650,7 @@
 		)
 		(uuid "18c243e0-83e0-471e-9943-f08fb412bada")
 	)
-(wire
+	(wire
 		(pts
 			(xy 54.61 63.5) (xy 54.61 64.77)
 		)
@@ -1660,7 +1660,7 @@
 		)
 		(uuid "1ce686fd-07d0-41fe-8dc2-969db608102a")
 	)
-(wire
+	(wire
 		(pts
 			(xy 118.11 49.53) (xy 95.25 49.53)
 		)
@@ -1670,7 +1670,7 @@
 		)
 		(uuid "1dacd914-7b31-4889-a684-3288d54b9cfe")
 	)
-(wire
+	(wire
 		(pts
 			(xy 68.58 62.23) (xy 69.85 62.23)
 		)
@@ -1680,7 +1680,7 @@
 		)
 		(uuid "20d925d9-63be-4717-9c07-de57a2ef3a68")
 	)
-(wire
+	(wire
 		(pts
 			(xy 68.58 77.47) (xy 69.85 77.47)
 		)
@@ -1690,7 +1690,7 @@
 		)
 		(uuid "21c5f200-3d35-42d5-8083-c7c4972c1c25")
 	)
-(wire
+	(wire
 		(pts
 			(xy 95.25 74.93) (xy 96.52 74.93)
 		)
@@ -1700,7 +1700,7 @@
 		)
 		(uuid "22767be6-6939-4cf3-9720-93bd86eff606")
 	)
-(wire
+	(wire
 		(pts
 			(xy 106.68 64.77) (xy 109.22 64.77)
 		)
@@ -1710,7 +1710,7 @@
 		)
 		(uuid "22b35ef1-c785-4803-b798-0cef0704cb48")
 	)
-(wire
+	(wire
 		(pts
 			(xy 96.52 68.58) (xy 96.52 69.85)
 		)
@@ -1720,7 +1720,7 @@
 		)
 		(uuid "2347feae-e4ed-4474-b934-d6e96e706dd8")
 	)
-(wire
+	(wire
 		(pts
 			(xy 95.25 54.61) (xy 118.11 54.61)
 		)
@@ -1730,7 +1730,7 @@
 		)
 		(uuid "253bfa21-0b70-41d4-8dd1-c1e6878dbf05")
 	)
-(wire
+	(wire
 		(pts
 			(xy 95.25 77.47) (xy 96.52 77.47)
 		)
@@ -1740,7 +1740,7 @@
 		)
 		(uuid "27f40aa6-04fc-4f5b-a546-a4a4920377e5")
 	)
-(wire
+	(wire
 		(pts
 			(xy 96.52 72.39) (xy 96.52 74.93)
 		)
@@ -1750,7 +1750,7 @@
 		)
 		(uuid "2a26bbe7-a1ed-4a81-803e-65419352e5e2")
 	)
-(wire
+	(wire
 		(pts
 			(xy 54.61 57.15) (xy 69.85 57.15)
 		)
@@ -1760,7 +1760,7 @@
 		)
 		(uuid "2a3f257e-dea0-4ea3-9a58-0d24cebf8c0c")
 	)
-(wire
+	(wire
 		(pts
 			(xy 54.61 57.15) (xy 54.61 54.61)
 		)
@@ -1770,7 +1770,7 @@
 		)
 		(uuid "2e0b317f-f02e-4e3a-a41f-09a98c0fc534")
 	)
-(wire
+	(wire
 		(pts
 			(xy 68.58 72.39) (xy 69.85 72.39)
 		)
@@ -1780,7 +1780,7 @@
 		)
 		(uuid "31324248-5285-46f7-9759-54f4f9b8c7f4")
 	)
-(wire
+	(wire
 		(pts
 			(xy 96.52 69.85) (xy 95.25 69.85)
 		)
@@ -1790,7 +1790,7 @@
 		)
 		(uuid "3b133ac4-28c8-47dd-9316-ec4dfa3bfcab")
 	)
-(wire
+	(wire
 		(pts
 			(xy 95.25 67.31) (xy 96.52 67.31)
 		)
@@ -1800,7 +1800,7 @@
 		)
 		(uuid "3be99739-4d5c-4726-a372-64d14f2144c9")
 	)
-(wire
+	(wire
 		(pts
 			(xy 60.96 54.61) (xy 69.85 54.61)
 		)
@@ -1810,7 +1810,7 @@
 		)
 		(uuid "40f9e937-c5fc-4f24-bcec-e19bbce5d507")
 	)
-(wire
+	(wire
 		(pts
 			(xy 82.55 82.55) (xy 82.55 83.82)
 		)
@@ -1820,7 +1820,7 @@
 		)
 		(uuid "4311b085-c29b-4d7f-bf47-9642c998de8c")
 	)
-(wire
+	(wire
 		(pts
 			(xy 68.58 80.01) (xy 68.58 77.47)
 		)
@@ -1830,7 +1830,7 @@
 		)
 		(uuid "44916478-9c59-4c51-955d-156b8cad5a43")
 	)
-(wire
+	(wire
 		(pts
 			(xy 68.58 49.53) (xy 69.85 49.53)
 		)
@@ -1840,7 +1840,7 @@
 		)
 		(uuid "493e6506-d991-4041-ab4e-1b81bd23a4cd")
 	)
-(wire
+	(wire
 		(pts
 			(xy 109.22 66.04) (xy 109.22 64.77)
 		)
@@ -1850,7 +1850,7 @@
 		)
 		(uuid "49700706-d8fe-4a1f-9510-d6542fa2b333")
 	)
-(wire
+	(wire
 		(pts
 			(xy 54.61 73.66) (xy 54.61 69.85)
 		)
@@ -1860,7 +1860,7 @@
 		)
 		(uuid "4d53ea38-65fc-41bd-b8fd-bfaebbd86f2b")
 	)
-(wire
+	(wire
 		(pts
 			(xy 116.84 66.04) (xy 116.84 64.77)
 		)
@@ -1870,7 +1870,7 @@
 		)
 		(uuid "4e618b4e-1656-4746-ad73-553df2d02566")
 	)
-(wire
+	(wire
 		(pts
 			(xy 54.61 78.74) (xy 54.61 80.01)
 		)
@@ -1880,7 +1880,7 @@
 		)
 		(uuid "4fdda76b-3290-4d7d-b310-b93c8a123af8")
 	)
-(wire
+	(wire
 		(pts
 			(xy 63.5 49.53) (xy 62.23 49.53)
 		)
@@ -1890,7 +1890,7 @@
 		)
 		(uuid "55ffa291-c988-4acc-914d-3f5996e312a1")
 	)
-(wire
+	(wire
 		(pts
 			(xy 106.68 68.58) (xy 106.68 64.77)
 		)
@@ -1900,7 +1900,7 @@
 		)
 		(uuid "59ff7782-04c8-4f4b-8acd-9cd99d3e8aff")
 	)
-(wire
+	(wire
 		(pts
 			(xy 68.58 77.47) (xy 68.58 74.93)
 		)
@@ -1910,7 +1910,17 @@
 		)
 		(uuid "65596139-5784-4fd5-a697-ea4db727cf32")
 	)
-(wire
+	(wire
+		(pts
+			(xy 41.91 72.39) (xy 41.91 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "717e6bd4-fa3b-41dc-9a44-04201597acc6")
+	)
+	(wire
 		(pts
 			(xy 116.84 62.23) (xy 116.84 64.77)
 		)
@@ -1920,7 +1930,7 @@
 		)
 		(uuid "7e4f5899-fe31-4be8-9889-0a766a7d4e25")
 	)
-(wire
+	(wire
 		(pts
 			(xy 54.61 80.01) (xy 68.58 80.01)
 		)
@@ -1930,7 +1940,7 @@
 		)
 		(uuid "7fc925fa-31f8-417b-834a-2243052d28df")
 	)
-(wire
+	(wire
 		(pts
 			(xy 96.52 77.47) (xy 96.52 78.74)
 		)
@@ -1940,7 +1950,7 @@
 		)
 		(uuid "85890728-a733-45af-b987-58c5a6cd7195")
 	)
-(wire
+	(wire
 		(pts
 			(xy 54.61 58.42) (xy 54.61 57.15)
 		)
@@ -1950,7 +1960,7 @@
 		)
 		(uuid "87da8cdc-2152-4f5f-b28c-bdf5100b01d7")
 	)
-(wire
+	(wire
 		(pts
 			(xy 95.25 62.23) (xy 116.84 62.23)
 		)
@@ -1960,7 +1970,7 @@
 		)
 		(uuid "8ad35149-1fa5-43eb-bfd8-1b9ca1a2e1b1")
 	)
-(wire
+	(wire
 		(pts
 			(xy 68.58 74.93) (xy 68.58 72.39)
 		)
@@ -1970,7 +1980,7 @@
 		)
 		(uuid "8ef911c6-61a1-48e1-9024-192055196865")
 	)
-(wire
+	(wire
 		(pts
 			(xy 99.06 68.58) (xy 99.06 71.12)
 		)
@@ -1980,7 +1990,7 @@
 		)
 		(uuid "933dffa8-45cc-4338-aaf2-76c899407e3c")
 	)
-(wire
+	(wire
 		(pts
 			(xy 68.58 67.31) (xy 69.85 67.31)
 		)
@@ -1990,7 +2000,7 @@
 		)
 		(uuid "948ac2af-5127-4107-ad0a-cf26c74aab14")
 	)
-(wire
+	(wire
 		(pts
 			(xy 53.34 69.85) (xy 54.61 69.85)
 		)
@@ -2000,7 +2010,7 @@
 		)
 		(uuid "9ab9b338-52f6-4d8d-885c-8c0b2425952e")
 	)
-(wire
+	(wire
 		(pts
 			(xy 68.58 74.93) (xy 69.85 74.93)
 		)
@@ -2010,7 +2020,7 @@
 		)
 		(uuid "9ad7fdcf-615c-4a15-ace4-96ce60691889")
 	)
-(wire
+	(wire
 		(pts
 			(xy 62.23 52.07) (xy 69.85 52.07)
 		)
@@ -2020,7 +2030,7 @@
 		)
 		(uuid "9f6ea9bb-152f-454d-912a-34e84c22cae1")
 	)
-(wire
+	(wire
 		(pts
 			(xy 95.25 72.39) (xy 96.52 72.39)
 		)
@@ -2030,7 +2040,7 @@
 		)
 		(uuid "a04539a6-a4d1-4c3c-87a1-e500ca82c44f")
 	)
-(wire
+	(wire
 		(pts
 			(xy 96.52 74.93) (xy 96.52 77.47)
 		)
@@ -2040,7 +2050,7 @@
 		)
 		(uuid "a18522d0-2483-4b1b-aa87-5e9cecee6715")
 	)
-(wire
+	(wire
 		(pts
 			(xy 95.25 59.69) (xy 118.11 59.69)
 		)
@@ -2050,7 +2060,7 @@
 		)
 		(uuid "a39c77a9-8ff8-4bd9-ad88-85cdb788824f")
 	)
-(wire
+	(wire
 		(pts
 			(xy 115.57 64.77) (xy 116.84 64.77)
 		)
@@ -2060,7 +2070,7 @@
 		)
 		(uuid "a417fb17-c018-40c7-8b64-896188d1cdcd")
 	)
-(wire
+	(wire
 		(pts
 			(xy 68.58 81.28) (xy 68.58 80.01)
 		)
@@ -2070,7 +2080,7 @@
 		)
 		(uuid "a594d208-c59e-4a33-be37-8e5463193c9e")
 	)
-(wire
+	(wire
 		(pts
 			(xy 54.61 69.85) (xy 69.85 69.85)
 		)
@@ -2080,7 +2090,7 @@
 		)
 		(uuid "aa850f1b-cd24-49d0-8d2b-c2efc15d6fb6")
 	)
-(wire
+	(wire
 		(pts
 			(xy 99.06 68.58) (xy 100.33 68.58)
 		)
@@ -2090,7 +2100,7 @@
 		)
 		(uuid "b0ddda02-3ef6-4f06-9b8d-9de4e9905b30")
 	)
-(wire
+	(wire
 		(pts
 			(xy 62.23 49.53) (xy 62.23 52.07)
 		)
@@ -2100,7 +2110,7 @@
 		)
 		(uuid "b3bf5497-0a2c-4e81-b22b-784ae6cda48a")
 	)
-(wire
+	(wire
 		(pts
 			(xy 116.84 71.12) (xy 116.84 72.39)
 		)
@@ -2110,7 +2120,7 @@
 		)
 		(uuid "b7ee664a-1fca-4969-ab49-1400ff6bfad0")
 	)
-(wire
+	(wire
 		(pts
 			(xy 53.34 57.15) (xy 54.61 57.15)
 		)
@@ -2120,7 +2130,7 @@
 		)
 		(uuid "b8e0837b-3150-43ef-bfd7-b9c334b5e1e2")
 	)
-(wire
+	(wire
 		(pts
 			(xy 96.52 68.58) (xy 99.06 68.58)
 		)
@@ -2130,7 +2140,7 @@
 		)
 		(uuid "c7c3806e-2c62-4578-b38d-d590c0df8ab3")
 	)
-(wire
+	(wire
 		(pts
 			(xy 99.06 76.2) (xy 99.06 77.47)
 		)
@@ -2140,7 +2150,7 @@
 		)
 		(uuid "cd7204fc-3038-4f15-be0a-4d8c63bc0227")
 	)
-(wire
+	(wire
 		(pts
 			(xy 95.25 64.77) (xy 106.68 64.77)
 		)
@@ -2150,7 +2160,7 @@
 		)
 		(uuid "ddb8806f-4e0d-4144-a962-10b64b6c867a")
 	)
-(wire
+	(wire
 		(pts
 			(xy 109.22 64.77) (xy 110.49 64.77)
 		)
@@ -2160,7 +2170,17 @@
 		)
 		(uuid "df73d066-75ce-4496-abb8-2686b0f06ae2")
 	)
-(wire
+	(wire
+		(pts
+			(xy 41.91 66.04) (xy 41.91 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6038347-3470-453a-b228-085653952849")
+	)
+	(wire
 		(pts
 			(xy 96.52 67.31) (xy 96.52 68.58)
 		)
@@ -2170,7 +2190,7 @@
 		)
 		(uuid "eaf39c09-90c3-4bf7-87d1-2136886f8349")
 	)
-(wire
+	(wire
 		(pts
 			(xy 105.41 68.58) (xy 106.68 68.58)
 		)
@@ -2180,7 +2200,7 @@
 		)
 		(uuid "ec7afeab-bda3-4c7c-b452-9974ba4cda07")
 	)
-(wire
+	(wire
 		(pts
 			(xy 54.61 54.61) (xy 55.88 54.61)
 		)
@@ -2190,7 +2210,7 @@
 		)
 		(uuid "edfaaf4f-8a82-47e1-9bf0-ab63cbc7a766")
 	)
-(wire
+	(wire
 		(pts
 			(xy 99.06 77.47) (xy 96.52 77.47)
 		)
@@ -2200,7 +2220,7 @@
 		)
 		(uuid "f4b72bb7-8eb2-4cae-99c1-8bd9f3407c52")
 	)
-(wire
+	(wire
 		(pts
 			(xy 109.22 71.12) (xy 109.22 72.39)
 		)
@@ -2210,7 +2230,7 @@
 		)
 		(uuid "fc7f3034-f993-400c-aa69-3c62d3acd804")
 	)
-(wire
+	(wire
 		(pts
 			(xy 68.58 59.69) (xy 69.85 59.69)
 		)
@@ -2220,223 +2240,117 @@
 		)
 		(uuid "fe7eb111-4b83-47c0-8076-d64f94f1083d")
 	)
-	(hierarchical_label "BOUT1"
-		(shape passive)
-		(at 68.58 67.31 180)
-		(effects (font (size 1.27 1.27)) (justify right))
-		(uuid "9b770bd3-db9f-4f8b-81ea-5104edfd65d0")
-	)
-	(hierarchical_label "AOUT2"
-		(shape passive)
-		(at 68.58 62.23 180)
-		(effects (font (size 1.27 1.27)) (justify right))
-		(uuid "c3fec907-886b-4ea1-930e-f2cda48d3783")
-	)
 	(hierarchical_label "AEN"
 		(shape input)
 		(at 118.11 52.07 0)
-		(effects (font (size 1.27 1.27)) (justify left))
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
 		(uuid "02595cfb-17fc-40f6-8df9-ef8faf052d28")
-	)
-	(hierarchical_label "APH"
-		(shape input)
-		(at 118.11 54.61 0)
-		(effects (font (size 1.27 1.27)) (justify left))
-		(uuid "e8be700b-3250-400c-83a3-10b765329780")
-	)
-(symbol
-		(lib_id "power:+5V")
-		(at 53.34 57.15 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(in_pos_files no)
-		(dnp no)
-		(uuid "a9128ab3-d86b-4604-b7ae-15443aa8fa9f")
-		(property "Reference" "#PWR8044"
-			(at 56.34 54.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VM"
-			(at 53.34 52.07 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				
-			)
-		)
-		(property "Footprint" ""
-			(at 53.34 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 53.34 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 53.34 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fbb86fa7-673b-4e2e-ba93-9cb20e5956d7")
-		)
-		(instances
-			(project "Tesla"
-				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/a127f740-835a-49c8-bc78-066016e92855/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
-					(reference "#PWR8044")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(hierarchical_label "BOUT2"
-		(shape passive)
-		(at 68.58 64.77 180)
-		(effects (font (size 1.27 1.27)) (justify right))
-		(uuid "e8c72a30-8ed5-4789-93fa-347761088c56")
 	)
 	(hierarchical_label "BEN"
 		(shape input)
 		(at 118.11 57.15 0)
-		(effects (font (size 1.27 1.27)) (justify left))
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
 		(uuid "23191c03-7add-48ef-86b5-0fa04ca4d710")
-	)
-	(hierarchical_label "BPH"
-		(shape input)
-		(at 118.11 59.69 0)
-		(effects (font (size 1.27 1.27)) (justify left))
-		(uuid "ab9dc85a-3575-4bad-88a2-3ad018a01888")
-	)
-	(hierarchical_label "nFault"
-		(shape output)
-		(at 118.11 62.23 0)
-		(effects (font (size 1.27 1.27)) (justify left))
-		(uuid "8f07837a-958e-40a8-a102-1d0d20d8a6d8")
-	)
-	(hierarchical_label "AOUT1"
-		(shape passive)
-		(at 68.58 59.69 180)
-		(effects (font (size 1.27 1.27)) (justify right))
-		(uuid "ff892a28-4912-4c7d-910c-a45b6303b3a6")
-	)
-(symbol
-		(lib_id "power:+5V")
-		(at 53.34 69.85 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(in_pos_files no)
-		(dnp no)
-		(uuid "2a5cc4cc-1cbd-4b4c-964c-0899d3fb4dd3")
-		(property "Reference" "#PWR8046"
-			(at 56.34 66.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VM"
-			(at 53.34 64.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				
-			)
-		)
-		(property "Footprint" ""
-			(at 53.34 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 53.34 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 53.34 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5d7ce09e-c7a7-43b1-b0ea-6a22693b099a")
-		)
-		(instances
-			(project "Tesla"
-				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/a127f740-835a-49c8-bc78-066016e92855/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
-					(reference "#PWR8046")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(hierarchical_label "nSleep"
 		(shape input)
 		(at 118.11 49.53 0)
-		(effects (font (size 1.27 1.27)) (justify left))
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
 		(uuid "74c98666-ffe2-4526-92b3-86615f3ed57a")
 	)
-(symbol
+	(hierarchical_label "nFault"
+		(shape output)
+		(at 118.11 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8f07837a-958e-40a8-a102-1d0d20d8a6d8")
+	)
+	(hierarchical_label "BOUT1"
+		(shape passive)
+		(at 68.58 67.31 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9b770bd3-db9f-4f8b-81ea-5104edfd65d0")
+	)
+	(hierarchical_label "BPH"
+		(shape input)
+		(at 118.11 59.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ab9dc85a-3575-4bad-88a2-3ad018a01888")
+	)
+	(hierarchical_label "AOUT2"
+		(shape passive)
+		(at 68.58 62.23 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c3fec907-886b-4ea1-930e-f2cda48d3783")
+	)
+	(hierarchical_label "APH"
+		(shape input)
+		(at 118.11 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e8be700b-3250-400c-83a3-10b765329780")
+	)
+	(hierarchical_label "BOUT2"
+		(shape passive)
+		(at 68.58 64.77 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e8c72a30-8ed5-4789-93fa-347761088c56")
+	)
+	(hierarchical_label "AOUT1"
+		(shape passive)
+		(at 68.58 59.69 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ff892a28-4912-4c7d-910c-a45b6303b3a6")
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 109.22 72.39 0)
 		(unit 1)
@@ -2468,7 +2382,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				
 			)
 		)
 		(property "Footprint" ""
@@ -2509,14 +2422,14 @@
 		)
 		(instances
 			(project "Tesla"
-				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/a127f740-835a-49c8-bc78-066016e92855/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
 					(reference "#PWR07")
 					(unit 1)
 				)
 			)
 		)
 	)
-(symbol
+	(symbol
 		(lib_id "power:GND")
 		(at 96.52 78.74 0)
 		(unit 1)
@@ -2548,7 +2461,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				
 			)
 		)
 		(property "Footprint" ""
@@ -2589,14 +2501,91 @@
 		)
 		(instances
 			(project "Tesla"
-				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/a127f740-835a-49c8-bc78-066016e92855/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
 					(reference "#PWR08")
 					(unit 1)
 				)
 			)
 		)
 	)
-(symbol
+	(symbol
+		(lib_id "power:+5V")
+		(at 53.34 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "2a5cc4cc-1cbd-4b4c-964c-0899d3fb4dd3")
+		(property "Reference" "#PWR8046"
+			(at 56.34 66.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VM"
+			(at 53.34 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 53.34 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5d7ce09e-c7a7-43b1-b0ea-6a22693b099a")
+		)
+		(instances
+			(project "Tesla"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
+					(reference "#PWR8046")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDPWR")
 		(at 68.58 81.28 0)
 		(unit 1)
@@ -2628,7 +2617,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				
 			)
 		)
 		(property "Footprint" ""
@@ -2669,14 +2657,14 @@
 		)
 		(instances
 			(project "Tesla"
-				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/a127f740-835a-49c8-bc78-066016e92855/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
 					(reference "#PWR03")
 					(unit 1)
 				)
 			)
 		)
 	)
-(symbol
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 116.84 68.58 0)
 		(unit 1)
@@ -2751,14 +2739,93 @@
 		)
 		(instances
 			(project "Tesla"
-				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/a127f740-835a-49c8-bc78-066016e92855/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
 					(reference "R1")
 					(unit 1)
 				)
 			)
 		)
 	)
-(symbol
+	(symbol
+		(lib_id "power:GNDPWR")
+		(at 41.91 73.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "425d8421-c6b5-4e45-b703-9a8bfc266044")
+		(property "Reference" "#PWR04"
+			(at 41.91 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GNDPWR"
+			(at 41.91 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 41.91 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1f81c4cd-68fb-4ff7-9525-c6fd5d532405")
+		)
+		(instances
+			(project "Tesla"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 66.04 49.53 90)
 		(unit 1)
@@ -2833,14 +2900,14 @@
 		)
 		(instances
 			(project "Tesla"
-				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/a127f740-835a-49c8-bc78-066016e92855/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
 					(reference "C1")
 					(unit 1)
 				)
 			)
 		)
 	)
-(symbol
+	(symbol
 		(lib_id "power:GND")
 		(at 116.84 72.39 0)
 		(unit 1)
@@ -2872,7 +2939,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				
 			)
 		)
 		(property "Footprint" ""
@@ -2913,14 +2979,14 @@
 		)
 		(instances
 			(project "Tesla"
-				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/a127f740-835a-49c8-bc78-066016e92855/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
 					(reference "#PWR05")
 					(unit 1)
 				)
 			)
 		)
 	)
-(symbol
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 54.61 60.96 0)
 		(mirror x)
@@ -2996,14 +3062,14 @@
 		)
 		(instances
 			(project "Tesla"
-				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/a127f740-835a-49c8-bc78-066016e92855/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
 					(reference "C3")
 					(unit 1)
 				)
 			)
 		)
 	)
-(symbol
+	(symbol
 		(lib_id "power:GNDPWR")
 		(at 82.55 83.82 0)
 		(unit 1)
@@ -3035,7 +3101,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				
 			)
 		)
 		(property "Footprint" ""
@@ -3076,14 +3141,14 @@
 		)
 		(instances
 			(project "Tesla"
-				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/a127f740-835a-49c8-bc78-066016e92855/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
 					(reference "#PWR09")
 					(unit 1)
 				)
 			)
 		)
 	)
-(symbol
+	(symbol
 		(lib_id "power:GNDPWR")
 		(at 54.61 64.77 0)
 		(unit 1)
@@ -3115,7 +3180,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				
 			)
 		)
 		(property "Footprint" ""
@@ -3156,14 +3220,14 @@
 		)
 		(instances
 			(project "Tesla"
-				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/a127f740-835a-49c8-bc78-066016e92855/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
 					(reference "#PWR02")
 					(unit 1)
 				)
 			)
 		)
 	)
-(symbol
+	(symbol
 		(lib_id "Tesla_Parts:DRV8424EPWPR")
 		(at 82.55 63.5 0)
 		(unit 1)
@@ -3318,14 +3382,14 @@
 		)
 		(instances
 			(project "Tesla"
-				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/a127f740-835a-49c8-bc78-066016e92855/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
 					(reference "U1")
 					(unit 1)
 				)
 			)
 		)
 	)
-(symbol
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 54.61 76.2 0)
 		(mirror x)
@@ -3401,14 +3465,91 @@
 		)
 		(instances
 			(project "Tesla"
-				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/a127f740-835a-49c8-bc78-066016e92855/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
 					(reference "C4")
 					(unit 1)
 				)
 			)
 		)
 	)
-(symbol
+	(symbol
+		(lib_id "power:+5V")
+		(at 41.91 66.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "8556e7dc-8375-4ffb-98e7-335aced6599f")
+		(property "Reference" "#PWR8045"
+			(at 44.91 63.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VM"
+			(at 41.91 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 41.91 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c1de95c8-693b-4978-800e-037156411f8f")
+		)
+		(instances
+			(project "Tesla"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
+					(reference "#PWR8045")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 113.03 64.77 90)
 		(mirror x)
@@ -3484,14 +3625,14 @@
 		)
 		(instances
 			(project "Tesla"
-				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/a127f740-835a-49c8-bc78-066016e92855/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
 					(reference "R2")
 					(unit 1)
 				)
 			)
 		)
 	)
-(symbol
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 99.06 73.66 0)
 		(unit 1)
@@ -3566,14 +3707,14 @@
 		)
 		(instances
 			(project "Tesla"
-				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/a127f740-835a-49c8-bc78-066016e92855/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
 					(reference "R4")
 					(unit 1)
 				)
 			)
 		)
 	)
-(symbol
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 109.22 68.58 0)
 		(mirror x)
@@ -3649,200 +3790,16 @@
 		)
 		(instances
 			(project "Tesla"
-				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/a127f740-835a-49c8-bc78-066016e92855/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
 					(reference "C5")
 					(unit 1)
 				)
 			)
 		)
 	)
-(symbol
-		(lib_id "Device:R_Small")
-		(at 102.87 68.58 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c00e29e4-35c8-4ed4-a93c-19e9c1bef56b")
-		(property "Reference" "R3"
-			(at 101.6 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "15k"
-			(at 104.9 66.8 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 102.87 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 102.87 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 102.87 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "61fa367c-a325-4733-a22f-8d7efaaa09fd")
-		)
-		(pin "1"
-			(uuid "610a2cc2-fe8f-4e58-b6cb-e43ef48605f4")
-		)
-		(instances
-			(project "Tesla"
-				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/a127f740-835a-49c8-bc78-066016e92855/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-(symbol
-		(lib_id "Device:C_Small")
-		(at 58.42 54.61 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "cd050df4-d4bd-4b59-8bd1-35e3b386d039")
-		(property "Reference" "C2"
-			(at 54.86 59.94 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "220nF"
-			(at 55.37 52.07 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "220nF"
-			(at 58.42 52.07 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 58.42 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 58.42 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c0d467a7-796c-48f4-bf59-ba4b7e95b012")
-		)
-		(pin "2"
-			(uuid "952a367c-48ad-4f1d-9efb-fc6ba6e617e1")
-		)
-		(instances
-			(project "Tesla"
-				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/a127f740-835a-49c8-bc78-066016e92855/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
-					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-(wire
-		(pts
-			(xy 41.91 72.39) (xy 41.91 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "717e6bd4-fa3b-41dc-9a44-04201597acc6")
-	)
-(wire
-		(pts
-			(xy 41.91 66.04) (xy 41.91 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e6038347-3470-453a-b228-085653952849")
-	)
-(symbol
+	(symbol
 		(lib_id "power:+5V")
-		(at 41.91 66.04 0)
+		(at 53.34 57.15 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3850,9 +3807,9 @@
 		(on_board no)
 		(in_pos_files no)
 		(dnp no)
-		(uuid "8556e7dc-8375-4ffb-98e7-335aced6599f")
-		(property "Reference" "#PWR8045"
-			(at 44.91 63.04 0)
+		(uuid "a9128ab3-d86b-4604-b7ae-15443aa8fa9f")
+		(property "Reference" "#PWR8044"
+			(at 56.34 54.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3863,18 +3820,17 @@
 			)
 		)
 		(property "Value" "VM"
-			(at 41.91 60.96 0)
+			(at 53.34 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				
 			)
 		)
 		(property "Footprint" ""
-			(at 41.91 66.04 0)
+			(at 53.34 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3885,7 +3841,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 41.91 66.04 0)
+			(at 53.34 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3896,7 +3852,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 41.91 66.04 0)
+			(at 53.34 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3907,98 +3863,18 @@
 			)
 		)
 		(pin "1"
-			(uuid "c1de95c8-693b-4978-800e-037156411f8f")
+			(uuid "fbb86fa7-673b-4e2e-ba93-9cb20e5956d7")
 		)
 		(instances
 			(project "Tesla"
-				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/a127f740-835a-49c8-bc78-066016e92855/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
-					(reference "#PWR8045")
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
+					(reference "#PWR8044")
 					(unit 1)
 				)
 			)
 		)
 	)
-(symbol
-		(lib_id "power:GNDPWR")
-		(at 41.91 73.66 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "425d8421-c6b5-4e45-b703-9a8bfc266044")
-		(property "Reference" "#PWR04"
-			(at 41.91 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "GNDPWR"
-			(at 41.91 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				
-			)
-		)
-		(property "Footprint" ""
-			(at 41.91 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 41.91 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 41.91 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1f81c4cd-68fb-4ff7-9525-c6fd5d532405")
-		)
-		(instances
-			(project "Tesla"
-				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/a127f740-835a-49c8-bc78-066016e92855/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-(symbol
+	(symbol
 		(lib_id "Device:C_Polarized_Small")
 		(at 41.91 69.85 0)
 		(unit 1)
@@ -4073,8 +3949,172 @@
 		)
 		(instances
 			(project "Tesla"
-				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/a127f740-835a-49c8-bc78-066016e92855/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 102.87 68.58 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c00e29e4-35c8-4ed4-a93c-19e9c1bef56b")
+		(property "Reference" "R3"
+			(at 101.6 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "15k"
+			(at 104.9 66.8 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 102.87 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "61fa367c-a325-4733-a22f-8d7efaaa09fd")
+		)
+		(pin "1"
+			(uuid "610a2cc2-fe8f-4e58-b6cb-e43ef48605f4")
+		)
+		(instances
+			(project "Tesla"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 58.42 54.61 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cd050df4-d4bd-4b59-8bd1-35e3b386d039")
+		(property "Reference" "C2"
+			(at 54.86 59.94 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "220nF"
+			(at 55.37 52.07 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "220nF"
+			(at 58.42 52.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 58.42 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c0d467a7-796c-48f4-bf59-ba4b7e95b012")
+		)
+		(pin "2"
+			(uuid "952a367c-48ad-4f1d-9efb-fc6ba6e617e1")
+		)
+		(instances
+			(project "Tesla"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84"
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -4085,5 +4125,4 @@
 			(page "1")
 		)
 	)
-	(embedded_fonts no)
 )

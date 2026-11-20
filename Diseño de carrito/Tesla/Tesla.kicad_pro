@@ -416,7 +416,7 @@
         "uuid": "5887439a-b21c-43e4-993b-4d67284a5af9"
       }
     ],
-    "used_designators": "",
+    "used_designators": "SW3,R13",
     "variants": []
   },
   "sheets": [
@@ -425,56 +425,56 @@
       "Tesla"
     ],
     [
-      "2af30aa8-11ac-40d5-8e94-f794db822e6a",
+      "d030c1b8-cfad-4a3d-92ca-1d1b304d6085",
       "Alimentacion"
     ],
     [
-      "932934f4-541b-4c80-aaf3-37d33b2eb794",
+      "4d5a437e-9cd6-42bc-ac67-03ff09125619",
       "Proteccion bateria"
     ],
     [
-      "ac811346-6bfe-4c89-b0b8-4618fc2c6f14",
+      "2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84",
+      "Drivers motores"
+    ],
+    [
+      "69e35a55-fecc-465b-b93e-e8f9a04d5311",
       "Medicion bateria"
     ],
     [
-      "0f4e3445-1ab9-43d0-b032-e95d69f5da79",
-      "Buck 3V3"
-    ],
-    [
-      "d8588c43-97aa-45c2-9908-612eab68a8d4",
-      "Buck 5V servos y GPS"
-    ],
-    [
-      "273003c0-b3e4-4391-a09a-22bbd316495b",
-      "Buck 5V LiDAR"
-    ],
-    [
-      "0c9879b8-d617-4ebb-a752-9eb4c201db26",
-      "control"
-    ],
-    [
-      "2e1988ea-6ed5-4de4-bd52-5045c280510e",
-      "Cerebro P4"
-    ],
-    [
-      "8a8d680c-e2b5-40e9-acec-9cc770959f9c",
-      "ESP32-P4X nucleo"
-    ],
-    [
-      "e7c789fc-75ea-46b7-a8bd-46fb21e61aec",
-      "Radio C6"
-    ],
-    [
-      "55268bce-0398-496c-bb97-bb3df96e506a",
-      "Motores"
-    ],
-    [
-      "a8571a6f-d4dc-4924-ab83-3035b48c0bf7",
+      "1fc318c9-0813-49d3-884d-c1187d2b5ece",
       "Faros"
     ],
     [
-      "d79cc02d-d8fa-407c-8119-2151bc631024",
+      "09a3ad19-feed-456f-a21f-6193b3b1e264",
+      "Buck 3V3"
+    ],
+    [
+      "fbf26f2b-cf83-4bba-a96f-eba4c216c8cf",
       "Tira LED"
+    ],
+    [
+      "9514380a-ce1b-4fd7-892a-e3d8a829a31b",
+      "Buck 5V servos y GPS"
+    ],
+    [
+      "3c4a6b14-817a-5d2d-a52d-894fc134b7f3",
+      "Salidas externas"
+    ],
+    [
+      "1370ccb2-d480-45b0-a8ad-0346476b329a",
+      "Buck 5V LiDAR"
+    ],
+    [
+      "a127f740-835a-49c8-bc78-066016e92855",
+      "Control ESP32"
+    ],
+    [
+      "43effa7b-6359-50c5-a0ef-c6d36c8e9362",
+      "LEDs RGB y estado"
+    ],
+    [
+      "91ebebfe-ed52-5779-8e7f-23f352fcb28e",
+      "Radio nRF24"
     ]
   ],
   "text_variables": {},

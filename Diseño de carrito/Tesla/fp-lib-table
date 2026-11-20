@@ -2,5 +2,7 @@
   (version 7)
   (lib (name "Tesla_Parts")(type "KiCad")(uri "${KIPRJMOD}/Tesla_Parts.pretty")(options "")(descr ""))
   (lib (name "PCM_Espressif")(type "KiCad")(uri "${KIPRJMOD}/../Componentes/ESP32-P4/KiCad/Espressif.pretty")(options "")(descr "Espressif ESP32-P4"))
+  (lib (name "Waveshare_P4")(type "KiCad")(uri "${KIPRJMOD}/../Componentes/ESP32-P4/Modulo/Waveshare_P4.pretty")(options "")(descr "ESP32-P4 Module (castellated, PSRAM 32MB + Flash 16MB + C6)"))
+  (lib (name "Espressif_S3")(type "KiCad")(uri "${KIPRJMOD}/../Componentes/ESP32-S3/KiCad/Espressif_S3.pretty")(options "")(descr "Espressif ESP32-S3-WROOM-1/1U/2 oficiales"))
   (lib (name "Espressif_C6")(type "KiCad")(uri "${KIPRJMOD}/../Componentes/ESP32-C6/KiCad/Espressif_C6.pretty")(options "")(descr "Espressif ESP32-C6 land pattern oficial"))
 )

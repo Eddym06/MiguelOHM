@@ -562,27 +562,27 @@
 			(embedded_fonts no)
 		)
 	)
-(junction
+	(junction
 		(at 46.99 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1bc4dda3-dfa0-44aa-921e-9462079e6df4")
 	)
-(junction
+	(junction
 		(at 52.07 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b41cb063-e8ba-4c89-8e23-e0e4372ca68f")
 	)
-(junction
+	(junction
 		(at 49.53 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f84979a5-40dd-4761-9210-bcfa44894582")
 	)
-(wire
+	(wire
 		(pts
-			(xy 41.91 46.99) (xy 46.99 46.99)
+			(xy 41.91 46.99) (xy 49.53 46.99)
 		)
 		(stroke
 			(width 0)
@@ -590,7 +590,7 @@
 		)
 		(uuid "5bd8dd47-cf21-4ff2-939a-e7831eb5e5e7")
 	)
-(wire
+	(wire
 		(pts
 			(xy 46.99 52.07) (xy 54.61 52.07)
 		)
@@ -600,7 +600,7 @@
 		)
 		(uuid "8b751877-a580-4390-979b-584544ca6473")
 	)
-(wire
+	(wire
 		(pts
 			(xy 46.99 57.15) (xy 52.07 57.15)
 		)
@@ -610,91 +610,29 @@
 		)
 		(uuid "a1a41682-bf3d-4456-862c-f00e031240f3")
 	)
+	(hierarchical_label "VM"
+		(shape input)
+		(at 49.53 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "11923d87-6343-4be8-b533-a4f7efbc9370")
+	)
 	(hierarchical_label "VBAT_ADC"
 		(shape output)
 		(at 54.61 52.07 0)
-		(effects (font (size 1.27 1.27)) (justify left))
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
 		(uuid "261c2473-db03-4bbf-9eab-9c8eafc567a1")
 	)
-(symbol
-		(lib_id "power:+5V")
-		(at 41.91 46.99 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(in_pos_files no)
-		(dnp no)
-		(uuid "5d090891-d672-448c-85ea-f3f2dd3bebab")
-		(property "Reference" "#PWR8023"
-			(at 44.91 43.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VM"
-			(at 41.91 41.91 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				
-			)
-		)
-		(property "Footprint" ""
-			(at 41.91 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 41.91 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 41.91 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e09d5293-de6a-4bc3-ae26-13a33ed5bee0")
-		)
-		(instances
-			(project "Tesla"
-				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/d030c1b8-cfad-4a3d-92ca-1d1b304d6085/69e35a55-fecc-465b-b93e-e8f9a04d5311"
-					(reference "#PWR8023")
-					(unit 1)
-				)
-			)
-		)
-	)
-(symbol
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 46.99 54.61 0)
 		(unit 1)
@@ -775,7 +713,84 @@
 			)
 		)
 	)
-(symbol
+	(symbol
+		(lib_id "power:+5V")
+		(at 41.91 46.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "5d090891-d672-448c-85ea-f3f2dd3bebab")
+		(property "Reference" "#PWR8023"
+			(at 44.91 43.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VM"
+			(at 41.91 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 41.91 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e09d5293-de6a-4bc3-ae26-13a33ed5bee0")
+		)
+		(instances
+			(project "Tesla"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/d030c1b8-cfad-4a3d-92ca-1d1b304d6085/69e35a55-fecc-465b-b93e-e8f9a04d5311"
+					(reference "#PWR8023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 52.07 54.61 0)
 		(unit 1)
@@ -856,7 +871,7 @@
 			)
 		)
 	)
-(symbol
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 46.99 49.53 0)
 		(unit 1)
@@ -937,7 +952,7 @@
 			)
 		)
 	)
-(symbol
+	(symbol
 		(lib_id "power:GND")
 		(at 49.53 57.15 0)
 		(unit 1)
@@ -968,7 +983,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				
 			)
 		)
 		(property "Footprint" ""
@@ -1016,21 +1030,9 @@
 			)
 		)
 	)
-	(wire
-		(pts (xy 41.91 46.99) (xy 49.53 46.99))
-		(stroke (width 0) (type default))
-		(uuid "06ccdbe9-25ec-4069-ac56-c65101992993")
-	)
-	(hierarchical_label "VM"
-		(shape input)
-		(at 49.53 46.99 0)
-		(effects (font (size 1.27 1.27)) (justify left))
-		(uuid "11923d87-6343-4be8-b533-a4f7efbc9370")
-	)
 	(sheet_instances
 		(path "/"
 			(page "1")
 		)
 	)
-	(embedded_fonts no)
 )
