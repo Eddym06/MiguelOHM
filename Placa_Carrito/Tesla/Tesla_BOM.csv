@@ -1,9 +1,9 @@
-﻿Referencias,Cant,Valor,Huella,Notas
-C1,1,22nF,22nF,X7R 50 V (de tu diseño; falta huella)
-C2,1,220nF,220nF,X7R 50 V (de tu diseño; falta huella)
-"C3,C4",2,10nF,10nF,X7R 50 V (de tu diseño; falta huella)
-C5,1,470nF,10nF,X7R 50 V (de tu diseño; falta huella)
-C6,1,100uF,(sin huella),Electrolítico 25 V mín. en VM (de tu diseño; falta huella)
+Referencias,Cant,Valor,Huella,Notas
+C1,1,22nF,Capacitor_SMD:C_0805_2012Metric,X7R 50 V (de tu diseño; verificar MPN y dimensiones antes de compra)
+C2,1,220nF,Capacitor_SMD:C_0805_2012Metric,X7R 50 V (de tu diseño; verificar MPN y dimensiones antes de compra)
+"C3,C4",2,10nF,Capacitor_SMD:C_0805_2012Metric,X7R 50 V (de tu diseño; verificar MPN y dimensiones antes de compra)
+C5,1,470nF,Capacitor_SMD:C_0805_2012Metric,X7R 50 V (de tu diseño; verificar MPN y dimensiones antes de compra)
+C6,1,100uF,Capacitor_SMD:CP_Elec_8x10,Electrolítico 25 V mín. en VM (de tu diseño; verificar MPN y dimensiones antes de compra)
 "C45,C69,C73,C79,C82,C83,C86,C88",8,10uF,Capacitor_SMD:C_0805_2012Metric,X7R 25 V mín. si está en VM; 10 V mín. en 3V3/5V
 "C46,C70,C74,C78,C80,C84,C87,C89,C90,C91,C92,C93,C94",13,0.1uF,Capacitor_SMD:C_0402_1005Metric,X7R 16 V mín. (25 V si está en VM)
 "C47,C48,C71,C72,C75,C76",6,22uF,Capacitor_SMD:C_0805_2012Metric,X5R/X7R 10 V mín. (salidas de los bucks; 25 V si algún día va en VM)
@@ -52,8 +52,8 @@ L4,1,4.7uH,Inductor_SMD:L_0805_2012Metric,"4,7 uH, Isat 3 A mín. (AP63203)"
 L7,1,100uH,Inductor_SMD:L_Bourns_SRN6045TA,"Inductor de potencia 100 uH, Isat 0,6 A mín. (Bourns SRN6045TA o equivalente)"
 NT1,1,NetTie_2,NetTie:NetTie-2_SMD_Pad0.5mm,Net tie GND-GNDPWR (sin pieza física)
 Q1,1,SUD50P06-15,Package_TO_SOT_SMD:TO-252-2,"Vishay SUD50P06-15, P-MOSFET 60 V 50 A, protección de polaridad invertida (TO-252)"
-"R1,R3",2,15k,(sin huella),de tu diseño; falta huella
-"R2,R4",2,10k,(sin huella),de tu diseño; falta huella
+"R1,R3",2,15k,Resistor_SMD:R_0402_1005Metric,de tu diseño; verificar MPN y dimensiones antes de compra
+"R2,R4",2,10k,Resistor_SMD:R_0402_1005Metric,de tu diseño; verificar MPN y dimensiones antes de compra
 "R17,R18,R19,R20",4,1k,Resistor_SMD:R_0402_1005Metric,limitan los LED de dirección
 "R21,R22",2,4.7k,Resistor_SMD:R_0402_1005Metric,"1 %, 0402"
 "R24,R26,R27",3,10k,Resistor_SMD:R_0402_1005Metric,"1 %, 0402"
