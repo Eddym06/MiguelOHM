@@ -22,15 +22,15 @@ control remoto, navegación autónoma por GPS y una página web de control desde
 
 | Carpeta | Contenido |
 |---|---|
-| [Control Remoto/](Control%20Remoto/) | PCB del control (KiCad: `KAKATA_RC433_V1`) y su firmware en [Codigo/](Control%20Remoto/Codigo/README.md) (PlatformIO, Arduino, ESP32-S3). |
+| [Placa_Control_Remoto/](Placa_Control_Remoto/) | PCB del control (KiCad: `KAKATA_RC433_V1`) y su firmware en [Codigo/](Placa_Control_Remoto/Codigo/README.md) (PlatformIO, Arduino, ESP32-S3). |
 | [Codigo Carrito/](Codigo%20Carrito/README.md) | Firmware del carrito en ESP-IDF: `p4/` (cerebro), `s3/` (WiFi + web), `shared/` (protocolos) y `tests/`. |
 | [Diseño Caja 3D/](Diseño%20Caja%203D/) | Cajas para impresión 3D (FreeCAD). |
-| [Diseño de carrito/](Diseño%20de%20carrito/) | Diseño mecánico del carrito. |
+| [Placa_Carrito/](Placa_Carrito/) | Diseño mecánico del carrito. |
 | [Documentación/](Documentación/) | Documento del proyecto y registro de cambios. |
 
 ## Empezar
 
-- **Control remoto:** abrir `Control Remoto/Codigo` con PlatformIO y `pio run -t upload`.
+- **Control remoto:** abrir `Placa_Control_Remoto/Codigo` con PlatformIO y `pio run -t upload`.
 - **Carrito:** necesita ESP-IDF 5.5 (P4) y 5.3 o superior (S3). Instrucciones, tabla de pines pendientes y
   lista de lo que falta validar en [Codigo Carrito/README.md](Codigo%20Carrito/README.md).
 - **Pruebas de la lógica del carrito en la PC:** `bash "Codigo Carrito/tests/run_host_tests.sh"`.
@@ -45,3 +45,7 @@ control remoto, navegación autónoma por GPS y una página web de control desde
 
 Antes de las pruebas con hardware, revisar la sección «Sin validar en hardware» del README del carrito
 (sentido de ejes y motores, encoders, PID, protocolo del LIDAR y del GPS).
+
+## Simulación
+
+[Modelos y resultados por placa](Simulación/README.md).

@@ -5,7 +5,7 @@ Firmware ESP-IDF para los dos cerebros del carrito. Sin Arduino ni PlatformIO.
 ```
                  433 MHz                         SPI (50 Hz)                 WiFi propio
  Control remoto <-------> ESP32-P4  <=========================> ESP32-S3 <-------------> Celular
- (Control Remoto/Codigo)   (cerebro)                          (puerta de enlace)        (página web)
+ (Placa_Control_Remoto/Codigo)   (cerebro)                          (puerta de enlace)        (página web)
                            · motores + PID + encoders
                            · servo, luces, tira del aleron
                            · BMI160, INA219, brújula, GPS, LIDAR
