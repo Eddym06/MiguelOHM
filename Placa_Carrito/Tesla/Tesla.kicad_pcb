@@ -90,7 +90,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "01b2d3da-c750-45e5-b9a9-31f5100cdab3")
-		(at 54.955 38.335)
+		(at 75.52 100.885)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C70"
@@ -237,7 +237,7 @@
 	(footprint "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
 		(layer "F.Cu")
 		(uuid "03249d6f-f64f-4f58-9117-995381bddfb2")
-		(at 165.189999 54.4)
+		(at 101.625 33.1)
 		(descr "SOIC, 16 Pin (JEDEC MS-012, variation AC, https://www.jedec.org/document_search?search_api_views_fulltext=MS-012, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_16.pdf)")
 		(tags "SOIC SO 16-pin-NSOP R-16 R-16-S D0016A M2B SO16 SOT109-1 751B SOIC_N narrow")
 		(property "Reference" "U11"
@@ -519,7 +519,7 @@
 			(size 1.95 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/RGB_R")
+			(net "/GPIO41")
 			(uuid "922aa3ef-7047-4031-84ee-1fed641f8100")
 		)
 		(pad "2" smd roundrect
@@ -527,7 +527,7 @@
 			(size 1.95 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/RGB_G")
+			(net "/GPIO15")
 			(uuid "2831457a-97a8-40c7-9df0-48b431991484")
 		)
 		(pad "3" smd roundrect
@@ -535,7 +535,7 @@
 			(size 1.95 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/RGB_B")
+			(net "/GPIO16")
 			(uuid "6dcb47f8-1a0f-424d-950c-0cf4698c90a5")
 		)
 		(pad "4" smd roundrect
@@ -575,7 +575,7 @@
 			(size 1.95 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "8ed18284-5e3f-400e-b6d3-dac42975ab4e")
 		)
 		(pad "9" smd roundrect
@@ -583,7 +583,7 @@
 			(size 1.95 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(J17-Pin_1)")
+			(net "VLED")
 			(uuid "e2669110-e79c-44c1-ab1c-a11dc8f5b122")
 		)
 		(pad "10" smd roundrect
@@ -623,7 +623,7 @@
 			(size 1.95 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(J17-Pin_4)")
+			(net "RGB_OUT_B")
 			(uuid "0023e459-0e03-44dc-a567-c815047a00b6")
 		)
 		(pad "15" smd roundrect
@@ -631,7 +631,7 @@
 			(size 1.95 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(J17-Pin_3)")
+			(net "RGB_OUT_G")
 			(uuid "c17b091b-e1b9-40a4-8ea1-d79d15498488")
 		)
 		(pad "16" smd roundrect
@@ -639,7 +639,7 @@
 			(size 1.95 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(J17-Pin_2)")
+			(net "RGB_OUT_R")
 			(uuid "c98e0fab-4681-4ada-a038-bc0b242dc989")
 		)
 		(embedded_fonts no)
@@ -658,7 +658,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "067e972f-64c0-4c16-ae88-26eaa15d5338")
-		(at 62.285 64.12)
+		(at 71.565 93.655)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R53"
@@ -717,7 +717,7 @@
 				)
 			)
 		)
-		(path "/91ebebfe-ed52-5779-8e7f-23f352fcb28e/7bfd8c5c-5acc-425f-ad50-1f84fda7ff71")
+		(path "/3c4a6b14-817a-5d2d-a52d-894fc134b7f3/7bfd8c5c-5acc-425f-ad50-1f84fda7ff71")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -778,7 +778,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(J12-Pin_2)")
+			(net "NRF_VCC")
 			(uuid "12a026a6-843b-41ee-8ff0-f6b0d3aa4ad5")
 		)
 		(pad "2" smd roundrect
@@ -786,7 +786,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/NRF_CSN")
+			(net "/GPIO10")
 			(uuid "a39400c0-fdfe-4e05-a216-9bfb40654e3a")
 		)
 		(embedded_fonts no)
@@ -805,7 +805,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "09de56d7-8fc3-4cf1-aebc-0778e9816e60")
-		(at 25.935 79.32)
+		(at 96.22 58.855)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C89"
@@ -933,7 +933,7 @@
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "9da57ac4-66c9-4d81-bcf8-fa74c771c159")
 		)
 		(embedded_fonts no)
@@ -952,7 +952,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "0a8af45d-7f81-44a2-a7e3-7eb6fc2175f1")
-		(at 26.725 50.005)
+		(at 95.71 52.975)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C82"
@@ -1080,7 +1080,7 @@
 			(size 1 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "c9d5d51e-f3ae-4156-818a-e6d91eb1e42a")
 		)
 		(embedded_fonts no)
@@ -1099,7 +1099,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "0e329f32-7eba-4bb0-bb0f-54a87a3b6824")
-		(at 84.484999 108.01)
+		(at 75.54 77.115)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R63"
@@ -1158,7 +1158,7 @@
 				)
 			)
 		)
-		(path "/a127f740-835a-49c8-bc78-066016e92855/3676e107-8323-45eb-ab1e-374828dd2a03")
+		(path "/ea8db2ee-0c7d-41ec-aab2-b25337a7efa7/3676e107-8323-45eb-ab1e-374828dd2a03")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1227,7 +1227,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(U14-~{INT})")
+			(net "/GPIO42")
 			(uuid "8ea3a7b7-3473-4d35-917b-bbee19269de5")
 		)
 		(embedded_fonts no)
@@ -1246,7 +1246,7 @@
 	(footprint "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "0ed30f92-9347-43be-af7d-3c1201474765")
-		(at 157.779999 82.28)
+		(at 116.845 43.755)
 		(descr "Molex KK-254 Interconnect System, old/engineering part number: AE-6410-02A example for new part number: 22-27-2021, 2 Pins (http://www.molex.com/pdm_docs/sd/022272021_sd.pdf)")
 		(tags "connector Molex KK-254 vertical")
 		(property "Reference" "J5"
@@ -1529,7 +1529,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(roundrect_rratio 0.143678)
-			(net "/Drivers motores/BOUT1")
+			(net "/BOUT1")
 			(uuid "6b5bb0e8-d7de-4b4d-9a0f-157bacc81b0f")
 		)
 		(pad "2" thru_hole oval
@@ -1538,7 +1538,7 @@
 			(drill 1.19)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/Drivers motores/BOUT2")
+			(net "/BOUT2")
 			(uuid "b730ffe4-c213-4b19-b3df-aad3c85ba846")
 		)
 		(embedded_fonts no)
@@ -1557,7 +1557,7 @@
 	(footprint "Inductor_SMD:L_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "10d31246-d9a9-43b9-9db9-2780d7a0fa26")
-		(at 45.695 64.379999)
+		(at 84.99 56.135)
 		(descr "Inductor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf)")
 		(tags "inductor")
 		(property "Reference" "FB1"
@@ -1616,7 +1616,7 @@
 				)
 			)
 		)
-		(path "/91ebebfe-ed52-5779-8e7f-23f352fcb28e/f6ea330f-df85-4d76-8ed0-9cf122b86d8d")
+		(path "/3c4a6b14-817a-5d2d-a52d-894fc134b7f3/f6ea330f-df85-4d76-8ed0-9cf122b86d8d")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1685,7 +1685,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(J12-Pin_2)")
+			(net "NRF_VCC")
 			(uuid "7e1422c6-008f-4233-813b-d3aee19ab7c5")
 		)
 		(embedded_fonts no)
@@ -1704,7 +1704,7 @@
 	(footprint "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "12d21fcd-cf56-4e22-9b1c-b39df35916ed")
-		(at 55.535 65.42)
+		(at 58.145 29.495)
 		(descr "Through hole straight socket strip, 2x04, 2.54mm pitch, double rows (from Kicad 4.0.7), script generated")
 		(tags "Through hole socket strip THT 2x04 2.54mm double row")
 		(property "Reference" "J12"
@@ -1763,7 +1763,7 @@
 				)
 			)
 		)
-		(path "/91ebebfe-ed52-5779-8e7f-23f352fcb28e/c6d85865-7faf-4321-9c31-34e18e7364cc")
+		(path "/3c4a6b14-817a-5d2d-a52d-894fc134b7f3/c6d85865-7faf-4321-9c31-34e18e7364cc")
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1962,7 +1962,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J12-Pin_2)")
+			(net "NRF_VCC")
 			(uuid "0c918254-8d90-4990-bf26-11fa72e3c14e")
 		)
 		(pad "3" thru_hole circle
@@ -1971,7 +1971,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/Control ESP32/NRF_CE")
+			(net "/EXP_GPIO0")
 			(uuid "97684a43-93c0-4dac-89bd-067fb020742d")
 		)
 		(pad "4" thru_hole circle
@@ -1980,7 +1980,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/Control ESP32/NRF_CSN")
+			(net "/GPIO10")
 			(uuid "c9e96d01-c1ce-454c-b450-3eafca4ddb70")
 		)
 		(pad "5" thru_hole circle
@@ -1989,7 +1989,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/Control ESP32/NRF_SCK")
+			(net "/GPIO12")
 			(uuid "ede91cbd-262f-4d57-b1a8-9d6217d029fb")
 		)
 		(pad "6" thru_hole circle
@@ -1998,7 +1998,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/Control ESP32/NRF_MOSI")
+			(net "/GPIO11")
 			(uuid "57d530f4-585d-4cc9-adff-a2395f367e22")
 		)
 		(pad "7" thru_hole circle
@@ -2007,7 +2007,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/Control ESP32/NRF_MISO")
+			(net "/GPIO13")
 			(uuid "75207355-d4bc-458a-b93a-c292ed0de14f")
 		)
 		(pad "8" thru_hole circle
@@ -2016,7 +2016,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/Control ESP32/NRF_IRQ")
+			(net "/EXP_GPIO1")
 			(uuid "829ffc19-4826-4a85-a601-9588e9655c09")
 		)
 		(embedded_fonts no)
@@ -2035,7 +2035,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "15cdc03f-c4d5-476b-afab-9b5d8069e79f")
-		(at 80.784999 64.629999)
+		(at 34.415 100.82)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C1"
@@ -2182,7 +2182,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "18c1a8f9-dde9-4562-93c3-819db464b737")
-		(at 102.695 38.335)
+		(at 86.41 58.855)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C80"
@@ -2329,7 +2329,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "1a392e46-200d-4c8d-bd11-4631266470e7")
-		(at 72.664999 108.01)
+		(at 102.09 55.875)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R22"
@@ -2388,7 +2388,7 @@
 				)
 			)
 		)
-		(path "/a127f740-835a-49c8-bc78-066016e92855/86b6ccc8-857a-42ba-bfb6-74ca496548a2")
+		(path "/ea8db2ee-0c7d-41ec-aab2-b25337a7efa7/86b6ccc8-857a-42ba-bfb6-74ca496548a2")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2457,7 +2457,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/GPS_SDA")
+			(net "/GPIO40")
 			(uuid "b49eec21-789f-44b6-a3d9-1362b182b4b1")
 		)
 		(embedded_fonts no)
@@ -2476,7 +2476,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "1b94dc42-d588-4dd5-8d0c-7ffaf01898d9")
-		(at 150.6 49.495)
+		(at 75.54 67.555)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R57"
@@ -2596,7 +2596,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/RGB_G")
+			(net "/GPIO15")
 			(uuid "9b761ffe-ce47-49ef-89fe-a9ecabfa79d9")
 		)
 		(pad "2" smd roundrect
@@ -2623,7 +2623,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "1fff6edc-3940-4b7f-8471-d233a6676dc0")
-		(at 63.37 50.005)
+		(at 66.785 99.19)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C137"
@@ -2743,7 +2743,7 @@
 			(size 1 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(J17-Pin_1)")
+			(net "VLED")
 			(uuid "cf02361a-9ca9-4c0a-bbb4-e36a8522a424")
 		)
 		(pad "2" smd roundrect
@@ -2751,7 +2751,7 @@
 			(size 1 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "faf2694c-29a7-4f54-b8d2-5edbacd8f2ae")
 		)
 		(embedded_fonts no)
@@ -2770,7 +2770,7 @@
 	(footprint "Capacitor_SMD:CP_Elec_8x10"
 		(layer "F.Cu")
 		(uuid "21751b99-7dd8-407d-91c7-5b820b8e472f")
-		(at 121.87 68.05)
+		(at 66.9 32.125)
 		(descr "SMD capacitor, aluminum electrolytic, Nichicon, 8.0x10mm")
 		(tags "capacitor electrolytic")
 		(property "Reference" "C6"
@@ -3187,7 +3187,7 @@
 			(size 3.5 2.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "c29b403a-df7e-4e29-8ccf-1b0e9ff66364")
 		)
 		(embedded_fonts no)
@@ -3203,98 +3203,10 @@
 			)
 		)
 	)
-	(footprint "NetTie:NetTie-2_SMD_Pad0.5mm"
-		(layer "F.Cu")
-		(uuid "21aae117-b62e-4e56-9a06-32b64c5f4480")
-		(at 78.55 25.25)
-		(descr "Net tie, 2 pin, 0.5mm square SMD pads")
-		(tags "net tie")
-		(property "Reference" "NT1"
-			(at 0 -1.2 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "4da9868a-4a52-4ab3-b4ef-800e30559c07")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "NetTie_2"
-			(at 0 1.2 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "543cbb7d-4ddf-4b31-8069-a07a7a3371d7")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "bb3122a6-fe20-4a9d-a5bc-9f07768733aa")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "fe3ca400-f76d-4e69-a72b-e397396f84eb")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(path "/d030c1b8-cfad-4a3d-92ca-1d1b304d6085/4d5a437e-9cd6-42bc-ac67-03ff09125619/9508d62f-1699-452f-85d6-11717e401a7e")
-		(attr exclude_from_pos_files allow_missing_courtyard)
-		(net_tie_pad_groups "1, 2")
-		(duplicate_pad_numbers_are_jumpers no)
-		(fp_poly
-			(pts
-				(xy -0.5 -0.25) (xy 0.5 -0.25) (xy 0.5 0.25) (xy -0.5 0.25)
-			)
-			(stroke
-				(width 0)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.Cu")
-			(uuid "f74f76b1-15fe-4770-a109-e5aa8fd9d4ff")
-		)
-		(pad "1" smd circle
-			(at -0.5 0)
-			(size 0.5 0.5)
-			(layers "F.Cu")
-			(net "GNDPWR")
-			(uuid "9bb56dd5-dac5-4eeb-ae35-22e24fff73c1")
-		)
-		(pad "2" smd circle
-			(at 0.5 0)
-			(size 0.5 0.5)
-			(layers "F.Cu")
-			(net "GND")
-			(uuid "4efdb617-a9bc-47c3-be78-b96b9a0403e2")
-		)
-		(embedded_fonts no)
-	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "2335613a-96ff-42e0-9822-688def899c08")
-		(at 144.69 49.495)
+		(at 75.54 65.165)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R56"
@@ -3414,7 +3326,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/RGB_R")
+			(net "/GPIO41")
 			(uuid "ee948fb3-2f0b-42e4-a79c-17a37d67ec5b")
 		)
 		(pad "2" smd roundrect
@@ -3441,7 +3353,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "2384f525-6b19-4052-af3a-9d4e928b209a")
-		(at 88.234999 64.629999)
+		(at 76.31 49.565)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C2"
@@ -3588,7 +3500,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "2472f536-a3f2-4018-b902-daf373b329e3")
-		(at 138.55 38.855)
+		(at 76.31 52.975)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C73"
@@ -3716,7 +3628,7 @@
 			(size 1 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "f758b6b3-8ff7-4f60-b3eb-c69309e6badf")
 		)
 		(embedded_fonts no)
@@ -3735,7 +3647,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "25a3ba3d-db09-4647-8736-45df4c813072")
-		(at 90.394999 108.01)
+		(at 75.54 79.505)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R64"
@@ -3794,7 +3706,7 @@
 				)
 			)
 		)
-		(path "/a127f740-835a-49c8-bc78-066016e92855/b2597625-f02b-4d75-8e47-87a14f7a704d")
+		(path "/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84/b2597625-f02b-4d75-8e47-87a14f7a704d")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3855,7 +3767,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/APH")
+			(net "/EXP_GPIO2")
 			(uuid "50b7beed-b222-4027-9c5b-04d7010aa25d")
 		)
 		(pad "2" smd roundrect
@@ -3882,7 +3794,7 @@
 	(footprint "Package_TO_SOT_SMD:SOT-23-6"
 		(layer "F.Cu")
 		(uuid "26bae6f8-7a9e-4a6e-8ecb-7df0d8a34178")
-		(at 27.075 109.415)
+		(at 47.315 100.07)
 		(descr "SOT, 6 Pin (JEDEC MO-178 Var AB https://www.jedec.org/document_search?search_api_views_fulltext=MO-178)")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "U13"
@@ -4164,7 +4076,7 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/USB_S3_DP")
+			(net "/GPIO20")
 			(uuid "b3c2b1ee-0afe-4394-9bf4-6fdbe0c3c49d")
 		)
 		(pad "2" smd roundrect
@@ -4180,7 +4092,7 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/USB_S3_DM")
+			(net "/GPIO19")
 			(uuid "371bc723-8294-4d55-9dbb-fef2448f28fe")
 		)
 		(pad "4" smd roundrect
@@ -4188,7 +4100,7 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/USB_S3_DM")
+			(net "/GPIO19")
 			(uuid "55831678-483f-4caf-aff3-04f20a93c645")
 		)
 		(pad "5" smd roundrect
@@ -4196,7 +4108,7 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(U13-VBUS)")
+			(net "USB_VBUS")
 			(uuid "586e6ff0-9ed3-4712-a913-ee9cf84c3bb4")
 		)
 		(pad "6" smd roundrect
@@ -4204,7 +4116,7 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/USB_S3_DP")
+			(net "/GPIO20")
 			(uuid "51677a0d-deac-4ce2-8957-e4b19a2e2337")
 		)
 		(embedded_fonts no)
@@ -4223,7 +4135,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "29728378-5b97-444b-bb2a-4ba7b2654401")
-		(at 132.87 49.495)
+		(at 88.85 55.875)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R19"
@@ -4351,7 +4263,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/LED_BP")
+			(net "/EXP_GPIO8")
 			(uuid "f6e1eb0f-f9c8-4b26-9815-4686f06d9815")
 		)
 		(embedded_fonts no)
@@ -4370,7 +4282,7 @@
 	(footprint "Diode_SMD:D_SMB"
 		(layer "F.Cu")
 		(uuid "2f71989a-f7cb-408b-9153-0f5f001d4feb")
-		(at 111.35 40.125)
+		(at 68.78 72.485)
 		(descr "Diode SMB (DO-214AA)")
 		(tags "Diode SMB (DO-214AA)")
 		(property "Reference" "D9"
@@ -4618,7 +4530,7 @@
 			(size 2.5 2.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1086956522)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "100c2721-6447-486a-bcca-912abf5dc4fd")
 		)
 		(embedded_fonts no)
@@ -4637,7 +4549,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "320adde6-3315-434f-bf37-e6b15c6cda36")
-		(at 75.419999 79.32)
+		(at 112.569999 58.855)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C94"
@@ -4765,7 +4677,7 @@
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "969e8a81-22ee-4e48-ba66-4c68345051bd")
 		)
 		(embedded_fonts no)
@@ -4784,7 +4696,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "321057a1-0a73-452c-89ec-c3ad8dbbff40")
-		(at 68.195 64.12)
+		(at 71.565 96.045)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R54"
@@ -4798,7 +4710,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "10k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "ff824d14-3f52-4961-ab50-80e548a8ad1c")
@@ -4843,7 +4755,7 @@
 				)
 			)
 		)
-		(path "/91ebebfe-ed52-5779-8e7f-23f352fcb28e/7ace1186-06ac-423a-9ef1-696105059c22")
+		(path "/3c4a6b14-817a-5d2d-a52d-894fc134b7f3/7ace1186-06ac-423a-9ef1-696105059c22")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4904,7 +4816,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/NRF_CE")
+			(net "/EXP_GPIO0")
 			(uuid "3eae61b4-5e8f-4fa6-88cf-a8056096ddbe")
 		)
 		(pad "2" smd roundrect
@@ -4931,7 +4843,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "371841d1-b50f-44e2-8a9d-f4b096a2be5c")
-		(at 156.51 49.495)
+		(at 75.54 69.945)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R58"
@@ -5051,7 +4963,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/RGB_B")
+			(net "/GPIO16")
 			(uuid "eaca93eb-0f09-48ff-9e5e-f008f02000a6")
 		)
 		(pad "2" smd roundrect
@@ -5078,7 +4990,7 @@
 	(footprint "Connector_JST:JST_ZH_B4B-ZR_1x04_P1.50mm_Vertical"
 		(layer "F.Cu")
 		(uuid "37fd4d7a-469e-4a04-a7db-ef8f72e8287b")
-		(at 99.435 94.13)
+		(at 107.125 42.135)
 		(descr "JST ZH series connector, B4B-ZR (http://www.jst-mfg.com/product/pdf/eng/eZH.pdf)")
 		(tags "connector JST ZH vertical")
 		(property "Reference" "J11"
@@ -5442,7 +5354,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(roundrect_rratio 0.242718)
-			(net "/Control ESP32/LIDAR_RX")
+			(net "/GPIO35")
 			(uuid "390085f8-ba89-43a1-a92b-ccefd56c0428")
 		)
 		(pad "2" thru_hole oval
@@ -5460,7 +5372,7 @@
 			(drill 0.73)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "451718ad-a232-43d6-a7cb-1dce9573b981")
 		)
 		(pad "4" thru_hole oval
@@ -5488,7 +5400,7 @@
 	(footprint "Diode_SMD:D_SMB"
 		(layer "F.Cu")
 		(uuid "3a165d1e-6658-479b-b727-ea70c066456b")
-		(at 56.875 27.275)
+		(at 68.78 66.535)
 		(descr "Diode SMB (DO-214AA)")
 		(tags "Diode SMB (DO-214AA)")
 		(property "Reference" "D8"
@@ -5736,7 +5648,7 @@
 			(size 2.5 2.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1086956522)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "2be17f59-fc3e-4109-a4e3-06edd40796cf")
 		)
 		(embedded_fonts no)
@@ -5755,7 +5667,7 @@
 	(footprint "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "3a340575-b324-4597-adbf-569843525a3b")
-		(at 126.964999 95.75)
+		(at 34.485 78.165)
 		(descr "Molex KK-254 Interconnect System, old/engineering part number: AE-6410-04A example for new part number: 22-27-2041, 4 Pins (http://www.molex.com/pdm_docs/sd/022272021_sd.pdf)")
 		(tags "connector Molex KK-254 vertical")
 		(property "Reference" "J14"
@@ -6116,7 +6028,7 @@
 			(drill 1.19)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/Control ESP32/ENC_B1")
+			(net "/GPIO6")
 			(uuid "ddd47d40-b96e-45ae-aa01-50382ce55714")
 		)
 		(pad "4" thru_hole oval
@@ -6125,7 +6037,7 @@
 			(drill 1.19)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/Control ESP32/ENC_B2")
+			(net "/GPIO7")
 			(uuid "14acc6b8-4bf4-4212-acf1-558536d40f7c")
 		)
 		(embedded_fonts no)
@@ -6144,7 +6056,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "3cfc14cc-ae0a-4789-b8d5-91e1b760f4ff")
-		(at 61.379999 79.33)
+		(at 108.71 55.875)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R26"
@@ -6264,7 +6176,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/LUCES")
+			(net "/GPIO21")
 			(uuid "17076725-7139-439f-8569-1951d58ab24e")
 		)
 		(pad "2" smd roundrect
@@ -6272,7 +6184,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "8f543861-275a-4b5f-8e75-cc1601ff5d26")
 		)
 		(embedded_fonts no)
@@ -6291,7 +6203,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "3e16d7fa-a61f-44ef-9cbc-b9406b3b96c4")
-		(at 138.78 49.495)
+		(at 95.47 55.875)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R20"
@@ -6419,7 +6331,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/LED_BN")
+			(net "/EXP_GPIO9")
 			(uuid "b2322365-1b50-4330-93b4-441f29eb9206")
 		)
 		(embedded_fonts no)
@@ -6438,7 +6350,7 @@
 	(footprint "Package_TO_SOT_SMD:TSOT-23-6"
 		(layer "F.Cu")
 		(uuid "4101cb1d-acd3-4b85-94e4-1628df79e077")
-		(at 55.57 50.9)
+		(at 67.135 90.035)
 		(descr "TSOT, 6 Pin (https://www.jedec.org/sites/default/files/docs/MO-193D.pdf variant AA)")
 		(tags "TSOT TO_SOT_SMD")
 		(property "Reference" "U8"
@@ -6744,7 +6656,7 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "a56000e7-1765-4636-8634-fc904c59aa97")
 		)
 		(pad "5" smd roundrect
@@ -6779,7 +6691,7 @@
 	(footprint "Fuse:Fuse_2920_7451Metric"
 		(layer "F.Cu")
 		(uuid "47358d99-d995-45a6-bb1f-abf212a97249")
-		(at 69.175 28.005)
+		(at 58.435 76.975)
 		(descr "Fuse SMD 2920 (7451 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size from: http://www.megastar.com/products/fusetronic/polyswitch/PDF/smd2920.pdf)")
 		(tags "fuse")
 		(property "Reference" "F1"
@@ -6899,7 +6811,7 @@
 			(size 1.925 5.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.12987)
-			(net "/Alimentacion/VBAT")
+			(net "/VBAT")
 			(uuid "1375b70c-65ca-47e3-af71-70cef4ad9560")
 		)
 		(pad "2" smd roundrect
@@ -6926,7 +6838,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "4ca65103-90e0-4c5f-b154-b8a1213ee9a4")
-		(at 41.535 108)
+		(at 75.52 86.665)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C132"
@@ -7073,7 +6985,7 @@
 	(footprint "Inductor_SMD:L_Taiyo-Yuden_NR-50xx"
 		(layer "F.Cu")
 		(uuid "522e742b-1453-4b84-a87a-250d5870d9f7")
-		(at 121.85 40.625)
+		(at 48.065 93.995)
 		(descr "Inductor, Taiyo Yuden, NR series, Taiyo-Yuden_NR-50xx, 4.9mmx4.9mm")
 		(tags "inductor taiyo-yuden nr smd")
 		(property "Reference" "L5"
@@ -7308,7 +7220,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "52fa48e5-337a-4a4c-8bac-fc9f189d54a2")
-		(at 61.615 38.855)
+		(at 115.109999 49.565)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C71"
@@ -7436,7 +7348,7 @@
 			(size 1 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "c0cc5cc4-bfb8-4b63-b672-e9262eeab3bb")
 		)
 		(embedded_fonts no)
@@ -7455,7 +7367,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "53368dd7-3b74-49ae-9cbb-ef64b3852daf")
-		(at 48.22 25.485)
+		(at 92.95 58.855)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C87"
@@ -7583,7 +7495,7 @@
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "6ec04b58-744a-4eba-84fe-e73cf6336ec3")
 		)
 		(embedded_fonts no)
@@ -7602,7 +7514,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "5641e4fa-bf43-43be-a544-9d012dc66eeb")
-		(at 96.035 38.855)
+		(at 90.86 52.975)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C79"
@@ -7749,7 +7661,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "5aac8f10-88b9-45c7-a4c9-44899cfb32ba")
-		(at 161.595 92.8)
+		(at 105.4 55.875)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R24"
@@ -7896,7 +7808,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "5b101928-cf56-46fe-8005-1c70ad522c2f")
-		(at 142.174999 94.1)
+		(at 29.495 72.605)
 		(descr "Through hole straight pin header, 1x04, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x04 2.54mm single row")
 		(property "Reference" "J15"
@@ -8114,7 +8026,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/Control ESP32/GPS_SCL")
+			(net "/GPIO39")
 			(uuid "c34a3927-da90-463e-96e2-176071748fd7")
 		)
 		(pad "4" thru_hole circle
@@ -8123,7 +8035,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/Control ESP32/GPS_SDA")
+			(net "/GPIO40")
 			(uuid "1f7ae283-ffed-4bfb-ad0b-6702377fc3a9")
 		)
 		(embedded_fonts no)
@@ -8142,7 +8054,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "5c477725-b060-4d86-b15d-559dc3a94463")
-		(at 169.285 64.629999)
+		(at 110.259999 52.975)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C88"
@@ -8270,7 +8182,7 @@
 			(size 1 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "57d3c9db-0432-4b60-85c3-f301d39b14ab")
 		)
 		(embedded_fonts no)
@@ -8289,7 +8201,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "605e144f-8602-41a2-b87b-15307852eb2e")
-		(at 167.505 92.8)
+		(at 75.54 72.335)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R61"
@@ -8436,7 +8348,7 @@
 	(footprint "Capacitor_SMD:CP_Elec_8x10"
 		(layer "F.Cu")
 		(uuid "60fa9716-616d-4892-b5c7-63b17e714b28")
-		(at 30.56 29.425)
+		(at 79.135 32.125)
 		(descr "SMD capacitor, aluminum electrolytic, Nichicon, 8.0x10mm")
 		(tags "capacitor electrolytic")
 		(property "Reference" "C85"
@@ -8853,7 +8765,7 @@
 			(size 3.5 2.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "de422e40-e410-42e3-bbbb-8c1f8a89eede")
 		)
 		(embedded_fonts no)
@@ -8872,7 +8784,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "636a2623-a78f-4def-81a7-5745f276cb35")
-		(at 96.304999 108.01)
+		(at 75.54 81.895)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R65"
@@ -8931,7 +8843,7 @@
 				)
 			)
 		)
-		(path "/a127f740-835a-49c8-bc78-066016e92855/f6c12dc5-df60-4199-a23f-84fc8143016d")
+		(path "/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84/f6c12dc5-df60-4199-a23f-84fc8143016d")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8992,7 +8904,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/BPH")
+			(net "/EXP_GPIO3")
 			(uuid "fd81f2ab-7544-4c31-b706-aa5bae565925")
 		)
 		(pad "2" smd roundrect
@@ -9019,7 +8931,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "642fa500-e70f-4dff-bc07-cb582423af7f")
-		(at 137.095 26.005)
+		(at 95.71 49.565)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C47"
@@ -9166,7 +9078,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "64559798-fd85-406e-a9c8-af6e43bfbb42")
-		(at 126.96 49.495)
+		(at 51.205 71.915)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R18"
@@ -9294,7 +9206,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/LED_AN")
+			(net "/EXP_GPIO7")
 			(uuid "08cf5bcb-aa71-4ab0-9ac7-fa66f19ec880")
 		)
 		(embedded_fonts no)
@@ -9313,7 +9225,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "68791a51-0009-4e28-b53b-95cfee37f47c")
-		(at 48.295 38.855)
+		(at 110.259999 49.565)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C69"
@@ -9441,7 +9353,7 @@
 			(size 1 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "6af11f32-8b0e-4d3e-aabb-a1595af4711b")
 		)
 		(embedded_fonts no)
@@ -9460,7 +9372,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "6e39b2a3-e20e-4ede-83d5-914e20d1096d")
-		(at 132.1 64.12)
+		(at 60.515 101.784999)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R1"
@@ -9580,7 +9492,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/nFault")
+			(net "/EXP_GPIO5")
 			(uuid "db5795a2-c7cc-4ea4-8134-f73e7e628d24")
 		)
 		(pad "2" smd roundrect
@@ -9607,7 +9519,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "6e783812-9d27-4ecc-9c4d-3d00a5cf31fa")
-		(at 102.214999 108.01)
+		(at 75.54 84.285)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R66"
@@ -9666,7 +9578,7 @@
 				)
 			)
 		)
-		(path "/a127f740-835a-49c8-bc78-066016e92855/5555af14-a5bb-454a-b4d5-9cbaf8fd0b68")
+		(path "/2f6b690c-7e8a-4ff5-bb9a-4b13d551cd84/5555af14-a5bb-454a-b4d5-9cbaf8fd0b68")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9727,7 +9639,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/nSleep")
+			(net "/EXP_GPIO4")
 			(uuid "bee82253-5283-44ca-8eeb-3c1d8c55d8a1")
 		)
 		(pad "2" smd roundrect
@@ -9754,7 +9666,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "771eb7d5-b1ae-4fff-a402-cb64081142fe")
-		(at 149.83 64.12)
+		(at 71.565 88.63)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R4"
@@ -9901,7 +9813,7 @@
 	(footprint "LED_SMD:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "79765746-1862-4850-8b46-1e25a75e3dd9")
-		(at 77.69 49.795)
+		(at 119.739999 52.765)
 		(descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf)")
 		(tags "LED")
 		(property "Reference" "D2"
@@ -10097,7 +10009,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "7a5e21e3-6ba5-4515-8d02-e51b4cfdf277")
-		(at 26.725 64.629999)
+		(at 61.285 98.885)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C134"
@@ -10156,7 +10068,7 @@
 				)
 			)
 		)
-		(path "/91ebebfe-ed52-5779-8e7f-23f352fcb28e/60d43de3-7d47-423d-b29f-0ec94937df13")
+		(path "/3c4a6b14-817a-5d2d-a52d-894fc134b7f3/60d43de3-7d47-423d-b29f-0ec94937df13")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10217,7 +10129,7 @@
 			(size 1 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(J12-Pin_2)")
+			(net "NRF_VCC")
 			(uuid "2f7a91f5-4365-4249-a615-5a5619a6305c")
 		)
 		(pad "2" smd roundrect
@@ -10244,7 +10156,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "7bbfa715-0fdd-49f9-b0ec-0b02e82112a3")
-		(at 123.774999 26.005)
+		(at 90.86 49.565)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C45"
@@ -10391,7 +10303,7 @@
 	(footprint "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "7c049259-e3c0-4371-bd34-4951940acb81")
-		(at 147.639999 82.28)
+		(at 47.095 86.415)
 		(descr "Molex KK-254 Interconnect System, old/engineering part number: AE-6410-02A example for new part number: 22-27-2021, 2 Pins (http://www.molex.com/pdm_docs/sd/022272021_sd.pdf)")
 		(tags "connector Molex KK-254 vertical")
 		(property "Reference" "J4"
@@ -10674,7 +10586,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(roundrect_rratio 0.143678)
-			(net "/Drivers motores/AOUT1")
+			(net "/AOUT1")
 			(uuid "9e5bf03e-31a8-414c-b95b-c089155573b5")
 		)
 		(pad "2" thru_hole oval
@@ -10683,7 +10595,7 @@
 			(drill 1.19)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/Drivers motores/AOUT2")
+			(net "/AOUT2")
 			(uuid "93fba005-e13b-413c-938b-f8ff172ed712")
 		)
 		(embedded_fonts no)
@@ -10702,7 +10614,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "810899fd-97aa-4338-ab7f-87dbd5582530")
-		(at 117.095 25.495)
+		(at 118.64 55.875)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R29"
@@ -10822,7 +10734,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Alimentacion/VBAT_ADC")
+			(net "/GPIO1")
 			(uuid "efe4a083-f0d5-4d54-980f-fd6aa1c161b9")
 		)
 		(pad "2" smd roundrect
@@ -10849,7 +10761,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "822750d9-e4c4-4abe-bf82-1d72b591201e")
-		(at 164.525 25.485)
+		(at 102.76 58.855)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C91"
@@ -10996,7 +10908,7 @@
 	(footprint "Inductor_SMD:L_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "8318d7a1-9a5a-42a4-bf5c-704de9845efd")
-		(at 32.645 38.725)
+		(at 47.075 72.295)
 		(descr "Inductor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 80, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "inductor")
 		(property "Reference" "L4"
@@ -11143,7 +11055,7 @@
 	(footprint "Package_TO_SOT_SMD:TO-252-2"
 		(layer "F.Cu")
 		(uuid "849bff51-c065-4cba-90f0-552f7142a7e6")
-		(at 89.715 28.67)
+		(at 39.105 94.89)
 		(descr "TO-252/DPAK SMD package, http://www.infineon.com/cms/en/product/packages/PG-TO252/PG-TO252-3-1/")
 		(tags "DPAK TO-252 DPAK-3 TO-252-3 SOT-428")
 		(property "Reference" "Q1"
@@ -11449,7 +11361,7 @@
 	(footprint "LED_SMD:LED_Cree-XP-G"
 		(layer "F.Cu")
 		(uuid "8669b635-19d9-4b71-92d8-5022381c5edb")
-		(at 109.039999 81.01)
+		(at 55.985 100.055)
 		(descr "LED Cree-XP-G http://www.cree.com/~/media/Files/Cree/LED%20Components%20and%20Modules/XLamp/Data%20and%20Binning/XLampXPG.pdf")
 		(tags "LED Cree XP-G")
 		(property "Reference" "D5"
@@ -11664,7 +11576,7 @@
 			(at 1.4 0)
 			(size 0.5 3.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Faros/FARO_A")
+			(net "/FARO_A")
 			(uuid "dc55c58f-5f34-4e9b-aaec-c0888394419c")
 		)
 		(pad "3" smd rect
@@ -11689,7 +11601,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "875d1c7c-b775-4703-9fde-7673bc67ba82")
-		(at 145.21 38.335)
+		(at 79.87 58.855)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C74"
@@ -11836,7 +11748,7 @@
 	(footprint "LED_SMD:LED_Cree-XP-G"
 		(layer "F.Cu")
 		(uuid "87758e7f-16e3-41dc-82c8-d2368988af62")
-		(at 117.389999 81.01)
+		(at 119.1 29.875)
 		(descr "LED Cree-XP-G http://www.cree.com/~/media/Files/Cree/LED%20Components%20and%20Modules/XLamp/Data%20and%20Binning/XLampXPG.pdf")
 		(tags "LED Cree XP-G")
 		(property "Reference" "D6"
@@ -12044,7 +11956,7 @@
 			(at -1.4 0)
 			(size 0.5 3.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Faros/FARO_K")
+			(net "/FARO_K")
 			(uuid "7ac7ce81-6f65-4179-b15b-9c94a07881ae")
 		)
 		(pad "2" smd rect
@@ -12076,7 +11988,7 @@
 	(footprint "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "882566b4-7109-40c4-b45c-fc2aff72b040")
-		(at 99.089999 52.445)
+		(at 34.485 86.415)
 		(descr "Molex KK-254 Interconnect System, old/engineering part number: AE-6410-04A example for new part number: 22-27-2041, 4 Pins (http://www.molex.com/pdm_docs/sd/022272021_sd.pdf)")
 		(tags "connector Molex KK-254 vertical")
 		(property "Reference" "J17"
@@ -12419,7 +12331,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(roundrect_rratio 0.143678)
-			(net "Net-(J17-Pin_1)")
+			(net "VLED")
 			(uuid "f0f4e63a-2c84-436a-b246-67d5ce02435b")
 		)
 		(pad "2" thru_hole oval
@@ -12428,7 +12340,7 @@
 			(drill 1.19)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J17-Pin_2)")
+			(net "RGB_OUT_R")
 			(uuid "d743dd28-0c6f-4e7c-b2d4-731bcff14b5a")
 		)
 		(pad "3" thru_hole oval
@@ -12437,7 +12349,7 @@
 			(drill 1.19)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J17-Pin_3)")
+			(net "RGB_OUT_G")
 			(uuid "1ea8b167-53b4-477a-94ff-7a79eb436887")
 		)
 		(pad "4" thru_hole oval
@@ -12446,7 +12358,7 @@
 			(drill 1.19)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J17-Pin_4)")
+			(net "RGB_OUT_B")
 			(uuid "6d0308f7-3f08-4d65-98a6-c127ff3af445")
 		)
 		(embedded_fonts no)
@@ -12465,7 +12377,7 @@
 	(footprint "Inductor_SMD:L_Taiyo-Yuden_NR-50xx"
 		(layer "F.Cu")
 		(uuid "895bfe32-515e-48b4-ae25-e7668f287865")
-		(at 46.67 51.775)
+		(at 67.885 78.935)
 		(descr "Inductor, Taiyo Yuden, NR series, Taiyo-Yuden_NR-50xx, 4.9mmx4.9mm")
 		(tags "inductor taiyo-yuden nr smd")
 		(property "Reference" "L6"
@@ -12700,7 +12612,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "89af3c23-732a-4730-abb2-0fdf8e4f514b")
-		(at 138.01 64.12)
+		(at 92.16 55.875)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R2"
@@ -12828,7 +12740,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/nFault")
+			(net "/EXP_GPIO5")
 			(uuid "8c667e6b-8937-4587-bdca-da222fb1819e")
 		)
 		(embedded_fonts no)
@@ -12847,7 +12759,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "8de4cdca-8e42-4b97-ad8c-770408075a56")
-		(at 99.405 25.495)
+		(at 112.02 55.875)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R27"
@@ -12975,7 +12887,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "0264bc80-433d-4532-baba-b87be051209a")
 		)
 		(embedded_fonts no)
@@ -12994,7 +12906,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "8f261fa5-0cd7-4a27-88c8-4916840535f0")
-		(at 95.684999 64.629999)
+		(at 81.16 49.565)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C3"
@@ -13114,7 +13026,7 @@
 			(size 1 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "7c944239-3199-47b2-a9f9-0066c00d29dc")
 		)
 		(pad "2" smd roundrect
@@ -13141,7 +13053,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "8f30cf73-425a-49be-9142-58b181d3da95")
-		(at 159.32 38.855)
+		(at 86.01 52.975)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C76"
@@ -13269,7 +13181,7 @@
 			(size 1 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "657b6b5f-dcb1-4a2b-9cb4-61da13b8945b")
 		)
 		(embedded_fonts no)
@@ -13288,7 +13200,7 @@
 	(footprint "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "8f82fe86-77fc-49c2-80f2-ff621ece3142")
-		(at 60.015 95.75)
+		(at 66.855 43.755)
 		(descr "Molex KK-254 Interconnect System, old/engineering part number: AE-6410-03A example for new part number: 22-27-2031, 3 Pins (http://www.molex.com/pdm_docs/sd/022272021_sd.pdf)")
 		(tags "connector Molex KK-254 vertical")
 		(property "Reference" "J8"
@@ -13601,7 +13513,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(roundrect_rratio 0.143678)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "6325e359-4742-44b9-b86c-55d5f9ffdcc6")
 		)
 		(pad "2" thru_hole oval
@@ -13619,7 +13531,7 @@
 			(drill 1.19)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/Control ESP32/SERVO_1")
+			(net "/GPIO9")
 			(uuid "65838739-633a-49af-bbe6-6239cb694aad")
 		)
 		(embedded_fonts no)
@@ -13638,7 +13550,7 @@
 	(footprint "Resistor_SMD:R_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "8fced40d-217e-4c81-8566-ee6163cd9978")
-		(at 54.72 79.81)
+		(at 115.089999 52.945)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R25"
@@ -13766,7 +13678,7 @@
 			(size 1.025 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
-			(net "/Faros/FARO_A")
+			(net "/FARO_A")
 			(uuid "4e277a69-095f-4e63-9f83-f1a806f7e89c")
 		)
 		(embedded_fonts no)
@@ -13785,7 +13697,7 @@
 	(footprint "Connector_JST:JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "90dd770e-e0c4-4c19-b06f-6a24f3375d52")
-		(at 88.485 95.61)
+		(at 58.735 43.615)
 		(descr "JST SH series connector, SM06B-SRSS-TB (http://www.jst-mfg.com/product/pdf/eng/eSH.pdf)")
 		(tags "connector JST SH horizontal")
 		(property "Reference" "J10"
@@ -14143,7 +14055,7 @@
 			(size 0.6 1.55)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/GPS_SCL")
+			(net "/GPIO39")
 			(uuid "aa630fa1-7ad0-43c8-8a59-696285f3dfcb")
 		)
 		(pad "2" smd roundrect
@@ -14151,7 +14063,7 @@
 			(size 0.6 1.55)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/GPS_SDA")
+			(net "/GPIO40")
 			(uuid "92097794-c5fd-4d04-aa58-6010cfac9cdf")
 		)
 		(pad "3" smd roundrect
@@ -14159,7 +14071,7 @@
 			(size 0.6 1.55)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/GPS_RX")
+			(net "/GPIO47")
 			(uuid "f18178b3-b60b-4b2a-9f9b-543365033ef2")
 		)
 		(pad "4" smd roundrect
@@ -14167,7 +14079,7 @@
 			(size 0.6 1.55)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/GPS_TX")
+			(net "/GPIO48")
 			(uuid "57d9c7a5-9a60-4734-93a2-ef8868d339f8")
 		)
 		(pad "5" smd roundrect
@@ -14216,7 +14128,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "916fbf29-c05f-4d8c-8f5a-117a6af88de6")
-		(at 47.405 108)
+		(at 75.52 89.035)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C133"
@@ -14363,7 +14275,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "919e4b8e-2949-4ec4-bf7a-6af47c739e4e")
-		(at 121.05 49.495)
+		(at 70.865 101.67)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R17"
@@ -14491,7 +14403,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/LED_AP")
+			(net "/EXP_GPIO6")
 			(uuid "8aac717e-7046-426c-b441-09d757e353f8")
 		)
 		(embedded_fonts no)
@@ -14510,7 +14422,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "93895333-401b-444b-9a4b-3f48d16fa479")
-		(at 60.005 109.32)
+		(at 29.495 29.505)
 		(descr "Through hole straight pin header, 1x16, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x16 2.54mm single row")
 		(property "Reference" "J20"
@@ -14569,7 +14481,7 @@
 				)
 			)
 		)
-		(path "/a127f740-835a-49c8-bc78-066016e92855/1dd200ca-824e-4321-a0c5-682e5f6c290c")
+		(path "/3c4a6b14-817a-5d2d-a52d-894fc134b7f3/1dd200ca-824e-4321-a0c5-682e5f6c290c")
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14728,7 +14640,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J20-Pin_3)")
+			(net "/GPIO40")
 			(uuid "50d186bf-128e-4836-945f-f1e447bc67d0")
 		)
 		(pad "4" thru_hole circle
@@ -14737,7 +14649,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J20-Pin_4)")
+			(net "/GPIO39")
 			(uuid "44c02e74-6596-4db2-bf10-a226a03a7f27")
 		)
 		(pad "5" thru_hole circle
@@ -14746,7 +14658,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J20-Pin_5)")
+			(net "/GPIO42")
 			(uuid "1cee19f7-6f58-4289-ae1d-6082fa54cff2")
 		)
 		(pad "6" thru_hole circle
@@ -14755,7 +14667,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J20-Pin_6)")
+			(net "/GPIO2")
 			(uuid "6280fa1e-3895-4601-9646-ed1839871031")
 		)
 		(pad "7" thru_hole circle
@@ -14764,7 +14676,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J20-Pin_7)")
+			(net "/GPIO36")
 			(uuid "5c4d422d-a2c4-4070-be42-8c48115d1198")
 		)
 		(pad "8" thru_hole circle
@@ -14773,7 +14685,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J20-Pin_8)")
+			(net "/GPIO37")
 			(uuid "f088fe8e-c8e7-473f-8b39-9cd4ceb8c1c6")
 		)
 		(pad "9" thru_hole circle
@@ -14782,7 +14694,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J20-Pin_9)")
+			(net "/EXP_GPIO10")
 			(uuid "34881fc9-1d80-48df-8c22-e54f1390ccb2")
 		)
 		(pad "10" thru_hole circle
@@ -14791,7 +14703,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J20-Pin_10)")
+			(net "/EXP_GPIO11")
 			(uuid "ca59673c-c549-478b-b5ab-9419a5c2558b")
 		)
 		(pad "11" thru_hole circle
@@ -14800,7 +14712,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J20-Pin_11)")
+			(net "/EXP_GPIO12")
 			(uuid "4eaa34b7-d472-4650-b511-258975ae280b")
 		)
 		(pad "12" thru_hole circle
@@ -14809,7 +14721,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J20-Pin_12)")
+			(net "/EXP_GPIO13")
 			(uuid "690ddd0f-7555-4fe3-82e5-5c79e211e392")
 		)
 		(pad "13" thru_hole circle
@@ -14818,7 +14730,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J20-Pin_13)")
+			(net "/EXP_GPIO14")
 			(uuid "3721feed-aee2-47a5-9fa0-91fb33910e26")
 		)
 		(pad "14" thru_hole circle
@@ -14827,7 +14739,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J20-Pin_14)")
+			(net "/EXP_GPIO15")
 			(uuid "0e97681c-9dfd-4623-86d8-aa7b31e5be41")
 		)
 		(pad "15" thru_hole circle
@@ -14864,7 +14776,7 @@
 	(footprint "Capacitor_SMD:CP_Elec_6.3x5.4"
 		(layer "F.Cu")
 		(uuid "965e0c4a-306a-477d-b450-cf8965bf256b")
-		(at 169.87 41.425)
+		(at 58.635 60.445)
 		(descr "SMD capacitor, aluminum electrolytic, Panasonic C55, 6.3x5.4mm")
 		(tags "capacitor electrolytic")
 		(property "Reference" "C81"
@@ -15281,7 +15193,7 @@
 			(size 3.5 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.15625)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "9887a622-2c08-4fa2-8724-992da76b7c49")
 		)
 		(embedded_fonts no)
@@ -15300,7 +15212,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "9c061c9a-08f8-4231-87bf-a6458a1a3f96")
-		(at 111.185 25.495)
+		(at 115.33 55.875)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R28"
@@ -15428,7 +15340,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Alimentacion/VBAT_ADC")
+			(net "/GPIO1")
 			(uuid "d452bc9c-73c2-4336-8317-217372e4eb0a")
 		)
 		(embedded_fonts no)
@@ -15447,7 +15359,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "9df9212d-5f3b-4fea-bb7a-653206895654")
-		(at 74.104999 64.12)
+		(at 75.54 62.775)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R55"
@@ -15506,7 +15418,7 @@
 				)
 			)
 		)
-		(path "/91ebebfe-ed52-5779-8e7f-23f352fcb28e/221f7f0d-2e02-470f-9c23-a1e196629875")
+		(path "/3c4a6b14-817a-5d2d-a52d-894fc134b7f3/221f7f0d-2e02-470f-9c23-a1e196629875")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15567,7 +15479,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(J12-Pin_2)")
+			(net "NRF_VCC")
 			(uuid "5cb3a37c-ddc7-47cb-a0b8-147d7b04f2d6")
 		)
 		(pad "2" smd roundrect
@@ -15575,7 +15487,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/NRF_IRQ")
+			(net "/EXP_GPIO1")
 			(uuid "4aceeedc-c197-40b3-b23c-0ad14d7c1b52")
 		)
 		(embedded_fonts no)
@@ -15594,7 +15506,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "a11013b6-f961-4a5f-9586-8ede670a7e30")
-		(at 125.359999 80.63)
+		(at 29.495 95.285)
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "J2"
@@ -15794,7 +15706,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/Control ESP32/S3_TXD0")
+			(net "/GPIO43")
 			(uuid "b99df445-077b-46bb-bfee-de64efe43812")
 		)
 		(pad "2" thru_hole circle
@@ -15803,7 +15715,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/Control ESP32/S3_RXD0")
+			(net "/GPIO44")
 			(uuid "e3c669fe-beb4-49f1-a395-6cb1bdeb6232")
 		)
 		(pad "3" thru_hole circle
@@ -15831,7 +15743,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "a2a93b4b-434c-4d1d-80ef-a9563c5a55e8")
-		(at 143.92 64.12)
+		(at 71.565 83.605)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R3"
@@ -15978,7 +15890,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "a4235c22-a0a2-42ec-bdc9-d54d075006ed")
-		(at 105.295 25.485)
+		(at 99.49 58.855)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C90"
@@ -16098,7 +16010,7 @@
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Alimentacion/VBAT_ADC")
+			(net "/GPIO1")
 			(uuid "1b3dd89f-5792-4a26-8042-888f285cab1b")
 		)
 		(pad "2" smd roundrect
@@ -16125,7 +16037,7 @@
 	(footprint "Package_TO_SOT_SMD:TSOT-23-6"
 		(layer "F.Cu")
 		(uuid "a4a4719a-89d8-4d04-9681-336a01b4a565")
-		(at 40.495 39.75)
+		(at 119 35.35)
 		(descr "TSOT, 6 Pin (https://www.jedec.org/sites/default/files/docs/MO-193D.pdf variant AA)")
 		(tags "TSOT TO_SOT_SMD")
 		(property "Reference" "U6"
@@ -16466,7 +16378,7 @@
 	(footprint "Diode_SMD:D_SMA"
 		(layer "F.Cu")
 		(uuid "a77e0df4-5f1f-4bea-b070-0f9efa3e5c8e")
-		(at 34.44 80.61)
+		(at 48.87 68.245)
 		(descr "Diode SMA (DO-214AC)")
 		(tags "Diode SMA (DO-214AC)")
 		(property "Reference" "D7"
@@ -16714,7 +16626,7 @@
 			(size 2.5 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1388888889)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "b9fc6e5a-ec1e-481e-bb43-5b8da6bc5f94")
 		)
 		(embedded_fonts no)
@@ -16733,7 +16645,7 @@
 	(footprint "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
 		(layer "F.Cu")
 		(uuid "ac6bfd5e-4925-46fe-beda-1eaee6ba5a2e")
-		(at 136.499999 84.13)
+		(at 91.155 32.995)
 		(descr "USB Type-C receptacle for USB 2.0 and PD, http://www.krhro.com/uploads/soft/180320/1-1P320120243.pdf")
 		(tags "usb usb-c 2.0 pd")
 		(property "Reference" "J3"
@@ -16955,7 +16867,7 @@
 			(size 0.6 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(U13-VBUS)")
+			(net "USB_VBUS")
 			(uuid "0cd1c3c6-de0d-484f-9c36-50efafeaadaa")
 		)
 		(pad "A5" smd roundrect
@@ -16971,7 +16883,7 @@
 			(size 0.3 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/USB_S3_DP")
+			(net "/GPIO20")
 			(uuid "f655951f-5aad-4a3a-a0c3-0f9cc1fce449")
 		)
 		(pad "A7" smd roundrect
@@ -16979,7 +16891,7 @@
 			(size 0.3 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/USB_S3_DM")
+			(net "/GPIO19")
 			(uuid "65e975eb-f52c-436d-a204-69ad3616964b")
 		)
 		(pad "A8" smd roundrect
@@ -16995,7 +16907,7 @@
 			(size 0.6 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(U13-VBUS)")
+			(net "USB_VBUS")
 			(uuid "821a0244-ad50-4de8-832e-0d41a097490b")
 		)
 		(pad "A12" smd roundrect
@@ -17019,7 +16931,7 @@
 			(size 0.6 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(U13-VBUS)")
+			(net "USB_VBUS")
 			(uuid "370bced8-e7e0-4b2a-8845-3bb0846fcbe9")
 		)
 		(pad "B5" smd roundrect
@@ -17035,7 +16947,7 @@
 			(size 0.3 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/USB_S3_DP")
+			(net "/GPIO20")
 			(uuid "4f102d55-c48e-49b4-8252-8b20493ac810")
 		)
 		(pad "B7" smd roundrect
@@ -17043,7 +16955,7 @@
 			(size 0.3 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/USB_S3_DM")
+			(net "/GPIO19")
 			(uuid "b4505f92-2e8a-4e70-a62f-44d3adf1caa8")
 		)
 		(pad "B8" smd roundrect
@@ -17059,7 +16971,7 @@
 			(size 0.6 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(U13-VBUS)")
+			(net "USB_VBUS")
 			(uuid "b2f4d9b7-5349-4ddb-a4d2-95710d40fe10")
 		)
 		(pad "B12" smd roundrect
@@ -17126,7 +17038,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "adf9f4c4-4601-4dac-ab97-f976b83ea3bd")
-		(at 144.545 26.005)
+		(at 100.56 49.565)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C48"
@@ -17273,7 +17185,7 @@
 	(footprint "LED_SMD:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "b243aacd-4738-48c4-a3c6-2990ebde3668")
-		(at 91.789999 49.795)
+		(at 80.58 56.175)
 		(descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf)")
 		(tags "LED")
 		(property "Reference" "D4"
@@ -17469,7 +17381,7 @@
 	(footprint "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "b3352afa-4883-46cd-9b09-f06e9b1ef386")
-		(at 47.345 95.75)
+		(at 55.605 93.075)
 		(descr "Molex KK-254 Interconnect System, old/engineering part number: AE-6410-03A example for new part number: 22-27-2031, 3 Pins (http://www.molex.com/pdm_docs/sd/022272021_sd.pdf)")
 		(tags "connector Molex KK-254 vertical")
 		(property "Reference" "J7"
@@ -17782,7 +17694,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(roundrect_rratio 0.143678)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "b084a918-f315-4c45-b8c5-60652f21206c")
 		)
 		(pad "2" thru_hole oval
@@ -17800,7 +17712,7 @@
 			(drill 1.19)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/Control ESP32/SERVO_DIR")
+			(net "/GPIO8")
 			(uuid "4f8dc7ce-0f1f-4e9f-b54c-64555da5e7dc")
 		)
 		(embedded_fonts no)
@@ -17819,7 +17731,7 @@
 	(footprint "LED_SMD:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "b75e6a69-a3df-45e8-b40a-1cb8abb2b3c6")
-		(at 70.64 49.795)
+		(at 71.455 98.98)
 		(descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf)")
 		(tags "LED")
 		(property "Reference" "D1"
@@ -18015,7 +17927,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "bb1402ec-d88a-44c2-84c9-a1a34f6d32f6")
-		(at 33.385 64.11)
+		(at 75.52 91.405)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C135"
@@ -18074,7 +17986,7 @@
 				)
 			)
 		)
-		(path "/91ebebfe-ed52-5779-8e7f-23f352fcb28e/accedfd3-baa5-4030-ba63-07587b6f7a1f")
+		(path "/3c4a6b14-817a-5d2d-a52d-894fc134b7f3/accedfd3-baa5-4030-ba63-07587b6f7a1f")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18135,7 +18047,7 @@
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(J12-Pin_2)")
+			(net "NRF_VCC")
 			(uuid "4051846a-c86e-4e26-a3b5-e1217d5fd386")
 		)
 		(pad "2" smd roundrect
@@ -18162,7 +18074,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "bc1c75b1-3f5f-4566-96f4-e007d0add7e3")
-		(at 66.754999 108.01)
+		(at 98.78 55.875)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R21"
@@ -18221,7 +18133,7 @@
 				)
 			)
 		)
-		(path "/a127f740-835a-49c8-bc78-066016e92855/907c7174-ef26-4361-b20c-60e01f849be1")
+		(path "/ea8db2ee-0c7d-41ec-aab2-b25337a7efa7/907c7174-ef26-4361-b20c-60e01f849be1")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18290,7 +18202,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/GPS_SCL")
+			(net "/GPIO39")
 			(uuid "7e9f4b36-f066-4d01-941e-e1e516e8c56b")
 		)
 		(embedded_fonts no)
@@ -18309,7 +18221,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "bc2145f7-9cdf-4b06-ab99-d7e9e2fa08fc")
-		(at 103.134999 64.629999)
+		(at 86.01 49.565)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C4"
@@ -18429,7 +18341,7 @@
 			(size 1 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "cff855de-a37c-41b3-aea2-3343ddf8c758")
 		)
 		(pad "2" smd roundrect
@@ -18456,7 +18368,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "bc9f2ed3-8df4-421d-8a01-778efccdc0df")
-		(at 89.375 38.335)
+		(at 83.14 58.855)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C78"
@@ -18584,7 +18496,7 @@
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "a6e19818-bdbf-493b-82e9-f7eba2b069b6")
 		)
 		(embedded_fonts no)
@@ -18603,7 +18515,7 @@
 	(footprint "Diode_SMD:D_SMB"
 		(layer "F.Cu")
 		(uuid "bddab722-da0f-476c-8230-9864084a3d8f")
-		(at 36.17 51.275)
+		(at 68.78 60.585)
 		(descr "Diode SMB (DO-214AA)")
 		(tags "Diode SMB (DO-214AA)")
 		(property "Reference" "D10"
@@ -18851,7 +18763,7 @@
 			(size 2.5 2.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1086956522)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "d192ef3f-19cf-4f85-95d1-691ccb13964f")
 		)
 		(embedded_fonts no)
@@ -18870,7 +18782,7 @@
 	(footprint "Package_TO_SOT_SMD:SOT-353_SC-70-5"
 		(layer "F.Cu")
 		(uuid "c0b788b5-402f-47d1-973c-95f15a527e3b")
-		(at 101.389999 80.175)
+		(at 76.06 59.71)
 		(descr "SOT, 5 Pin (https://home.jeita.or.jp/tsc/std-pdf/ED-7500A.pdf#page=171, JEDEC MO-203, variant AA, https://www.jedec.org/document_search?search_api_views_fulltext=MO-203)")
 		(tags "SOT TO_SOT_SMD SC-88A SOT-353 SC-70-5")
 		(property "Reference" "U10"
@@ -19202,7 +19114,7 @@
 			(size 1.025 0.35)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "d10d474b-2442-46c8-90b6-53a5ef2b4c8c")
 		)
 		(pad "2" smd roundrect
@@ -19210,7 +19122,7 @@
 			(size 1.025 0.35)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/LED_DATA")
+			(net "/GPIO38")
 			(uuid "90167162-8082-442a-87ea-3bf665e73e1b")
 		)
 		(pad "3" smd roundrect
@@ -19218,7 +19130,7 @@
 			(size 1.025 0.35)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "0fd5cdd4-7ff2-4324-9457-2f6523330c68")
 		)
 		(pad "4" smd roundrect
@@ -19253,7 +19165,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "c0c12f5d-092c-48ec-8853-06eb0182ecb3")
-		(at 151.995 26.005)
+		(at 100.56 52.975)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C83"
@@ -19400,7 +19312,7 @@
 	(footprint "Capacitor_SMD:CP_Elec_6.3x5.4"
 		(layer "F.Cu")
 		(uuid "c25d51b2-98bb-4d42-bbb7-3c787bd23fae")
-		(at 85.18 82.41)
+		(at 58.635 68.995)
 		(descr "SMD capacitor, aluminum electrolytic, Panasonic C55, 6.3x5.4mm")
 		(tags "capacitor electrolytic")
 		(property "Reference" "C95"
@@ -19817,7 +19729,7 @@
 			(size 3.5 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.15625)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "70383058-6b91-4ae8-93d4-51622ab9633f")
 		)
 		(embedded_fonts no)
@@ -19836,7 +19748,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "c29409cd-ee05-4200-aa9f-c3603486d966")
-		(at 110.585 64.629999)
+		(at 105.409999 49.565)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C5"
@@ -19983,7 +19895,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "c319461d-4eb5-47e6-80a2-799e1300c554")
-		(at 158.655 25.485)
+		(at 89.68 58.855)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C84"
@@ -20130,7 +20042,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "c51a1389-2c7e-47ae-b130-fe2936adda2c")
-		(at 151.87 38.855)
+		(at 81.16 52.975)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C75"
@@ -20258,7 +20170,7 @@
 			(size 1 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "f56d054f-6d97-4527-8484-abf8ea0052a7")
 		)
 		(embedded_fonts no)
@@ -20277,7 +20189,7 @@
 	(footprint "LED_SMD:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "c63f0073-51fb-4470-a8ac-7dbbef82bdf5")
-		(at 84.74 49.795)
+		(at 76.13 56.175)
 		(descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf)")
 		(tags "LED")
 		(property "Reference" "D3"
@@ -20473,7 +20385,7 @@
 	(footprint "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "c927e2e0-8e7c-4902-84ef-c0380da482a7")
-		(at 72.685 95.75)
+		(at 76.925 43.755)
 		(descr "Molex KK-254 Interconnect System, old/engineering part number: AE-6410-03A example for new part number: 22-27-2031, 3 Pins (http://www.molex.com/pdm_docs/sd/022272021_sd.pdf)")
 		(tags "connector Molex KK-254 vertical")
 		(property "Reference" "J9"
@@ -20786,7 +20698,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(roundrect_rratio 0.143678)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "c53e7082-3dab-4df2-a81c-3402874d2f9b")
 		)
 		(pad "2" thru_hole oval
@@ -20804,7 +20716,7 @@
 			(drill 1.19)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/Control ESP32/SERVO_2")
+			(net "/GPIO14")
 			(uuid "b3f342d4-d23a-4acb-8e82-46a4c5109c44")
 		)
 		(embedded_fonts no)
@@ -20823,7 +20735,7 @@
 	(footprint "Capacitor_SMD:CP_Elec_6.3x5.4"
 		(layer "F.Cu")
 		(uuid "c978c59a-c2ab-435a-b214-0aa8f4a2d946")
-		(at 79.615 41.425)
+		(at 58.635 51.895)
 		(descr "SMD capacitor, aluminum electrolytic, Panasonic C55, 6.3x5.4mm")
 		(tags "capacitor electrolytic")
 		(property "Reference" "C77"
@@ -21240,7 +21152,7 @@
 			(size 3.5 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.15625)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "9c1913ad-3b39-45a1-a6d1-e89134c2089e")
 		)
 		(embedded_fonts no)
@@ -21259,7 +21171,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "cb138586-bffe-44ba-98f1-582b8dee5653")
-		(at 34.875 108.52)
+		(at 39.265 100.82)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C131"
@@ -21273,7 +21185,7 @@
 				)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "22uF"
 			(at 0 1.68 0)
 			(layer "F.Fab")
 			(uuid "24272054-4f99-4ba8-aa34-1594153da262")
@@ -21406,7 +21318,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "cfff5f46-f10d-415e-8c02-11da5ecbf6ff")
-		(at 130.435 25.485)
+		(at 75.52 98.515)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C46"
@@ -21553,7 +21465,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "d37a0788-82e5-4111-aa6a-676a0976f3b5")
-		(at 39.255 64.11)
+		(at 75.52 93.775)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C136"
@@ -21612,7 +21524,7 @@
 				)
 			)
 		)
-		(path "/91ebebfe-ed52-5779-8e7f-23f352fcb28e/bfb4ed2a-4323-46f7-b240-441a91367f65")
+		(path "/3c4a6b14-817a-5d2d-a52d-894fc134b7f3/bfb4ed2a-4323-46f7-b240-441a91367f65")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21673,7 +21585,7 @@
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(J12-Pin_2)")
+			(net "NRF_VCC")
 			(uuid "602a0718-ac2f-4750-af60-3994cad9faed")
 		)
 		(pad "2" smd roundrect
@@ -21700,7 +21612,7 @@
 	(footprint "Inductor_SMD:L_Bourns_SRN6045TA"
 		(layer "F.Cu")
 		(uuid "d5285384-e338-4af4-bdd3-515358c9daa2")
-		(at 45.49 82.11)
+		(at 48.825 77.995)
 		(descr "http://www.bourns.com/docs/product-datasheets/srn6045ta.pdf")
 		(tags "Semi-shielded Power Inductor")
 		(property "Reference" "L7"
@@ -21916,7 +21828,7 @@
 			(at 2.075 0)
 			(size 2.35 5.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Faros/FARO_K")
+			(net "/FARO_K")
 			(uuid "78bfb4e6-626c-4ff9-8610-14dd438f052a")
 		)
 		(embedded_fonts no)
@@ -21935,7 +21847,7 @@
 	(footprint "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "d7651f1f-ef44-400c-9c35-fa5293a1bd68")
-		(at 111.755 95.75)
+		(at 34.485 69.915)
 		(descr "Molex KK-254 Interconnect System, old/engineering part number: AE-6410-04A example for new part number: 22-27-2041, 4 Pins (http://www.molex.com/pdm_docs/sd/022272021_sd.pdf)")
 		(tags "connector Molex KK-254 vertical")
 		(property "Reference" "J13"
@@ -22296,7 +22208,7 @@
 			(drill 1.19)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/Control ESP32/ENC_A1")
+			(net "/GPIO4")
 			(uuid "f64471b5-72f2-4750-af86-b83fb412425c")
 		)
 		(pad "4" thru_hole oval
@@ -22305,7 +22217,7 @@
 			(drill 1.19)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/Control ESP32/ENC_A2")
+			(net "/GPIO5")
 			(uuid "57ac93ca-1ed7-455c-ac6f-ed85054a6f61")
 		)
 		(embedded_fonts no)
@@ -22324,7 +22236,7 @@
 	(footprint "Package_TO_SOT_SMD:TSOT-23-6"
 		(layer "F.Cu")
 		(uuid "e27b4598-8808-4991-aff1-29f2033c0f9f")
-		(at 130.75 39.75)
+		(at 67.135 85.01)
 		(descr "TSOT, 6 Pin (https://www.jedec.org/sites/default/files/docs/MO-193D.pdf variant AA)")
 		(tags "TSOT TO_SOT_SMD")
 		(property "Reference" "U7"
@@ -22630,7 +22542,7 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "a7113b2c-81f3-429d-b2b2-761e00896415")
 		)
 		(pad "5" smd roundrect
@@ -22665,7 +22577,7 @@
 	(footprint "Package_TO_SOT_SMD:TSOT-23-5"
 		(layer "F.Cu")
 		(uuid "e3503601-e13f-4fe2-bfa3-41e079bebf74")
-		(at 68.41 80.735)
+		(at 67.135 95.06)
 		(descr "TSOT, 5 Pin (https://www.jedec.org/sites/default/files/docs/MO-193D.pdf variant AB)")
 		(tags "TSOT TO_SOT_SMD")
 		(property "Reference" "U9"
@@ -23005,7 +22917,7 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "fd80df98-7434-4a49-9e0b-3323159d17cb")
 		)
 		(pad "3" smd roundrect
@@ -23013,7 +22925,7 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/LUCES")
+			(net "/GPIO21")
 			(uuid "0457b369-7129-417d-9e41-fef01735fca0")
 		)
 		(pad "4" smd roundrect
@@ -23021,7 +22933,7 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Faros/FARO_A")
+			(net "/FARO_A")
 			(uuid "4945e315-0c06-4993-bb98-4bede9dffffa")
 		)
 		(pad "5" smd roundrect
@@ -23048,7 +22960,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "e4353add-3cc3-43bf-a565-d5b43f3451c6")
-		(at 170.395 25.485)
+		(at 106.03 58.855)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C92"
@@ -23195,7 +23107,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "e4a1b524-381f-4261-8f08-c22cb3d3bdab")
-		(at 69.065 38.855)
+		(at 119.959999 49.565)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C72"
@@ -23323,7 +23235,7 @@
 			(size 1 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "b5bf8803-c768-4055-88cf-e70996e5eef5")
 		)
 		(embedded_fonts no)
@@ -23342,7 +23254,7 @@
 	(footprint "Espressif_S3:ESP32-S3-WROOM-1"
 		(layer "F.Cu")
 		(uuid "e52818fb-df49-476d-90ee-722b91ca1bdb")
-		(at 142.13 123.625)
+		(at 42.55 43.81)
 		(descr "ESP32-S3-WROOM-1 is a powerful, generic Wi-Fi + Bluetooth LE MCU modules that have Dual core CPU , a rich set of peripherals, provides acceleration for neural network computing and signal processing workloads. They are an ideal choice for a wide variety of application scenarios related to AI + Internet of Things (AIoT), such as wake word detection and speech commands recognition , face detection and recognition, smart home, smart appliance, smart control panel, smart speaker etc.")
 		(tags "esp32-s3")
 		(property "Reference" "U3"
@@ -23620,161 +23532,161 @@
 			(at -8.75 -4.45)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Control ESP32/ENC_A1")
+			(net "/GPIO4")
 			(uuid "e6aaac9c-d935-4085-95c7-f02f0ee7ab2a")
 		)
 		(pad "5" smd rect
 			(at -8.75 -3.18)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Control ESP32/ENC_A2")
+			(net "/GPIO5")
 			(uuid "050c7aad-66cb-4d5c-aae2-ba926903c4a8")
 		)
 		(pad "6" smd rect
 			(at -8.75 -1.91)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Control ESP32/ENC_B1")
+			(net "/GPIO6")
 			(uuid "0d66374b-3c0e-4f42-9a72-2ee7e2e8276e")
 		)
 		(pad "7" smd rect
 			(at -8.75 -0.64)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Control ESP32/ENC_B2")
+			(net "/GPIO7")
 			(uuid "fbe62258-43d9-4a43-a61a-884d846efd0f")
 		)
 		(pad "8" smd rect
 			(at -8.75 0.63)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Control ESP32/RGB_G")
+			(net "/GPIO15")
 			(uuid "29b7126c-eb3c-4b3e-82b8-f4916a8479c8")
 		)
 		(pad "9" smd rect
 			(at -8.75 1.9)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Control ESP32/RGB_B")
+			(net "/GPIO16")
 			(uuid "c56a0119-58e0-4f20-8a8c-ff14552d3344")
 		)
 		(pad "10" smd rect
 			(at -8.75 3.17)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Control ESP32/AEN")
+			(net "/GPIO17")
 			(uuid "6639998b-a86d-4eb6-8eae-097f35f4d861")
 		)
 		(pad "11" smd rect
 			(at -8.75 4.44)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Control ESP32/BEN")
+			(net "/GPIO18")
 			(uuid "77d0a105-1691-42d1-ab84-111498058dab")
 		)
 		(pad "12" smd rect
 			(at -8.75 5.71)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Control ESP32/SERVO_DIR")
+			(net "/GPIO8")
 			(uuid "361c04f5-505e-4e2e-9902-91552a54580b")
 		)
 		(pad "13" smd rect
 			(at -8.75 6.98)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Control ESP32/USB_S3_DM")
+			(net "/GPIO19")
 			(uuid "082a3774-b434-4f78-9630-e8144dc05368")
 		)
 		(pad "14" smd rect
 			(at -8.75 8.25)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Control ESP32/USB_S3_DP")
+			(net "/GPIO20")
 			(uuid "dd64f684-ef95-4431-aa0f-c2811a254ad7")
 		)
 		(pad "15" smd rect
 			(at -6.985 9.5 90)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "Net-(J20-Pin_4)")
+			(net "unconnected-(U3-GPIO3{slash}TOUCH3{slash}ADC1_CH2-Pad15)")
 			(uuid "4ed00984-4fa6-4586-a615-a446b44de4a5")
 		)
 		(pad "16" smd rect
 			(at -5.715 9.5 90)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "Net-(J20-Pin_8)")
+			(net "unconnected-(U3-GPIO46-Pad16)")
 			(uuid "79e91c9c-64d3-4e38-9d55-62fc2b02faa5")
 		)
 		(pad "17" smd rect
 			(at -4.445 9.5 90)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Control ESP32/SERVO_1")
+			(net "/GPIO9")
 			(uuid "a2c31ae0-18f9-4456-9cc3-5ec3f222d87e")
 		)
 		(pad "18" smd rect
 			(at -3.175 9.5 90)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Control ESP32/NRF_CSN")
+			(net "/GPIO10")
 			(uuid "8d6a9e7b-1683-4d0c-ad3e-6a8a7196fd97")
 		)
 		(pad "19" smd rect
 			(at -1.905 9.5 90)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Control ESP32/NRF_MOSI")
+			(net "/GPIO11")
 			(uuid "d0be733f-e8e7-4531-8230-a361a0119e78")
 		)
 		(pad "20" smd rect
 			(at -0.635 9.5 90)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Control ESP32/NRF_SCK")
+			(net "/GPIO12")
 			(uuid "34dabe90-30d5-4323-b520-5980743dd868")
 		)
 		(pad "21" smd rect
 			(at 0.635 9.5 90)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Control ESP32/NRF_MISO")
+			(net "/GPIO13")
 			(uuid "e6e63fa5-94ff-4a47-8104-a2c8103307b4")
 		)
 		(pad "22" smd rect
 			(at 1.905 9.5 90)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Control ESP32/SERVO_2")
+			(net "/GPIO14")
 			(uuid "f92c84a0-50c1-48a3-af79-61beffa9235e")
 		)
 		(pad "23" smd rect
 			(at 3.175 9.5 90)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Control ESP32/LUCES")
+			(net "/GPIO21")
 			(uuid "2f215061-c35a-4653-bf2c-19616396a01d")
 		)
 		(pad "24" smd rect
 			(at 4.445 9.5 90)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Control ESP32/GPS_RX")
+			(net "/GPIO47")
 			(uuid "9454c773-0b56-473a-9868-88d703cf3499")
 		)
 		(pad "25" smd rect
 			(at 5.715 9.5 90)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Control ESP32/GPS_TX")
+			(net "/GPIO48")
 			(uuid "6f48c3d2-a5d0-4674-8e29-f0c823a28355")
 		)
 		(pad "26" smd rect
 			(at 6.985 9.5 90)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "Net-(J20-Pin_7)")
+			(net "unconnected-(U3-GPIO45-Pad26)")
 			(uuid "b3c4b72e-e34e-4227-9dc2-fb35132a793d")
 		)
 		(pad "27" smd rect
@@ -23788,84 +23700,84 @@
 			(at 8.75 6.98 180)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Control ESP32/LIDAR_RX")
+			(net "/GPIO35")
 			(uuid "34ce15e7-f02d-4e1f-9af5-cc23b53277dd")
 		)
 		(pad "29" smd rect
 			(at 8.75 5.71 180)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "Net-(J20-Pin_5)")
+			(net "/GPIO36")
 			(uuid "3e2b6629-afca-4017-8985-5d2e4446cc22")
 		)
 		(pad "30" smd rect
 			(at 8.75 4.44 180)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "Net-(J20-Pin_6)")
+			(net "/GPIO37")
 			(uuid "62e3098b-cb44-4994-83af-591dbfd76697")
 		)
 		(pad "31" smd rect
 			(at 8.75 3.17 180)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Control ESP32/LED_DATA")
+			(net "/GPIO38")
 			(uuid "dd7cc938-ac04-4275-9dbf-978bfac5f700")
 		)
 		(pad "32" smd rect
 			(at 8.75 1.9 180)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Control ESP32/GPS_SCL")
+			(net "/GPIO39")
 			(uuid "00dc4be3-10c3-42ac-b109-a471e7d26c9b")
 		)
 		(pad "33" smd rect
 			(at 8.75 0.63 180)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Control ESP32/GPS_SDA")
+			(net "/GPIO40")
 			(uuid "2b1ba40c-1607-4f0f-96d0-e78012516944")
 		)
 		(pad "34" smd rect
 			(at 8.75 -0.64 180)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Control ESP32/RGB_R")
+			(net "/GPIO41")
 			(uuid "5ba0f577-be25-4592-bb57-eb415caedca5")
 		)
 		(pad "35" smd rect
 			(at 8.75 -1.91 180)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "Net-(U14-~{INT})")
+			(net "/GPIO42")
 			(uuid "816efd29-ae61-475a-a5d2-b0b8ccf8980f")
 		)
 		(pad "36" smd rect
 			(at 8.75 -3.18 180)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Control ESP32/S3_RXD0")
+			(net "/GPIO44")
 			(uuid "e8476e9a-ba05-404d-a631-f8d607e68fda")
 		)
 		(pad "37" smd rect
 			(at 8.75 -4.45 180)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Control ESP32/S3_TXD0")
+			(net "/GPIO43")
 			(uuid "c0bc1f23-39bf-4496-ab67-c700d98a7fe0")
 		)
 		(pad "38" smd rect
 			(at 8.75 -5.72 180)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "Net-(J20-Pin_3)")
+			(net "/GPIO2")
 			(uuid "bdbc5277-764f-4f5f-bf61-5308f7d1b754")
 		)
 		(pad "39" smd rect
 			(at 8.75 -6.99 180)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Alimentacion/VBAT_ADC")
+			(net "/GPIO1")
 			(uuid "eb596999-c373-4d25-9289-35dc99be5fbe")
 		)
 		(pad "40" smd rect
@@ -23979,7 +23891,7 @@
 			)
 			(polygon
 				(pts
-					(xy 151.13 113.825) (xy 133.13 113.825) (xy 133.13 107.875) (xy 151.13 107.875)
+					(xy 51.55 34.01) (xy 33.55 34.01) (xy 33.55 28.06) (xy 51.55 28.06)
 				)
 			)
 		)
@@ -24000,7 +23912,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "e8964321-dff3-4982-bb40-439518463030")
-		(at 114.3 50.795)
+		(at 29.495 85.215)
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "J18"
@@ -24209,7 +24121,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J17-Pin_1)")
+			(net "VLED")
 			(uuid "cd3af0e2-e01c-4886-9ef3-bf20c7b68296")
 		)
 		(pad "3" thru_hole circle
@@ -24237,7 +24149,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "e9e2df15-ba01-48f0-bea8-c5558d14b830")
-		(at 53.275 108)
+		(at 75.52 96.145)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C138"
@@ -24384,7 +24296,7 @@
 	(footprint "Tesla_Parts:SOP65P640X120-29N"
 		(layer "F.Cu")
 		(uuid "ece70517-f5a6-4766-87ff-8489a2c65269")
-		(at 159.635 68.75)
+		(at 111.6 32.825)
 		(property "Reference" "U1"
 			(at -0.725 -6.735 0)
 			(layer "F.SilkS")
@@ -25605,7 +25517,7 @@
 			(size 1.5 0.45)
 			(layers "F.Cu" "F.Paste")
 			(roundrect_rratio 0.1)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "149f6865-7102-42d4-bc7f-45f60cf5c07d")
 		)
 		(pad "4" smd roundrect
@@ -25613,7 +25525,7 @@
 			(size 1.5 0.45)
 			(layers "F.Cu" "F.Paste")
 			(roundrect_rratio 0.1)
-			(net "/Drivers motores/AOUT1")
+			(net "/AOUT1")
 			(uuid "ce55356f-3439-4b6d-841f-21ff9f8798de")
 		)
 		(pad "5" smd roundrect
@@ -25621,7 +25533,7 @@
 			(size 1.5 0.45)
 			(layers "F.Cu" "F.Paste")
 			(roundrect_rratio 0.1)
-			(net "/Drivers motores/AOUT1")
+			(net "/AOUT1")
 			(uuid "24190afa-86d7-4441-a646-94b6d1d793b1")
 		)
 		(pad "6" smd roundrect
@@ -25629,7 +25541,7 @@
 			(size 1.5 0.45)
 			(layers "F.Cu" "F.Paste")
 			(roundrect_rratio 0.1)
-			(net "/Drivers motores/AOUT2")
+			(net "/AOUT2")
 			(uuid "40619c89-0b85-4226-a887-eb1944dbb678")
 		)
 		(pad "7" smd roundrect
@@ -25637,7 +25549,7 @@
 			(size 1.5 0.45)
 			(layers "F.Cu" "F.Paste")
 			(roundrect_rratio 0.1)
-			(net "/Drivers motores/AOUT2")
+			(net "/AOUT2")
 			(uuid "bf677a2a-abeb-4ccd-9b5a-af2169731bee")
 		)
 		(pad "8" smd roundrect
@@ -25645,7 +25557,7 @@
 			(size 1.5 0.45)
 			(layers "F.Cu" "F.Paste")
 			(roundrect_rratio 0.1)
-			(net "/Drivers motores/BOUT2")
+			(net "/BOUT2")
 			(uuid "91305108-2a2a-4d1d-8e09-57ac00451513")
 		)
 		(pad "9" smd roundrect
@@ -25653,7 +25565,7 @@
 			(size 1.5 0.45)
 			(layers "F.Cu" "F.Paste")
 			(roundrect_rratio 0.1)
-			(net "/Drivers motores/BOUT2")
+			(net "/BOUT2")
 			(uuid "55dd6ee9-2a06-489f-beac-c8ef465c66a6")
 		)
 		(pad "10" smd roundrect
@@ -25661,7 +25573,7 @@
 			(size 1.5 0.45)
 			(layers "F.Cu" "F.Paste")
 			(roundrect_rratio 0.1)
-			(net "/Drivers motores/BOUT1")
+			(net "/BOUT1")
 			(uuid "e35d807c-fb9d-47de-a541-d57fce2218e6")
 		)
 		(pad "11" smd roundrect
@@ -25669,7 +25581,7 @@
 			(size 1.5 0.45)
 			(layers "F.Cu" "F.Paste")
 			(roundrect_rratio 0.1)
-			(net "/Drivers motores/BOUT1")
+			(net "/BOUT1")
 			(uuid "cec174c7-ff7e-4ea8-90ee-b8133f725cd1")
 		)
 		(pad "12" smd roundrect
@@ -25677,7 +25589,7 @@
 			(size 1.5 0.45)
 			(layers "F.Cu" "F.Paste")
 			(roundrect_rratio 0.1)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "7cddba2a-1bd0-4c7d-b532-f2259ecf672a")
 		)
 		(pad "13" smd roundrect
@@ -25693,7 +25605,7 @@
 			(size 1.5 0.45)
 			(layers "F.Cu" "F.Paste")
 			(roundrect_rratio 0.1)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "b16d349c-e690-4c39-a236-60008f9453bf")
 		)
 		(pad "15" smd roundrect
@@ -25709,7 +25621,7 @@
 			(size 1.5 0.45)
 			(layers "F.Cu" "F.Paste")
 			(roundrect_rratio 0.1)
-			(net "/Control ESP32/nFault")
+			(net "/EXP_GPIO5")
 			(uuid "6e4f2bc4-112b-427c-a2a7-cacf085b0b22")
 		)
 		(pad "17" smd roundrect
@@ -25757,7 +25669,7 @@
 			(size 1.5 0.45)
 			(layers "F.Cu" "F.Paste")
 			(roundrect_rratio 0.1)
-			(net "/Control ESP32/BPH")
+			(net "/EXP_GPIO3")
 			(uuid "40465448-4300-43cb-833d-98d18e781a8e")
 		)
 		(pad "23" smd roundrect
@@ -25765,7 +25677,7 @@
 			(size 1.5 0.45)
 			(layers "F.Cu" "F.Paste")
 			(roundrect_rratio 0.1)
-			(net "/Control ESP32/BEN")
+			(net "/GPIO18")
 			(uuid "87c5bb07-2dbd-4be7-bf3f-a3cdab829531")
 		)
 		(pad "24" smd roundrect
@@ -25773,7 +25685,7 @@
 			(size 1.5 0.45)
 			(layers "F.Cu" "F.Paste")
 			(roundrect_rratio 0.1)
-			(net "/Control ESP32/APH")
+			(net "/EXP_GPIO2")
 			(uuid "c1089951-73f1-45c0-9701-fece5c2b5cb8")
 		)
 		(pad "25" smd roundrect
@@ -25781,7 +25693,7 @@
 			(size 1.5 0.45)
 			(layers "F.Cu" "F.Paste")
 			(roundrect_rratio 0.1)
-			(net "/Control ESP32/AEN")
+			(net "/GPIO17")
 			(uuid "e892b687-47aa-48f3-900a-d5d171b71117")
 		)
 		(pad "26" smd roundrect
@@ -25789,7 +25701,7 @@
 			(size 1.5 0.45)
 			(layers "F.Cu" "F.Paste")
 			(roundrect_rratio 0.1)
-			(net "/Control ESP32/nSleep")
+			(net "/EXP_GPIO4")
 			(uuid "417ad0bf-8897-491d-b79e-6c6ecde24970")
 		)
 		(pad "27" smd roundrect
@@ -25812,7 +25724,7 @@
 			(at 0 0)
 			(size 0.1 0.1)
 			(layers "F.Cu")
-			(net "GNDPWR")
+			(net "GND")
 			(options
 				(clearance outline)
 				(anchor rect)
@@ -26057,7 +25969,7 @@
 	(footprint "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "ed203d35-a4ba-47c6-bcf9-80bfbdbb0134")
-		(at 149.765 95.75)
+		(at 55.605 84.825)
 		(descr "Molex KK-254 Interconnect System, old/engineering part number: AE-6410-03A example for new part number: 22-27-2031, 3 Pins (http://www.molex.com/pdm_docs/sd/022272021_sd.pdf)")
 		(tags "connector Molex KK-254 vertical")
 		(property "Reference" "J16"
@@ -26370,7 +26282,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(roundrect_rratio 0.143678)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "ccf3630e-1940-48bc-a2db-bdf0c4cc584b")
 		)
 		(pad "2" thru_hole oval
@@ -26388,7 +26300,7 @@
 			(drill 1.19)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/Salidas externas/LED_STRIP")
+			(net "/LED_STRIP")
 			(uuid "1290cc1a-4507-40d6-bc97-3a9dc20d330c")
 		)
 		(embedded_fonts no)
@@ -26407,7 +26319,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "ef5ac103-7cf8-4c73-878e-34e62b8cf039")
-		(at 94.96 79.33)
+		(at 71.565 85.995)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R30"
@@ -26535,7 +26447,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Salidas externas/LED_STRIP")
+			(net "/LED_STRIP")
 			(uuid "f491acb0-a1af-4069-93d0-10ab9c734c79")
 		)
 		(embedded_fonts no)
@@ -26554,7 +26466,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "efe3df1c-6a92-4bf7-a9d4-3140fbfe776f")
-		(at 25.935 38.335)
+		(at 109.3 58.855)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C93"
@@ -26701,7 +26613,7 @@
 	(footprint "Button_Switch_SMD:SW_SPST_TL3342"
 		(layer "F.Cu")
 		(uuid "f018e494-ebff-4ec5-8ec0-a683651a2b79")
-		(at 111.444999 110.54)
+		(at 89.475 43.335)
 		(descr "Low-profile SMD Tactile Switch, https://www.e-switch.com/system/asset/product_line/data_sheet/165/TL3342.pdf")
 		(tags "SPST Tactile Switch")
 		(property "Reference" "SW1"
@@ -27261,7 +27173,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "f3a9b822-bd13-46df-aa3f-826a60f160d2")
-		(at 78.574999 108.01)
+		(at 71.565 91.02)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R52"
@@ -27408,7 +27320,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "f980b52b-a39b-4292-8ae6-6455797ebadc")
-		(at 41.56 26.005)
+		(at 105.409999 52.975)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C86"
@@ -27536,7 +27448,7 @@
 			(size 1 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "a397bc1f-5ecd-4c3f-8ab2-204c3d69968b")
 		)
 		(embedded_fonts no)
@@ -27555,7 +27467,7 @@
 	(footprint "Connector_AMASS:AMASS_XT60-M_1x02_P7.20mm_Vertical"
 		(layer "F.Cu")
 		(uuid "fcd6d77d-ec4d-4b9a-8214-7f01ddc5b2a5")
-		(at 29.675 96.93)
+		(at 37.365 60.445)
 		(descr "AMASS female XT60, through hole, vertical, https://www.tme.eu/Document/2d152ced3b7a446066e6c419d84bb460/XT60%20SPEC.pdf")
 		(tags "XT60 female vertical")
 		(property "Reference" "J6"
@@ -27807,7 +27719,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(roundrect_rratio 0.25)
-			(net "/Alimentacion/VBAT")
+			(net "/VBAT")
 			(uuid "2b0b1464-e1fb-4512-ba46-5aa6bb20a8cf")
 		)
 		(pad "2" thru_hole circle
@@ -27816,7 +27728,7 @@
 			(drill 4.5)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GNDPWR")
+			(net "GND")
 			(uuid "28a9f31d-4aa4-4494-833e-5d802e72b948")
 		)
 		(embedded_fonts no)
@@ -27835,7 +27747,7 @@
 	(footprint "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm"
 		(layer "F.Cu")
 		(uuid "fd781f8d-5a0a-4961-8dfb-c9cff463be06")
-		(at 160.239999 111.69)
+		(at 69.31 52.735)
 		(descr "TSSOP, 24 Pin (JEDEC MO-153 variation AD, 1.00mm body thickness, https://www.jedec.org/document_search?search_api_views_fulltext=MO-153)")
 		(tags "TSSOP SO")
 		(property "Reference" "U14"
@@ -28077,7 +27989,7 @@
 			(size 1.475 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(U14-~{INT})")
+			(net "/GPIO42")
 			(uuid "e18f5939-ed4a-4caa-840b-ec6d26873496")
 		)
 		(pad "2" smd roundrect
@@ -28101,7 +28013,7 @@
 			(size 1.475 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/NRF_CE")
+			(net "/EXP_GPIO0")
 			(uuid "caa63a63-b809-4702-959e-9a3841c54e19")
 		)
 		(pad "5" smd roundrect
@@ -28109,7 +28021,7 @@
 			(size 1.475 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/NRF_IRQ")
+			(net "/EXP_GPIO1")
 			(uuid "e941efbb-f01f-4227-b154-2e2e1f5d4d4c")
 		)
 		(pad "6" smd roundrect
@@ -28117,7 +28029,7 @@
 			(size 1.475 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/APH")
+			(net "/EXP_GPIO2")
 			(uuid "086360ee-44c2-410f-98e1-0fa72fdb34e4")
 		)
 		(pad "7" smd roundrect
@@ -28125,7 +28037,7 @@
 			(size 1.475 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/BPH")
+			(net "/EXP_GPIO3")
 			(uuid "3c0db65d-a20a-43e7-9937-2e758d662311")
 		)
 		(pad "8" smd roundrect
@@ -28133,7 +28045,7 @@
 			(size 1.475 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/nSleep")
+			(net "/EXP_GPIO4")
 			(uuid "08d617e4-f129-4b0d-89ff-2bbec1d0569f")
 		)
 		(pad "9" smd roundrect
@@ -28141,7 +28053,7 @@
 			(size 1.475 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/nFault")
+			(net "/EXP_GPIO5")
 			(uuid "f57d6f61-8107-47d4-9e4a-a4762ab882ca")
 		)
 		(pad "10" smd roundrect
@@ -28149,7 +28061,7 @@
 			(size 1.475 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/LED_AP")
+			(net "/EXP_GPIO6")
 			(uuid "4a70542c-3570-4dd0-8598-0da147d2e5f9")
 		)
 		(pad "11" smd roundrect
@@ -28157,7 +28069,7 @@
 			(size 1.475 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/LED_AN")
+			(net "/EXP_GPIO7")
 			(uuid "243d1e97-0f50-4641-82bc-aa38f4cb6b7a")
 		)
 		(pad "12" smd roundrect
@@ -28173,7 +28085,7 @@
 			(size 1.475 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/LED_BP")
+			(net "/EXP_GPIO8")
 			(uuid "a65dc516-e2a6-4b11-96e7-2ecbb736418e")
 		)
 		(pad "14" smd roundrect
@@ -28181,7 +28093,7 @@
 			(size 1.475 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/LED_BN")
+			(net "/EXP_GPIO9")
 			(uuid "024bd16f-443b-4dc8-948e-30b5cf30449c")
 		)
 		(pad "15" smd roundrect
@@ -28189,7 +28101,7 @@
 			(size 1.475 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(J20-Pin_9)")
+			(net "/EXP_GPIO10")
 			(uuid "8cdc3505-f27d-427e-9d60-06feba8ce5e4")
 		)
 		(pad "16" smd roundrect
@@ -28197,7 +28109,7 @@
 			(size 1.475 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(J20-Pin_10)")
+			(net "/EXP_GPIO11")
 			(uuid "828c215f-04b6-4291-953a-917d00341a0c")
 		)
 		(pad "17" smd roundrect
@@ -28205,7 +28117,7 @@
 			(size 1.475 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(J20-Pin_11)")
+			(net "/EXP_GPIO12")
 			(uuid "8bfd08e7-12ee-4951-9b90-9f08848781b1")
 		)
 		(pad "18" smd roundrect
@@ -28213,7 +28125,7 @@
 			(size 1.475 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(J20-Pin_12)")
+			(net "/EXP_GPIO13")
 			(uuid "0497de77-f2a1-4ca4-8927-d17c3b5de7cc")
 		)
 		(pad "19" smd roundrect
@@ -28221,7 +28133,7 @@
 			(size 1.475 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(J20-Pin_13)")
+			(net "/EXP_GPIO14")
 			(uuid "56467bf5-0d1c-4bf3-a72a-a4634a15628d")
 		)
 		(pad "20" smd roundrect
@@ -28229,7 +28141,7 @@
 			(size 1.475 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(J20-Pin_14)")
+			(net "/EXP_GPIO15")
 			(uuid "ad98962e-278b-4704-b76d-985b497ed352")
 		)
 		(pad "21" smd roundrect
@@ -28245,7 +28157,7 @@
 			(size 1.475 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/GPS_SCL")
+			(net "/GPIO39")
 			(uuid "3c630c28-3b0b-4369-873b-83de84302234")
 		)
 		(pad "23" smd roundrect
@@ -28253,7 +28165,7 @@
 			(size 1.475 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/Control ESP32/GPS_SDA")
+			(net "/GPIO40")
 			(uuid "70d126f9-1c8f-4720-ad60-cfcad45f814e")
 		)
 		(pad "24" smd roundrect
@@ -28280,7 +28192,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "fe062e9a-8155-43b6-9768-59e26361b6ff")
-		(at 173.415 92.8)
+		(at 75.54 74.725)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R62"
@@ -28427,7 +28339,7 @@
 	(footprint "Button_Switch_SMD:SW_SPST_TL3342"
 		(layer "F.Cu")
 		(uuid "fecbaa84-087b-451d-8d3b-3b034832587e")
-		(at 123.994999 110.54)
+		(at 99.425 43.335)
 		(descr "Low-profile SMD Tactile Switch, https://www.e-switch.com/system/asset/product_line/data_sheet/165/TL3342.pdf")
 		(tags "SPST Tactile Switch")
 		(property "Reference" "SW4"
@@ -28983,6 +28895,17 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(gr_rect
+		(start 25 25)
+		(end 125 105)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "813dca17-f615-4d0f-88d1-c6c820eee490")
 	)
 	(embedded_fonts no)
 )

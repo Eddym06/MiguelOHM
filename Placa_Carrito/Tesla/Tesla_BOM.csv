@@ -10,7 +10,7 @@ C6,1,100uF,Capacitor_SMD:CP_Elec_8x10,Electrolítico 25 V mín. en VM (de tu dis
 "C77,C95",2,470uF,Capacitor_SMD:CP_Elec_6.3x5.4,Electrolítico SMD 10 V mín. (salida 5 V servos/GPS)
 C81,1,100uF,Capacitor_SMD:CP_Elec_6.3x5.4,Electrolítico SMD 10 V mín. (salida 5 V del LiDAR)
 C85,1,470uF 25V,Capacitor_SMD:CP_Elec_8x10,Electrolítico SMD 25 V 8x10 (reserva a la entrada de la batería)
-C131,1,10uF,Capacitor_SMD:C_0805_2012Metric,X5R 10 V
+C131,1,22uF,Capacitor_SMD:C_0805_2012Metric,X5R 10 V
 C132,1,0.1uF,Capacitor_SMD:C_0402_1005Metric,X7R 16 V mín.
 C133,1,1uF,Capacitor_SMD:C_0402_1005Metric,Retardo de EN del S3
 C134,1,22uF,Capacitor_SMD:C_0805_2012Metric,"X5R 10 V, alimentacion del nRF24"
@@ -46,11 +46,10 @@ J15,1,IMU I2C (GY-521),Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertica
 J16,1,Tira WS2812,Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical,"Molex KK-254 3 pines: GND, 5V, DATA (tira WS2812)"
 J17,1,LEDs RGB ruedas (VLED R G B),Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical,"Molex KK-254 4 pines: VLED comun (anodo), R, G, B (las resistencias de los LED van en el cableado)"
 J18,1,"VLED (1-2: 12 V, 2-3: 5 V)",Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,"Header 1x3 con puente: 1-2 = 12 V (VM), 2-3 = 5 V"
-J20,1,Expansion S3 + PCA9555,Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical,"Header 1x16: 3V3, GND, 5V, 6 pines del S3 (GPIO2, 36, 37 libres; GPIO3, 45, 46 de strapping) y 6 E/S libres del PCA9555"
+J20,1,Expansion S3 + PCA9555,Connector_PinSocket_2.54mm:PinSocket_1x16_P2.54mm_Vertical,"Socket hembra 1x16 para placa hija encima (pines macho en la placa hija): 3V3, GND, 5V, SDA, SCL, INT del PCA9555, 3 GPIO libres del S3 (GPIO2, 36, 37) y 6 E/S libres del PCA9555. GPIO3, 45 y 46 (arranque) sin uso"
 L4,1,4.7uH,Inductor_SMD:L_0805_2012Metric,"4,7 uH, Isat 3 A mín. (AP63203)"
 "L5,L6",2,4.7uH,Inductor_SMD:L_Taiyo-Yuden_NR-50xx,"Inductor 4,7 uH, Isat 3 A mín. (bucks de 2 A)"
 L7,1,100uH,Inductor_SMD:L_Bourns_SRN6045TA,"Inductor de potencia 100 uH, Isat 0,6 A mín. (Bourns SRN6045TA o equivalente)"
-NT1,1,NetTie_2,NetTie:NetTie-2_SMD_Pad0.5mm,Net tie GND-GNDPWR (sin pieza física)
 Q1,1,SUD50P06-15,Package_TO_SOT_SMD:TO-252-2,"Vishay SUD50P06-15, P-MOSFET 60 V 50 A, protección de polaridad invertida (TO-252)"
 "R1,R3",2,15k,Resistor_SMD:R_0402_1005Metric,de tu diseño; verificar MPN y dimensiones antes de compra
 "R2,R4",2,10k,Resistor_SMD:R_0402_1005Metric,de tu diseño; verificar MPN y dimensiones antes de compra
@@ -63,7 +62,7 @@ R29,1,33k,Resistor_SMD:R_0402_1005Metric,"divisor de batería: 12,6 V da 3,13 V"
 R30,1,330,Resistor_SMD:R_0402_1005Metric,serie en la línea de datos de la tira WS2812
 R52,1,10k,Resistor_SMD:R_0402_1005Metric,"Pull-up de EN del S3, 1 %, 0402"
 R53,1,10k,Resistor_SMD:R_0402_1005Metric,"Pull-up de CSN del nRF24, 1 %, 0402"
-R54,1,100k,Resistor_SMD:R_0402_1005Metric,"Pull-down de CE del nRF24, 1 %, 0402"
+R54,1,10k,Resistor_SMD:R_0402_1005Metric,"Pull-down de CE del nRF24, 1 %, 0402"
 R55,1,10k,Resistor_SMD:R_0402_1005Metric,"Pull-up de IRQ del nRF24, 1 %, 0402"
 R56,1,10k,Resistor_SMD:R_0402_1005Metric,"Pull-down de entrada del ULN2003A (R), 1 %, 0402"
 R57,1,10k,Resistor_SMD:R_0402_1005Metric,"Pull-down de entrada del ULN2003A (G), 1 %, 0402"
