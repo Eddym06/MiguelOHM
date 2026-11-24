@@ -25,7 +25,7 @@ control remoto, navegación autónoma por GPS y una página web de control desde
 | [Placa_Control_Remoto/](Placa_Control_Remoto/) | PCB del control (KiCad: `KAKATA_RC433_V1`) y su firmware en [Codigo/](Placa_Control_Remoto/Codigo/README.md) (PlatformIO, Arduino, ESP32-S3). |
 | [Codigo Carrito/](Codigo%20Carrito/README.md) | Firmware del carrito en ESP-IDF: `p4/` (cerebro), `s3/` (WiFi + web), `shared/` (protocolos) y `tests/`. |
 | [Diseño Caja 3D/](Diseño%20Caja%203D/) | Cajas para impresión 3D (FreeCAD). |
-| [Placa_Carrito/](Placa_Carrito/) | Diseño mecánico del carrito. |
+| [Placa_Carrito/](Placa_Carrito/) | PCB del carrito (KiCad): [Tesla/](Placa_Carrito/Tesla/README.md) con un solo ESP32-S3 y expansor PCA9555, y la placa modular S3+P4. |
 | [Documentación/](Documentación/) | Documento del proyecto y registro de cambios. |
 
 ## Empezar

@@ -2,6 +2,8 @@
 
 Firmware ESP-IDF para los dos cerebros del carrito. Sin Arduino ni PlatformIO.
 
+> **Placa Tesla (un solo ESP32-S3 + expansor PCA9555):** el firmware de aquí sigue siendo para P4 + S3. Qué cambia de pines, cómo se programa el expansor por I2C y qué hay que portar está en [Placa_Carrito/Tesla/README.md](../Placa_Carrito/Tesla/README.md).
+
 ```
                  433 MHz                         SPI (50 Hz)                 WiFi propio
  Control remoto <-------> ESP32-P4  <=========================> ESP32-S3 <-------------> Celular
