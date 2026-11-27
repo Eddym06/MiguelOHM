@@ -2814,7 +2814,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 60.96) (xy 63.5 63.5)
+			(xy 63.5 60.96) (xy 63.5 66.04)
 		)
 		(stroke
 			(width 0)
@@ -2824,53 +2824,13 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 63.5) (xy 63.5 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "967ade3d-903a-4d66-a8f2-d5b8e91284fc")
-	)
-	(wire
-		(pts
-			(xy 63.5 71.12) (xy 63.5 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "39fc2cea-7ff4-4f56-91a5-946e1a2975b8")
-	)
-	(wire
-		(pts
-			(xy 63.5 73.66) (xy 58.42 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "97985dac-af01-42f1-8cd8-4a2f61f39770")
-	)
-	(wire
-		(pts
-			(xy 88.9 60.96) (xy 88.9 63.5)
+			(xy 88.9 60.96) (xy 88.9 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "33f65046-17b6-4605-bdf7-44e8d83a8f84")
-	)
-	(wire
-		(pts
-			(xy 88.9 63.5) (xy 88.9 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e87e23c5-83c0-421f-963b-5a2c02d694a7")
 	)
 	(wire
 		(pts
@@ -2884,43 +2844,13 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 73.66) (xy 83.82 73.66)
+			(xy 63.5 71.12) (xy 63.5 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d7d89679-2a69-4f63-9be4-046dd94b4a59")
-	)
-	(wire
-		(pts
-			(xy 114.3 60.96) (xy 114.3 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58f857ed-1578-47f7-b678-cf1dec6975cd")
-	)
-	(wire
-		(pts
-			(xy 114.3 63.5) (xy 114.3 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e6cc7f89-2982-4641-8ccc-3a6fecd00d54")
-	)
-	(wire
-		(pts
-			(xy 114.3 71.12) (xy 114.3 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2dba709-419a-412b-baba-4a1fed543af9")
+		(uuid "39fc2cea-7ff4-4f56-91a5-946e1a2975b8")
 	)
 	(wire
 		(pts
@@ -2932,16 +2862,56 @@
 		)
 		(uuid "495f7636-1b03-4657-95a2-1b8a8068eb74")
 	)
-	(hierarchical_label "GPIO39"
+	(wire
+		(pts
+			(xy 114.3 60.96) (xy 114.3 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58f857ed-1578-47f7-b678-cf1dec6975cd")
+	)
+	(wire
+		(pts
+			(xy 63.5 73.66) (xy 58.42 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97985dac-af01-42f1-8cd8-4a2f61f39770")
+	)
+	(wire
+		(pts
+			(xy 88.9 73.66) (xy 83.82 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7d89679-2a69-4f63-9be4-046dd94b4a59")
+	)
+	(wire
+		(pts
+			(xy 114.3 71.12) (xy 114.3 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2dba709-419a-412b-baba-4a1fed543af9")
+	)
+	(hierarchical_label "GPIO42"
 		(shape bidirectional)
-		(at 58.42 73.66 180)
+		(at 109.22 73.66 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "821e7707-bea0-4af6-b74d-4dd2f013b242")
+		(uuid "5d5a4729-d8d9-4c81-87d7-52f31c44a07d")
 	)
 	(hierarchical_label "GPIO40"
 		(shape bidirectional)
@@ -2954,16 +2924,16 @@
 		)
 		(uuid "72b19e69-f03d-48e3-8c43-f4358180789b")
 	)
-	(hierarchical_label "GPIO42"
+	(hierarchical_label "GPIO39"
 		(shape bidirectional)
-		(at 109.22 73.66 180)
+		(at 58.42 73.66 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "5d5a4729-d8d9-4c81-87d7-52f31c44a07d")
+		(uuid "821e7707-bea0-4af6-b74d-4dd2f013b242")
 	)
 	(symbol
 		(lib_id "power:+3V3")

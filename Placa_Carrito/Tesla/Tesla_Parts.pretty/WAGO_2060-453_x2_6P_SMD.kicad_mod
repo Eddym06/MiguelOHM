@@ -1,0 +1,203 @@
+(footprint "WAGO_2060-453_x2_6P_SMD"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "2 bornes WAGO 2060-453/998-404 (3 polos, resorte CAGE CLAMP, SMD, paso 4 mm) en fila = 6 polos. Patron de pads segun el datasheet: pad largo 6x2 mm del lado del cable y pad corto 3,5x2 mm atras. El cable entra por el lado -X.")
+	(tags "WAGO 2060 spring clamp terminal SMD")
+	(attr smd)
+	(property "Reference" "REF**"
+		(at 0 -14.2 0)
+		(layer "F.SilkS")
+		(uuid "3b8d0f99-b9ca-4673-968a-cad10a7e3723")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "WAGO_2060-453_x2_6P_SMD"
+		(at 0 14.2 0)
+		(layer "F.Fab")
+		(uuid "d50330c0-a807-446e-a570-d39163ebcd64")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -4 -10)
+		(size 6 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8c8ff9ac-a294-47db-acea-0a4a8bdeb325")
+	)
+	(pad "1" smd rect
+		(at 5.25 -10)
+		(size 3.5 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "0e825395-ed9d-43a6-bca9-35e33ded0166")
+	)
+	(pad "2" smd rect
+		(at -4 -6)
+		(size 6 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f7d0cd02-715e-4c23-8f23-5a95acf34f62")
+	)
+	(pad "2" smd rect
+		(at 5.25 -6)
+		(size 3.5 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "0f0bbb58-2ef5-48d8-bd72-ff0ee48de12e")
+	)
+	(pad "3" smd rect
+		(at -4 -2)
+		(size 6 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "771ee4de-9c22-41c6-a5a1-3a8ad7334a47")
+	)
+	(pad "3" smd rect
+		(at 5.25 -2)
+		(size 3.5 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "3fe0b69c-2d15-4aa1-b2aa-faea6d5a8e63")
+	)
+	(pad "4" smd rect
+		(at -4 2)
+		(size 6 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "0557ca24-8650-49e3-ba78-fa77b5e7d210")
+	)
+	(pad "4" smd rect
+		(at 5.25 2)
+		(size 3.5 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e9a440d8-7734-47f1-a7fe-7c3280a0ef3e")
+	)
+	(pad "5" smd rect
+		(at -4 6)
+		(size 6 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "af2b643f-7e32-45d9-b81a-c83cb93e9237")
+	)
+	(pad "5" smd rect
+		(at 5.25 6)
+		(size 3.5 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "b796b3e1-6f66-4598-b12e-5cdda0f1ecc1")
+	)
+	(pad "6" smd rect
+		(at -4 10)
+		(size 6 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5a4e9a4f-f9a3-4d26-889f-175b088fec6e")
+	)
+	(pad "6" smd rect
+		(at 5.25 10)
+		(size 3.5 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8f3adebd-025c-4d13-9b61-5d33c96ae44d")
+	)
+	(fp_rect
+		(start -6.55 -11.95)
+		(end 6.55 -0.05)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "6cb424e1-f7b0-4179-a511-3e35595f26d3")
+	)
+	(fp_line
+		(start -6.55 -11.95)
+		(end -6.55 -0.05)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "548334f5-8212-4854-a5be-506463a1045e")
+	)
+	(fp_rect
+		(start -6.55 0.05)
+		(end 6.55 11.95)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "f87909f5-8c7c-42ff-a6f1-ae8f8296acae")
+	)
+	(fp_line
+		(start -6.55 0.05)
+		(end -6.55 11.95)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "52c0f936-888e-44b3-8494-55458af7e2f0")
+	)
+	(fp_line
+		(start -6.55 -12)
+		(end 6.55 -12)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "8461676e-a21c-450d-ac36-ab54119b18a8")
+	)
+	(fp_line
+		(start -6.55 12)
+		(end 6.55 12)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "41a42a81-ca07-42a3-9833-7d8b65df5477")
+	)
+	(fp_rect
+		(start -7.6 -12.7)
+		(end 7.6 12.7)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "70926463-2004-494b-be89-c3bb93bef91d")
+	)
+	(fp_text user "1"
+		(at -8.6 -10)
+		(layer "F.SilkS")
+		(uuid "59d2f7e9-ced0-44b8-97b9-b12edf4e7f06")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "cable ->"
+		(at -5.5 0)
+		(layer "F.Fab")
+		(uuid "42237f3d-5295-469f-86e5-03471429f547")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+			)
+		)
+	)
+	(model "${KIPRJMOD}/Tesla_Parts.3dshapes/WAGO_2060-453_x2.wrl"
+		(offset (xyz 0 0 0))
+		(scale (xyz 0.3937 0.3937 0.3937))
+		(rotate (xyz 0 0 0))
+	)
+)
