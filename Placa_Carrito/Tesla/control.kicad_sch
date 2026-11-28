@@ -10,6 +10,129 @@
 		(comment 1 "Bloque de control: ESP32-S3 (N16R2) + expansor PCA9555 (sin conectores externos)")
 	)
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.762)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "TP"
+			(at 0 6.858 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 0 5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 5.08 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 5.08 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "test point tp"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Pin* Test*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "TestPoint_0_1"
+			(circle
+				(center 0 3.302)
+				(radius 0.762)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "TestPoint_1_1"
+			(pin passive line
+				(at 0 0 90)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 		(symbol "Connector_Generic:Conn_01x16"
 			(pin_names
 				(offset 1.016)
@@ -5599,7 +5722,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60474"
+		(property "LCSC" "C307331"
 			(at 407.67 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -6110,7 +6233,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C6119899"
+		(property "LCSC" "C45783"
 			(at 392.43 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -6202,7 +6325,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60474"
+		(property "LCSC" "C307331"
 			(at 191.77 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -6372,7 +6495,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C325464"
+		(property "LCSC" "C52923"
 			(at 335.28 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -6476,5 +6599,61 @@
 				)
 			)
 		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 368.30 215.90 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1d349226-58fb-4cef-bf31-abc7044c352e")
+		(property "Reference" "TP15" (at 370.84 211.13 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "SCL0 3.3V" (at 370.84 213.67 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 368.30 215.90 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "" (at 368.30 215.90 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Description" "Test point I2C0 SCL (ESP32-S3 <-> PCA9555, GPIO39)" (at 368.30 215.90 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "a974eea9-a01f-473a-b50b-c03892a78a1a"))
+		(instances (project "Tesla" (path "/5887439a-b21c-43e4-993b-4d67284a5af9/edc9ca75-9f68-482d-90e6-4745f3649831/6045655a-1e14-4e6c-98b2-87df2f68e2b9" (reference "TP15") (unit 1))))
+	)
+	(wire
+		(pts (xy 368.30 215.90) (xy 368.30 220.98))
+		(stroke (width 0) (type default))
+		(uuid "b7236839-27ed-40e9-8354-ea26adf71aaa")
+	)
+	(label "GPIO39"
+		(at 368.30 220.98 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "8ecb6965-45e8-4d5f-a6f0-c0d7f0fdb502")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 393.70 215.90 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8ec4ad00-263c-4d3f-9723-c2da792a19d8")
+		(property "Reference" "TP16" (at 396.24 211.13 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "SDA0 3.3V" (at 396.24 213.67 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 393.70 215.90 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "" (at 393.70 215.90 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Description" "Test point I2C0 SDA (ESP32-S3 <-> PCA9555, GPIO40)" (at 393.70 215.90 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "7cf01214-de77-4c06-845c-c16978073961"))
+		(instances (project "Tesla" (path "/5887439a-b21c-43e4-993b-4d67284a5af9/edc9ca75-9f68-482d-90e6-4745f3649831/6045655a-1e14-4e6c-98b2-87df2f68e2b9" (reference "TP16") (unit 1))))
+	)
+	(wire
+		(pts (xy 393.70 215.90) (xy 393.70 220.98))
+		(stroke (width 0) (type default))
+		(uuid "c506dc49-aa1a-4169-a89e-e8dca96827aa")
+	)
+	(label "GPIO40"
+		(at 393.70 220.98 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "59cc11eb-44e3-4be2-b3ab-1d1b62e57aae")
 	)
 )

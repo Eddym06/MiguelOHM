@@ -3164,7 +3164,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C5448891"
+		(property "LCSC" "C15850"
 			(at 78.74 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -3863,7 +3863,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60474"
+		(property "LCSC" "C307331"
 			(at 116.84 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -4033,7 +4033,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C6119899"
+		(property "LCSC" "C45783"
 			(at 147.32 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -4203,7 +4203,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C6119899"
+		(property "LCSC" "C45783"
 			(at 134.62 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -4295,7 +4295,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C6119899"
+		(property "LCSC" "C45783"
 			(at 160.02 97.79 0)
 			(hide yes)
 			(show_name no)

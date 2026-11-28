@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "TO-277 Yangjie SS10U45, patron de pads sugerido por el datasheet (pad 1 = catodo, pines 1 y 2; pad 2 = anodo, lengueta/CASE)")
+	(descr "TO-277 Yangjie SS10U45, patron de pads segun datasheet S-S115 (pad 1 = catodo, lengueta/CASE Pin3; pad 2 = anodo, pines 1 y 2)")
 	(attr smd)
 	(property "Reference" "REF**"
 		(at 0 -3.88 0)
@@ -27,26 +27,66 @@
 			)
 		)
 	)
-	(pad "2" smd roundrect
+	(pad "1" smd roundrect
 		(at 0 0)
 		(size 3.36 4.86)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.15)
 		(uuid "a5d12ad3-a878-48de-85da-0f3deea01774")
 	)
-	(pad "1" smd roundrect
+	(pad "2" smd roundrect
 		(at -0.92 3.98)
 		(size 1.4 1.4)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.15)
 		(uuid "8304027c-82d3-4188-a1b9-9b04ee19b0cd")
 	)
-	(pad "1" smd roundrect
+	(pad "2" smd roundrect
 		(at 0.92 3.98)
 		(size 1.4 1.4)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.15)
 		(uuid "1a4138d4-7c7c-4561-84fd-e679e4acaefb")
+	)
+	(fp_line
+		(start -2.1 -2.8)
+		(end 2.1 -2.8)
+		(stroke
+			(width 0.3)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "912f7e8a-74b1-4e6c-82c5-6102c94c1001")
+	)
+	(fp_line
+		(start -2.1 -2.8)
+		(end -2.1 5.0)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "912f7e8a-74b1-4e6c-82c5-6102c94c1002")
+	)
+	(fp_line
+		(start 2.1 -2.8)
+		(end 2.1 5.0)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "912f7e8a-74b1-4e6c-82c5-6102c94c1003")
+	)
+	(fp_line
+		(start -2.1 5.0)
+		(end 2.1 5.0)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "912f7e8a-74b1-4e6c-82c5-6102c94c1004")
 	)
 	(fp_rect
 		(start -1.93 -2.68)

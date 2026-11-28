@@ -10,6 +10,129 @@
 		(comment 1 "Carrito Tesla - ESP32-S3 + DRV8424E")
 	)
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.762)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "TP"
+			(at 0 6.858 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 0 5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 5.08 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 5.08 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "test point tp"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Pin* Test*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "TestPoint_0_1"
+			(circle
+				(center 0 3.302)
+				(radius 0.762)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "TestPoint_1_1"
+			(pin passive line
+				(at 0 0 90)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 		(symbol "Device:C_Polarized_Small"
 			(pin_numbers
 				(hide yes)
@@ -3236,7 +3359,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C107147"
+		(property "LCSC" "C1729"
 			(at 121.92 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -3408,7 +3531,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C83170"
+		(property "LCSC" "C1710"
 			(at 93.98 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -3925,7 +4048,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C83170"
+		(property "LCSC" "C1710"
 			(at 119.38 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -4362,7 +4485,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C106846"
+		(property "LCSC" "C13967"
 			(at 175.26 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -4733,7 +4856,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C107131"
+		(property "LCSC" "C5378"
 			(at 111.76 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -4852,4 +4975,28 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 167.64 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "566572da-19f1-4978-abdd-81c50e4cd756")
+		(property "Reference" "TP11" (at 170.18 105.72 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "VREF 2.0V" (at 170.18 108.26 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 167.64 110.49 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "" (at 167.64 110.49 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Description" "Test point limite de corriente DRV8424E (VREFA/B = 2.0V)" (at 167.64 110.49 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "42873153-c832-4e28-8e9f-b4c87385dd1c"))
+		(instances (project "Tesla" (path "/5887439a-b21c-43e4-993b-4d67284a5af9/edc9ca75-9f68-482d-90e6-4745f3649831/776d9bb0-d89c-439a-9cba-380ea7b3fdd2" (reference "TP11") (unit 1))))
+	)
+	(wire
+		(pts (xy 167.64 110.49) (xy 167.64 115.57))
+		(stroke (width 0) (type default))
+		(uuid "c5fc5aa7-ddba-4958-ab10-0c6dfc080f8d")
+	)
+	(junction (at 167.64 115.57) (diameter 0) (color 0 0 0 0) (uuid "1946046d-b082-42d8-bb23-4e5095df5b48"))
 )

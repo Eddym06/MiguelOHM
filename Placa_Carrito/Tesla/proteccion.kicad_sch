@@ -7,7 +7,7 @@
 	(title_block
 		(title "Tesla - Proteccion y desacople")
 		(date "2026-11-26")
-		(comment 1 "Diodos TVS en VBAT y +5V y condensadores repartidos por la placa")
+		(comment 1 "Diodos TVS en VBAT, +5V y +3V3 y condensadores repartidos por la placa")
 	)
 	(lib_symbols
 		(symbol "Device:C_Small"
@@ -565,7 +565,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 124.46) (xy 109.22 124.46)
+			(xy 50.8 124.46) (xy 124.46 124.46)
 		)
 		(stroke
 			(width 0)
@@ -705,7 +705,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 111.76) (xy 109.22 111.76)
+			(xy 50.8 111.76) (xy 124.46 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1028,7 +1028,7 @@
 				(justify left)
 			)
 		)
-		(property "LCSC" "C131394"
+		(property "LCSC" "C307331"
 			(at 109.22 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -1124,7 +1124,7 @@
 				(justify left)
 			)
 		)
-		(property "LCSC" "C5448891"
+		(property "LCSC" "C15850"
 			(at 63.5 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -1220,7 +1220,7 @@
 				(justify left)
 			)
 		)
-		(property "LCSC" "C5448891"
+		(property "LCSC" "C15850"
 			(at 78.74 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -1316,7 +1316,7 @@
 				(justify left)
 			)
 		)
-		(property "LCSC" "C60474"
+		(property "LCSC" "C307331"
 			(at 154.94 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -1412,7 +1412,7 @@
 				(justify left)
 			)
 		)
-		(property "LCSC" "C6119899"
+		(property "LCSC" "C45783"
 			(at 78.74 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -1508,7 +1508,7 @@
 				(justify left)
 			)
 		)
-		(property "LCSC" "C60474"
+		(property "LCSC" "C307331"
 			(at 124.46 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -1604,7 +1604,7 @@
 				(justify left)
 			)
 		)
-		(property "LCSC" "C60474"
+		(property "LCSC" "C307331"
 			(at 109.22 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -1700,7 +1700,7 @@
 				(justify left)
 			)
 		)
-		(property "LCSC" "C131394"
+		(property "LCSC" "C307331"
 			(at 124.46 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -1892,7 +1892,7 @@
 				(justify left)
 			)
 		)
-		(property "LCSC" "C6119899"
+		(property "LCSC" "C45783"
 			(at 93.98 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -1988,7 +1988,7 @@
 				(justify left)
 			)
 		)
-		(property "LCSC" "C6119899"
+		(property "LCSC" "C45783"
 			(at 109.22 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -2084,7 +2084,7 @@
 				(justify left)
 			)
 		)
-		(property "LCSC" "C60474"
+		(property "LCSC" "C307331"
 			(at 139.7 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -2276,7 +2276,7 @@
 				(justify left)
 			)
 		)
-		(property "LCSC" "C6119899"
+		(property "LCSC" "C45783"
 			(at 93.98 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -2372,7 +2372,7 @@
 				(justify left)
 			)
 		)
-		(property "LCSC" "C6119899"
+		(property "LCSC" "C45783"
 			(at 78.74 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -2468,7 +2468,7 @@
 				(justify left)
 			)
 		)
-		(property "LCSC" "C60474"
+		(property "LCSC" "C307331"
 			(at 93.98 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -2500,4 +2500,134 @@
 			(page "1")
 		)
 	)
+
+	(junction
+		(at 109.22 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c75e4b0b-22a8-4801-a3ff-83b42f541fbd")
+	)
+	(junction
+		(at 109.22 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2ddf6552-1b27-4725-a5f1-b73d5978a3f7")
+	)
+	(wire
+		(pts
+			(xy 124.46 111.76) (xy 124.46 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "163e3dea-d381-4188-86c5-607a6aebab58")
+	)
+	(wire
+		(pts
+			(xy 124.46 121.92) (xy 124.46 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ee14e09-2d13-42a9-b76a-1a9a7eded022")
+	)
+	(symbol
+		(lib_id "Device:D_Zener")
+		(at 124.46 118.11 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "788a183a-12d3-47d8-9328-747e5339bfb9")
+		(property "Reference" "D19"
+			(at 127 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SMAJ3.3A"
+			(at 127 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 124.46 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "TVS Unidirectional 3.3V 400W SMA (+3V3 rail ESD protection)"
+			(at 124.46 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "LCSC" "C18199544"
+			(at 124.46 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "2e89a0b6-955d-437b-af87-64895170ce5f")
+		)
+		(pin "2"
+			(uuid "ae1ea0e5-dd5a-40ee-82c8-fc95a17aa7c3")
+		)
+		(instances
+			(project "Tesla"
+				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/edc9ca75-9f68-482d-90e6-4745f3649831/9c4e2b7a-61d3-4a85-b0f2-7e1d3c5a8f46"
+					(reference "D19")
+					(unit 1)
+				)
+			)
+		)
+	)
+
 )

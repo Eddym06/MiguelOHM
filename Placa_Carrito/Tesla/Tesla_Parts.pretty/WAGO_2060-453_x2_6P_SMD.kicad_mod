@@ -118,7 +118,7 @@
 			(width 0.15)
 			(type default)
 		)
-		(layer "F.SilkS")
+		(layer "F.Fab")
 		(uuid "548334f5-8212-4854-a5be-506463a1045e")
 	)
 	(fp_rect
@@ -139,7 +139,7 @@
 			(width 0.15)
 			(type default)
 		)
-		(layer "F.SilkS")
+		(layer "F.Fab")
 		(uuid "52c0f936-888e-44b3-8494-55458af7e2f0")
 	)
 	(fp_line

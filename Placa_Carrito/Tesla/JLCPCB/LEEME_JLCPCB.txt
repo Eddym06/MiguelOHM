@@ -1,0 +1,30 @@
+========================================================================
+PAQUETE DE FABRICACION Y ENSAMBLAJE JLCPCB — TESLA v2.5 (CIRCUITLY)
+========================================================================
+
+1. ARCHIVOS PARA SUBIR EN JLCPCB (www.jlcpcb.com)
+   - Gerbers + Drills : Tesla_JLCPCB_Gerbers.zip
+   - BOM (SMT + THT)  : Tesla_JLCPCB_BOM_SMT.csv  (59 LCSC unicos, 156 componentes)
+   - CPL (Pick&Place) : Tesla_JLCPCB_CPL_SMT.csv  (156 colocaciones, cara Top, origen exacto Gerber)
+   - Referencia total : Tesla_BOM_Completo_Compras.csv (resumen completo de compras y stock)
+
+2. CONFIGURACION PCB RECOMENDADA EN JLCPCB
+   - Capas             : 6 capas
+   - Dimensiones       : 130.0 x 170.0 mm
+   - Espesor           : 1.6 mm
+   - Stackup           : JLC06161H-3313 (impedancia controlada)
+   - Color Soldermask  : Matte Black (o Black)
+   - Color Silkscreen  : White
+   - Acabado superficial: ENIG (inmersion en oro, ideal para BMI270 LGA-14)
+   - Tipo PCBA         : Standard PCBA (Top side — incluye SMT + conectores THT)
+
+3. NOTAS IMPORTANTES DE ENSAMBLAJE
+   - Incluye TODOS los componentes SMD y TODOS los conectores (J2, J3, J5A/B,
+     J6, J7-J11, J13A/B, J15, J16, J20, J21-J24).
+   - U2 incluye el zocalo hembra 2x4 (C239344 / A2541HWV-2x4P) para enchufar el modulo/antena nRF24L01+.
+   - J5 y J13 se dividen en J5A/J5B y J13A/J13B porque cada puerto de motor
+     lleva dos bloques WAGO 2060-453 de 3 pines (C2765056) lado a lado.
+   - U17 usa CH340B (C81010, SOP-16 con reloj interno, pin-compatible con CH340C).
+   - Verificar SIEMPRE la vista previa 3D de colocacion en JLCPCB antes de pagar,
+     especialmente rotaciones de conectores (J2, J3, J5A/B, J6, J7-J11, J13A/B,
+     J21-J24), ICs (U1, U3, U6, U7, U14, U17, U23) y diodos/electroliticos.

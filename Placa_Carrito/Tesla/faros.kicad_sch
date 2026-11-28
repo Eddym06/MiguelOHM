@@ -3292,7 +3292,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C5448891"
+		(property "LCSC" "C15850"
 			(at 88.9 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -3384,7 +3384,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60474"
+		(property "LCSC" "C307331"
 			(at 76.2 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -3505,7 +3505,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky_Small")
-		(at 124.46 102.87 270)
+		(at 124.46 102.87 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4091,83 +4091,16 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "power:GND")
-		(at 124.46 209.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(in_pos_files no)
-		(dnp no)
-		(uuid "5f29d1c8-073a-438a-bc40-ba7637121739")
-		(property "Reference" "#PWR15004"
-			(at 127.46 206.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+	(hierarchical_label "VBAT"
+		(shape bidirectional)
+		(at 124.46 209.55 270)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left)
 		)
-		(property "Value" "GND"
-			(at 124.46 214.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 124.46 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 124.46 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 124.46 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5e3aa575-8101-4c64-9ef2-f8d30e6990fa")
-		)
-		(instances
-			(project "Tesla"
-				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/edc9ca75-9f68-482d-90e6-4745f3649831/a5fb39c4-645b-4bf3-97bb-20d3111f0e00"
-					(reference "#PWR15004")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "b9297d2c-d01e-4c71-a28d-7735818b957b")
 	)
 	(symbol
 		(lib_id "74xGxx:74AHCT1G125")
@@ -4506,7 +4439,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60474"
+		(property "LCSC" "C307331"
 			(at 181.61 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -5118,7 +5051,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C5448891"
+		(property "LCSC" "C15850"
 			(at 194.31 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -5147,7 +5080,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky_Small")
-		(at 124.46 204.47 270)
+		(at 124.46 204.47 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5339,83 +5272,16 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "power:GND")
-		(at 229.87 209.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(in_pos_files no)
-		(dnp no)
-		(uuid "aeebb5d3-9370-426b-9910-5e67cadd3268")
-		(property "Reference" "#PWR15009"
-			(at 232.87 206.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+	(hierarchical_label "VBAT"
+		(shape bidirectional)
+		(at 229.87 209.55 270)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left)
 		)
-		(property "Value" "GND"
-			(at 229.87 214.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 229.87 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 229.87 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 229.87 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4fb717e0-cd5a-44ce-b0db-749c597ee6e2")
-		)
-		(instances
-			(project "Tesla"
-				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/edc9ca75-9f68-482d-90e6-4745f3649831/a5fb39c4-645b-4bf3-97bb-20d3111f0e00"
-					(reference "#PWR15009")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "12038013-d187-4807-ad8a-80f6393b9156")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -5560,7 +5426,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C5448891"
+		(property "LCSC" "C15850"
 			(at 88.9 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -5743,83 +5609,16 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "power:GND")
-		(at 124.46 107.95 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(in_pos_files no)
-		(dnp no)
-		(uuid "cadedc6a-65a7-4eb7-9471-bf597bfdd698")
-		(property "Reference" "#PWR0142"
-			(at 127.46 104.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+	(hierarchical_label "VBAT"
+		(shape bidirectional)
+		(at 124.46 107.95 270)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left)
 		)
-		(property "Value" "GND"
-			(at 124.46 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 124.46 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 124.46 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 124.46 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6c5cad38-14e2-4f58-bf2f-c108f70ef121")
-		)
-		(instances
-			(project "Tesla"
-				(path "/5887439a-b21c-43e4-993b-4d67284a5af9/edc9ca75-9f68-482d-90e6-4745f3649831/a5fb39c4-645b-4bf3-97bb-20d3111f0e00"
-					(reference "#PWR0142")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "301a67f6-c066-4548-bb89-d76185303e21")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -6333,7 +6132,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky_Small")
-		(at 229.87 204.47 270)
+		(at 229.87 204.47 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6580,7 +6379,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60474"
+		(property "LCSC" "C307331"
 			(at 76.2 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -6944,7 +6743,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60474"
+		(property "LCSC" "C307331"
 			(at 189.23 82.55 0)
 			(hide yes)
 			(show_name no)
