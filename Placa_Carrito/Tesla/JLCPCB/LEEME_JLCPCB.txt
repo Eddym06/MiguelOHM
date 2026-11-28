@@ -1,30 +1,42 @@
-========================================================================
-PAQUETE DE FABRICACION Y ENSAMBLAJE JLCPCB — TESLA v2.5 (CIRCUITLY)
-========================================================================
+================================================================================
+PAQUETE DE FABRICACION Y ENSAMBLAJE JLCPCB — TESLA v2.7 (CIRCUITLY)
+================================================================================
 
 1. ARCHIVOS PARA SUBIR EN JLCPCB (www.jlcpcb.com)
-   - Gerbers + Drills : Tesla_JLCPCB_Gerbers.zip
-   - BOM (SMT + THT)  : Tesla_JLCPCB_BOM_SMT.csv  (59 LCSC unicos, 156 componentes)
-   - CPL (Pick&Place) : Tesla_JLCPCB_CPL_SMT.csv  (156 colocaciones, cara Top, origen exacto Gerber)
-   - Referencia total : Tesla_BOM_Completo_Compras.csv (resumen completo de compras y stock)
+   - Gerbers + Drills : Tesla_JLCPCB_Gerbers.zip (6 capas)
+   - BOM (SMT + THT)  : Tesla_JLCPCB_BOM_SMT.csv (59 LCSC unicos: 20 BASIC + 39 EXT)
+   - CPL (Pick&Place) : Tesla_JLCPCB_CPL_SMT.csv (148 colocaciones, cara Top, origen Gerber)
+   - Referencia total : Tesla_BOM_Completo_Compras.csv (stock verificado en vivo, 100% isBuy=1)
 
-2. CONFIGURACION PCB RECOMENDADA EN JLCPCB
-   - Capas             : 6 capas
-   - Dimensiones       : 130.0 x 170.0 mm
-   - Espesor           : 1.6 mm
-   - Stackup           : JLC06161H-3313 (impedancia controlada)
-   - Color Soldermask  : Matte Black (o Black)
-   - Color Silkscreen  : White
-   - Acabado superficial: ENIG (inmersion en oro, ideal para BMI270 LGA-14)
-   - Tipo PCBA         : Standard PCBA (Top side — incluye SMT + conectores THT)
+2. CONFIGURACION PCB OBLIGATORIA EN JLCPCB
+   - Capas              : 6 capas (JLC06161H-3313 impedancia controlada)
+   - Dimensiones        : 130.0 x 170.0 mm | Espesor: 1.6 mm
+   - Color Soldermask   : Matte Black + Serigrafia Blanca + Acabado ENIG
+   - [CRITICO!] VIA COVERING: SELECCIONAR "Epoxy Filled & Capped (VIPPO / POFV - IPC-4761 Type VII)"!
+     (GRATIS en PCB de 6 capas en JLCPCB — OBLIGATORIO para las 24 vias termicas de 0.20mm en
+     U1 DRV8424EPWPR Pad 29 y las 12 vias en D8 SS10U45 Pad 1, garantizando cero wicking de soldadura!)
+   - Tipo PCBA          : Standard PCBA — TOP SIDE ONLY (cero componentes en Bottom!)
 
-3. NOTAS IMPORTANTES DE ENSAMBLAJE
-   - Incluye TODOS los componentes SMD y TODOS los conectores (J2, J3, J5A/B,
-     J6, J7-J11, J13A/B, J15, J16, J20, J21-J24).
-   - U2 incluye el zocalo hembra 2x4 (C239344 / A2541HWV-2x4P) para enchufar el modulo/antena nRF24L01+.
-   - J5 y J13 se dividen en J5A/J5B y J13A/J13B porque cada puerto de motor
-     lleva dos bloques WAGO 2060-453 de 3 pines (C2765056) lado a lado.
-   - U17 usa CH340B (C81010, SOP-16 con reloj interno, pin-compatible con CH340C).
-   - Verificar SIEMPRE la vista previa 3D de colocacion en JLCPCB antes de pagar,
-     especialmente rotaciones de conectores (J2, J3, J5A/B, J6, J7-J11, J13A/B,
-     J21-J24), ICs (U1, U3, U6, U7, U14, U17, U23) y diodos/electroliticos.
+3. MEJORAS CRITICAS DE INGENIERIA v2.7 (POST-AUDITORIA ELEPHANT-GOLDFISH #1 & #2):
+   - U1 (DRV8424EPWPR): Apertura F.Mask ABIERTA en Exposed Pad 29 + pasta windowpane 60% (2x4)
+     + solder mask dam >=0.14mm en Matte Black (corregido bug critico de v2.5 donde Pad 29 no tenia mascara abierta!).
+   - U1 nFAULT (GPIO7): Eliminado R1 (15k a GND) que dividia nFAULT a 1.98V (< V_IH 2.475V).
+   - U1 VREFA/VREFB: Intercambiados R3=10k y R4=15k -> VREF = 1.98V (I_trip = 1.50A, coincide con TP11 2.0V).
+   - U19 (SRV05-4HTG-D): Re-cableado Pin 5 VP de +5V -> +3V3 (proteccion real a 3.3V para servos)
+     y desconectado Pin 6 de TIRA_LED_5V (ya protegida por D28 PESD5V0S1BA).
+   - Eliminados 7 diodos SD03C redundantes en paralelo (D22-D27, D29).
+   - D19: Reemplazado SMAJ3.3A (fuga en 3.33V) por SMAJ5.0A (C83329) + R79=191k (3.265V exactos).
+   - D8 (SS10U45): Pasta windowpane 60% (2x3) para evitar flotacion y voids.
+   - Capacitores MLCC en VBAT (C45, C69, C88, C141, C142, C151, C152): Murata 10uF 50V 0805 BASIC (C440198, margen >2x).
+   - U17 sincronizado en esquematico, PCB y BOM como CH340B (C81010).
+   - Vias de retorno GND (<=1.4mm) en USB-C + 3 Fiduciales Opticos (FID1-FID3) + Teardrops nativos
+     + 0 esquinas de 90 grados y 0 angulos agudos!
+
+4. ADVERTENCIAS DE SEGURIDAD Y BRING-UP INICIAL (<= 6W):
+   [!] FUSIBLE EXTERNO OBLIGATORIO EN BATERIA: Insertar portafusibles en linea con fusible
+       automotriz DC de 10A-15A (32V DC) en el cable positivo entre bateria LiPo 3S y J6!
+   [!] BRING-UP INICIAL: Medir resistencia en frio (>500 Ohm en VBAT/+5V/+3V3 vs GND), luego
+       energizar J6 con fuente de laboratorio limitada a 12.0V / 0.50A (6W max) antes de conectar
+       motores o bateria LiPo 3S. Verificar +5.0V, +3.265V y TP11 (1.98V).
+
+[v2.7] Upgrade adicional: C6 en /Externo/VBAT actualizado de 25V -> 35V (MVK 35V100 M 6.3*8, C350012, derating 36% en 3S, +10V margen sobre SMBJ15A 24.4V).

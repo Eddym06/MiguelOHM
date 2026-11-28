@@ -6,161 +6,171 @@
 	(paper "A3")
 	(lib_symbols
 		(symbol "Device:D_TVS"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
+				(pin_numbers
+					(hide yes)
 				)
-			)
-			(property "Value" "D_TVS"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
+				(pin_names
+					(offset 1.016)
+					(hide yes)
 				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Bidirectional transient-voltage-suppression diode"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "D_TVS_0_1"
-				(polyline
-					(pts
-						(xy -1.778 0) (xy 1.778 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 1.778 1.016) (xy 1.778 -1.016) (xy 0 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy -1.778 -1.016) (xy -1.778 1.016) (xy 0 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.381 1.397) (xy 0 1.016) (xy 0 -1.016) (xy -0.381 -1.397)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_TVS_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.032)
-					(name "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
+				(exclude_from_sim no)
+				(in_bom yes)
+				(on_board yes)
+				(in_pos_files yes)
+				(duplicate_pin_numbers_are_jumpers no)
+				(property "Reference" "D"
+					(at 0 2.54 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(effects
+						(font
+							(size 1.27 1.27)
 						)
 					)
 				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.032)
-					(name "A2"
-						(effects
-							(font
-								(size 1.27 1.27)
+				(property "Value" "D_TVS"
+					(at 0 -2.54 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "Footprint" ""
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "Datasheet" ""
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "Description" "Bidirectional transient-voltage-suppression diode"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "ki_keywords" "diode TVS thyrector"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(symbol "D_TVS_0_1"
+					(polyline
+						(pts
+							(xy -2.54 1.27) (xy -2.54 -1.27) (xy 2.54 1.27) (xy 2.54 -1.27) (xy -2.54 1.27)
+						)
+						(stroke
+							(width 0.254)
+							(type default)
+						)
+						(fill
+							(type none)
+						)
+					)
+					(polyline
+						(pts
+							(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
+						)
+						(stroke
+							(width 0.254)
+							(type default)
+						)
+						(fill
+							(type none)
+						)
+					)
+					(polyline
+						(pts
+							(xy 1.27 0) (xy -1.27 0)
+						)
+						(stroke
+							(width 0)
+							(type default)
+						)
+						(fill
+							(type none)
+						)
+					)
+				)
+				(symbol "D_TVS_1_1"
+					(pin passive line
+						(at -3.81 0 0)
+						(length 2.54)
+						(name "A1"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "1"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
 							)
 						)
 					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
+					(pin passive line
+						(at 3.81 0 180)
+						(length 2.54)
+						(name "A2"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "2"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
 							)
 						)
 					)
 				)
+				(embedded_fonts no)
 			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:D_Schottky_Small"
 			(pin_numbers
 				(hide yes)
@@ -2688,16 +2698,7 @@
 		)
 		(uuid "cba8b20f-97e1-4dfc-b58b-f61da67f57a3")
 	)
-	(wire
-		(pts
-			(xy 292.1 43.18) (xy 297.18 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc41f634-3b88-4f92-9dae-11d98eccf4d6")
-	)
+	(no_connect (at 292.1 43.18) (uuid "a1dc9bfd-21db-4d85-b310-eea812f66e0f"))
 	(wire
 		(pts
 			(xy 107.95 53.34) (xy 102.87 53.34)
@@ -3138,16 +3139,6 @@
 		)
 		(uuid "36f77237-e1ce-4b88-a498-3bc14f1ba6ae")
 	)
-	(label "TIRA_LED_5V"
-		(at 297.18 43.18 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "37872612-0821-4682-9127-cf9f6df0c3bf")
-	)
 	(label "GPIO14"
 		(at 297.18 129.54 0)
 		(effects
@@ -3421,7 +3412,7 @@
 			)
 		)
 	)
-	(global_label "+5V"
+	(global_label "+3V3"
 		(shape input)
 		(at 284.48 25.4 0)
 		(fields_autoplaced yes)
@@ -7212,193 +7203,18 @@
 	(global_label "GND" (shape input) (at 342.90 219.71 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "743db952-68ca-4686-9d1b-f6bfe7b4294d"))
 
 
-	(symbol
-		(lib_id "Device:D_TVS")
-		(at 363.22 213.36 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "237da2bb-344e-49b8-b203-795b996c4037")
-		(property "Reference" "D22" (at 365.76 212.09 0) (effects (font (size 1.27 1.27)) (justify left)))
-		(property "Value" "SD03C" (at 365.76 214.63 0) (effects (font (size 1.27 1.27)) (justify left)))
-		(property "Footprint" "Diode_SMD:D_SOD-323" (at 363.22 213.36 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Datasheet" "" (at 363.22 213.36 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Description" "ESD 3.3V J8 SERVO_1 (GPIO21)" (at 363.22 213.36 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "LCSC" "C502532" (at 363.22 213.36 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(pin "1" (uuid "ed9f2ffe-dbe6-43c4-b181-ec4b4cd8eb93"))
-		(pin "2" (uuid "9065fd32-bac7-4453-a19e-85f88863deb5"))
-		(instances (project "Tesla" (path "/5887439a-b21c-43e4-993b-4d67284a5af9/edc9ca75-9f68-482d-90e6-4745f3649831" (reference "D22") (unit 1))))
-	)
-	(wire (pts (xy 363.22 209.55) (xy 363.22 207.01)) (stroke (width 0) (type default)) (uuid "5f5240b1-a6e8-49e9-b7da-eb647a1c7e77"))
-	(label "GPIO21" (at 363.22 207.01 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "3fd96091-8e51-4173-8fc1-e523dd6a97a6"))
-	(wire (pts (xy 363.22 217.17) (xy 363.22 219.71)) (stroke (width 0) (type default)) (uuid "c0c032e8-2129-45d4-ba99-914930afa6b2"))
-	(global_label "GND" (shape input) (at 363.22 219.71 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "b7d8022c-ef98-4894-98e6-e6a3bf262950"))
 
 
-	(symbol
-		(lib_id "Device:D_TVS")
-		(at 383.54 213.36 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2de7c85c-4373-4138-80d9-7b2d0c5080da")
-		(property "Reference" "D23" (at 386.08 212.09 0) (effects (font (size 1.27 1.27)) (justify left)))
-		(property "Value" "SD03C" (at 386.08 214.63 0) (effects (font (size 1.27 1.27)) (justify left)))
-		(property "Footprint" "Diode_SMD:D_SOD-323" (at 383.54 213.36 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Datasheet" "" (at 383.54 213.36 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Description" "ESD 3.3V J9 SERVO_2 (GPIO35)" (at 383.54 213.36 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "LCSC" "C502532" (at 383.54 213.36 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(pin "1" (uuid "049e9f3f-4ab4-4a40-b4f1-bfb9c5abcbf0"))
-		(pin "2" (uuid "bbfcf7dc-377a-467b-bf09-b926043812b3"))
-		(instances (project "Tesla" (path "/5887439a-b21c-43e4-993b-4d67284a5af9/edc9ca75-9f68-482d-90e6-4745f3649831" (reference "D23") (unit 1))))
-	)
-	(wire (pts (xy 383.54 209.55) (xy 383.54 207.01)) (stroke (width 0) (type default)) (uuid "87daaca9-d31d-48f9-8456-7faeabf9ed80"))
-	(label "GPIO35" (at 383.54 207.01 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "40885dca-a619-4fd9-9b33-ddea68b586be"))
-	(wire (pts (xy 383.54 217.17) (xy 383.54 219.71)) (stroke (width 0) (type default)) (uuid "3fef63f2-0d5c-4bcf-a421-cf92bc72a99c"))
-	(global_label "GND" (shape input) (at 383.54 219.71 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "8180dbf5-4566-4653-9e73-b1f504d0a700"))
 
 
-	(symbol
-		(lib_id "Device:D_TVS")
-		(at 403.86 213.36 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4747e035-036a-492c-b035-c125f89a238a")
-		(property "Reference" "D29" (at 406.40 212.09 0) (effects (font (size 1.27 1.27)) (justify left)))
-		(property "Value" "SD03C" (at 406.40 214.63 0) (effects (font (size 1.27 1.27)) (justify left)))
-		(property "Footprint" "Diode_SMD:D_SOD-323" (at 403.86 213.36 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Datasheet" "" (at 403.86 213.36 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Description" "ESD 3.3V J7 SERVO_DIR (GPIO12)" (at 403.86 213.36 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "LCSC" "C502532" (at 403.86 213.36 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(pin "1" (uuid "9eaa01e5-927b-4443-9a7f-1402a8f0746d"))
-		(pin "2" (uuid "9866a296-c232-4e9f-bf0b-8f7f43977ac2"))
-		(instances (project "Tesla" (path "/5887439a-b21c-43e4-993b-4d67284a5af9/edc9ca75-9f68-482d-90e6-4745f3649831" (reference "D29") (unit 1))))
-	)
-	(wire (pts (xy 403.86 209.55) (xy 403.86 207.01)) (stroke (width 0) (type default)) (uuid "653b2d0a-f5a3-4906-b7c5-bc2866d961b7"))
-	(label "GPIO12" (at 403.86 207.01 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "e9a08395-f698-40cd-bfed-276efef27519"))
-	(wire (pts (xy 403.86 217.17) (xy 403.86 219.71)) (stroke (width 0) (type default)) (uuid "6c189aad-7eee-4fb1-bad1-d514abd8d216"))
-	(global_label "GND" (shape input) (at 403.86 219.71 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "3b2c4e41-5694-46b0-9b8e-4806d66164d3"))
 
 
-	(symbol
-		(lib_id "Device:D_TVS")
-		(at 322.58 248.92 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "81d75c76-9b0a-4f4f-a05d-a6a15e3b6232")
-		(property "Reference" "D24" (at 325.12 247.65 0) (effects (font (size 1.27 1.27)) (justify left)))
-		(property "Value" "SD03C" (at 325.12 250.19 0) (effects (font (size 1.27 1.27)) (justify left)))
-		(property "Footprint" "Diode_SMD:D_SOD-323" (at 322.58 248.92 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Datasheet" "" (at 322.58 248.92 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Description" "ESD 3.3V J13 ENC_A1 (GPIO15)" (at 322.58 248.92 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "LCSC" "C502532" (at 322.58 248.92 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(pin "1" (uuid "8462bb0d-b081-47b7-b4e2-4cc8d9fdcb81"))
-		(pin "2" (uuid "0de4c365-19d2-43a7-a1bd-367bfdc022ba"))
-		(instances (project "Tesla" (path "/5887439a-b21c-43e4-993b-4d67284a5af9/edc9ca75-9f68-482d-90e6-4745f3649831" (reference "D24") (unit 1))))
-	)
-	(wire (pts (xy 322.58 245.11) (xy 322.58 242.57)) (stroke (width 0) (type default)) (uuid "7ea7e98d-3d33-4b6f-98e7-7c86cdf14a63"))
-	(label "GPIO15" (at 322.58 242.57 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "1d877bbe-b992-4e0a-bfc5-bdd6fdd155d9"))
-	(wire (pts (xy 322.58 252.73) (xy 322.58 255.27)) (stroke (width 0) (type default)) (uuid "6500e770-f843-4d89-a1fd-6ddf51c28010"))
-	(global_label "GND" (shape input) (at 322.58 255.27 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "5a5bc346-1b1f-4f98-a992-7957e45a1fa9"))
 
 
-	(symbol
-		(lib_id "Device:D_TVS")
-		(at 342.90 248.92 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "bc43f8fa-e2ac-424b-9d04-b3c171bd481e")
-		(property "Reference" "D25" (at 345.44 247.65 0) (effects (font (size 1.27 1.27)) (justify left)))
-		(property "Value" "SD03C" (at 345.44 250.19 0) (effects (font (size 1.27 1.27)) (justify left)))
-		(property "Footprint" "Diode_SMD:D_SOD-323" (at 342.90 248.92 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Datasheet" "" (at 342.90 248.92 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Description" "ESD 3.3V J13 ENC_A2 (GPIO16)" (at 342.90 248.92 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "LCSC" "C502532" (at 342.90 248.92 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(pin "1" (uuid "33613a6e-0c30-4ef1-913e-dd0627aa11ab"))
-		(pin "2" (uuid "1f041c80-25cd-4c1f-ba59-e9a64299c2ba"))
-		(instances (project "Tesla" (path "/5887439a-b21c-43e4-993b-4d67284a5af9/edc9ca75-9f68-482d-90e6-4745f3649831" (reference "D25") (unit 1))))
-	)
-	(wire (pts (xy 342.90 245.11) (xy 342.90 242.57)) (stroke (width 0) (type default)) (uuid "ef57cada-3722-4973-8ddb-040e7a1d94a2"))
-	(label "GPIO16" (at 342.90 242.57 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "6b72213f-b2dd-41e3-a25b-5743036398e4"))
-	(wire (pts (xy 342.90 252.73) (xy 342.90 255.27)) (stroke (width 0) (type default)) (uuid "a6d8ba88-59b9-4239-aeb2-5ad4739da561"))
-	(global_label "GND" (shape input) (at 342.90 255.27 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "eb04ac3e-d0ba-482c-b0a3-d8d15f1c3ce9"))
 
 
-	(symbol
-		(lib_id "Device:D_TVS")
-		(at 363.22 248.92 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "bfa65914-9a02-43a1-89c5-f1d0908c1a40")
-		(property "Reference" "D26" (at 365.76 247.65 0) (effects (font (size 1.27 1.27)) (justify left)))
-		(property "Value" "SD03C" (at 365.76 250.19 0) (effects (font (size 1.27 1.27)) (justify left)))
-		(property "Footprint" "Diode_SMD:D_SOD-323" (at 363.22 248.92 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Datasheet" "" (at 363.22 248.92 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Description" "ESD 3.3V J5 ENC_B1 (GPIO13)" (at 363.22 248.92 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "LCSC" "C502532" (at 363.22 248.92 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(pin "1" (uuid "680d55a1-2d5f-4770-9a46-c6e1a516bdcf"))
-		(pin "2" (uuid "f7fee717-6e48-47e6-9085-db7b839970d7"))
-		(instances (project "Tesla" (path "/5887439a-b21c-43e4-993b-4d67284a5af9/edc9ca75-9f68-482d-90e6-4745f3649831" (reference "D26") (unit 1))))
-	)
-	(wire (pts (xy 363.22 245.11) (xy 363.22 242.57)) (stroke (width 0) (type default)) (uuid "25c01041-2d87-4a1b-b094-a020518ac953"))
-	(label "GPIO13" (at 363.22 242.57 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "2a291a45-aaf1-4879-8775-a82ca6a63b9f"))
-	(wire (pts (xy 363.22 252.73) (xy 363.22 255.27)) (stroke (width 0) (type default)) (uuid "27cabd7c-80d0-42f8-9eab-f9e0ce6da7ec"))
-	(global_label "GND" (shape input) (at 363.22 255.27 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "4779207a-d286-4fbd-83fa-0bba81e56dcb"))
 
 
-	(symbol
-		(lib_id "Device:D_TVS")
-		(at 383.54 248.92 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "699c39c2-44a1-4a71-bea5-46aef34aa831")
-		(property "Reference" "D27" (at 386.08 247.65 0) (effects (font (size 1.27 1.27)) (justify left)))
-		(property "Value" "SD03C" (at 386.08 250.19 0) (effects (font (size 1.27 1.27)) (justify left)))
-		(property "Footprint" "Diode_SMD:D_SOD-323" (at 383.54 248.92 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Datasheet" "" (at 383.54 248.92 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Description" "ESD 3.3V J5 ENC_B2 (GPIO14)" (at 383.54 248.92 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "LCSC" "C502532" (at 383.54 248.92 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(pin "1" (uuid "9bf95359-6019-44e1-b7ab-dffe393aeede"))
-		(pin "2" (uuid "e8b7c627-c065-4b61-bd94-62cf04f65444"))
-		(instances (project "Tesla" (path "/5887439a-b21c-43e4-993b-4d67284a5af9/edc9ca75-9f68-482d-90e6-4745f3649831" (reference "D27") (unit 1))))
-	)
-	(wire (pts (xy 383.54 245.11) (xy 383.54 242.57)) (stroke (width 0) (type default)) (uuid "5394284b-095c-4770-aa2d-fc61894e23f0"))
-	(label "GPIO14" (at 383.54 242.57 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "eb1ba22f-f519-4684-8c07-8a13d8e7e489"))
-	(wire (pts (xy 383.54 252.73) (xy 383.54 255.27)) (stroke (width 0) (type default)) (uuid "4f225c99-15fc-4a9a-beff-9e8ad75bd46b"))
-	(global_label "GND" (shape input) (at 383.54 255.27 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "2f1acc2d-0687-49be-873c-09052c0d8574"))
 
 
 	(symbol
